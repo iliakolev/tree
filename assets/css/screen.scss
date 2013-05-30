@@ -71,9 +71,8 @@ a {
 /* ------------------------------------------------------------ */
 
 .content {
-	@extend .clearfix;
-	margin: 0 auto;
-	width: 95%;
+	@include container;
+	@include susy-grid-background;
 }
 
 

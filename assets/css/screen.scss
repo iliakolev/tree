@@ -1,10 +1,7 @@
 // ::Imports pre-render. Must be after reset
 // ------------------------------------------------------------
 
-@import "compass/typography/vertical_rhythm";
-@import "compass/css3";
-@import "compass/utilities";
-
+@import "libs/base";
 @import "libs/reset";
 @import "libs/settings";
 @import "libs/mixins";
@@ -99,14 +96,14 @@ a {
 
 // Eg for 800px
 @media screen and (min-width: em-font(800px)) {
-	.container {
+	.content  {
 		min-width: em-font(780px);
 	}
 }
 
 // Eg for 1240px
 @media screen and (min-width: em-font(1240px)) {
-	.container {
+	.content {
 		max-width: em-font(1080px);
 	}
 }

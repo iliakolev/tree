@@ -17,28 +17,28 @@ h1 {
 }
 
 h2 {
-	@include adjust-font-size-to(30px);
-	margin: rhythm(4, 30px) 0 rhythm(2, 30px) 0;  			// 4 lines above / 2 lines below, based on font size
+	@include adjust-font-size-to(24px);
+	margin: rhythm(4, 24px) 0 rhythm(2, 24px) 0;  			// 4 lines above / 2 lines below, based on font size
 }
 
 h3 {
-	@include adjust-font-size-to(22px);
-	margin: rhythm(4, 22px) 0 rhythm(2, 22px) 0;  			// 4 lines above / 2 lines below, based on font size
+	@include adjust-font-size-to(21px);
+	margin: rhythm(4, 21px) 0 rhythm(2, 21px) 0;  			// 4 lines above / 2 lines below, based on font size
 }
 
 h4 {
-	@include adjust-font-size-to(20px);
-	margin: 0 0 rhythm(1, 20px) 0;  						// 1 lines below, based on font size
-}
-
-h5 {
 	@include adjust-font-size-to(18px);
 	margin: 0 0 rhythm(1, 18px) 0;  						// 1 lines below, based on font size
 }
 
-h6 {
+h5 {
 	@include adjust-font-size-to(16px);
 	margin: 0 0 rhythm(1, 16px) 0;  						// 1 lines below, based on font size
+}
+
+h6 {
+	@include adjust-font-size-to(14px);
+	margin: 0 0 rhythm(1, 14px) 0;  						// 1 lines below, based on font size
 }
 
 p, pre, label {

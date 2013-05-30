@@ -1,24 +1,6 @@
-// Table of Contents
-
-// See mark-down file for how to use compass' rhythm and trailer/leader functions or check the compass documentation
-// -------------------------------------------------------------
-
-// ::Imports pre-render
-	//:: Reset
-	//:: Settings
-	//:: Mixins
-// ::Clearfix extends
-// ::Base styles
-
-// ::Layout styles 
-// ::Media queries 
-// ::State styles
-// ::Debugs  
-
-
-
-// ::Imports pre-render. Must be after reset 
+// ::Imports pre-render. Must be after reset
 // ------------------------------------------------------------
+
 @import "compass/typography/vertical_rhythm";
 @import "compass/css3";
 @import "compass/utilities";
@@ -27,27 +9,35 @@
 @import "libs/settings";
 @import "libs/mixins";
 
+// Import base typography into the cascade (if required)
+@import "libs/typography";
+
+// Import form styles into the cascade (if required)
+@import "libs/forms";
 
 
 /* ::Clearfixs and extends. Use which suits best */
 /* ----------------------------------------------------------- */
 
-// CHOOSE YOUR CLEARFIX, OR YOU KNOW USE BOTH. WHATEVER, I'M NOT YOUR MOTHER
 
 // Use clearfix if you need general clearfixing
-.clearfix 			{ @include clearfix; }
-
+.clearfix {
+	@include clearfix;
+}
 
 // Use pie-clearfix if you need clearfixing that doesn't use overflow: hidden
-.pie-clearfix 		{ @include pie-clearfix; }
-
+.pie-clearfix {
+	@include pie-clearfix;
+}
 
 
 // OTHER EXTENDS
 
 // Max width, for images etc... in RWD
-.max-width 			{ max-width: 100%; height: auto; }
-
+.max-width {
+	max-width: 100%;
+	height: auto;
+}
 
 
 /* ::Base styles Almost exclusively single element selectors */
@@ -57,7 +47,7 @@ html {
 	font-size: 100%;
 }
 
-body { 
+body {
 	color: $base-color;
 	font-family: Helvetica, Arial, sans-serif;
 }
@@ -69,14 +59,6 @@ a {
 		color: $action-respond
 	}
 }
-
-// Import base typography into the cascade (if required)
-@import "libs/typography"; 		
-
-
-// Import form styles into the cascade (if required)
-@import "libs/forms";			
-
 
 
 // -------------------------------------------------------------------------------------------------------
@@ -110,7 +92,6 @@ section 				{ @extend .clearfix; }
 h1 						{ font-weight: 600; }
 ol 						{ @include ordered-inside }
 ul 						{ @include unordered-inside }
-
 
 
 /* ::Media queries */
@@ -153,7 +134,7 @@ ul 						{ @include unordered-inside }
 }
 
 
-// IOS specifics 
+// IOS specifics
 @media screen and (max-width: 769px) {  // Absolute measure here, as we're talking about devices, not screen size
 	-webkit-text-size-adjust:none; 		// Stop iPhone/iPad from scaling text
 }
@@ -166,8 +147,12 @@ ul 						{ @include unordered-inside }
 	display: none;
 }
 
-.is-shown, .is-block {
+.is-block {
 	display: block;
+}
+
+.is-inline {
+	display: inline-block;
 }
 
 .is-uppercase {
@@ -178,7 +163,6 @@ ul 						{ @include unordered-inside }
 .is-lowercase {
 	text-transform: lowercase;
 }
-
 
 
 /* ::Debugs and #grid by Jon Gibbins */
@@ -194,10 +178,10 @@ ul 						{ @include unordered-inside }
 #grid div.horiz{
 	// Use this one NOT using a global border-box setting
 	// height: $base-line-height - 1px;
-	
+
 	// Use this one if you ARE using a global border-box setting
     height: $base-line-height;
-    
+
     // Carry on...
     border-bottom: 1px solid #ddd;
     margin: 0;

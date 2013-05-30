@@ -68,53 +68,6 @@ textarea {
   resize: vertical;
 }
 
-/* ::Clearfixs and extends. Use which suits best */
-/* ----------------------------------------------------------- */
-.clearfix, .container, section {
-  overflow: hidden;
-  *zoom: 1;
-}
-
-.pie-clearfix {
-  *zoom: 1;
-}
-.pie-clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.max-width {
-  max-width: 100%;
-  height: auto;
-}
-
-/* ::Base styles Almost exclusively single element selectors */
-/* ------------------------------------------------------------ */
-html {
-  font-size: 100%;
-}
-
-body {
-  color: #666666;
-  font-family: Helvetica, Arial, sans-serif;
-}
-
-a {
-  color: #666666;
-  white-space: pre;
-  white-space: pre-wrap;
-  white-space: pre-line;
-  white-space: -pre-wrap;
-  white-space: -o-pre-wrap;
-  white-space: -moz-pre-wrap;
-  white-space: -hp-pre-wrap;
-  word-wrap: break-word;
-}
-a:hover, a:focus, a:active {
-  color: #222222;
-}
-
 h1 {
   font-size: 2.25em;
   line-height: 1.1111111em;
@@ -122,33 +75,33 @@ h1 {
 }
 
 h2 {
-  font-size: 1.875em;
+  font-size: 1.5em;
   line-height: 1.3333333em;
-  margin: 1.0666667em 0 0.5333333em 0;
+  margin: 1.3333333em 0 0.6666667em 0;
 }
 
 h3 {
-  font-size: 1.375em;
-  line-height: 1.4545455em;
-  margin: 1.4545455em 0 0.7272727em 0;
+  font-size: 1.3125em;
+  line-height: 1.5238095em;
+  margin: 1.5238095em 0 0.7619048em 0;
 }
 
 h4 {
-  font-size: 1.25em;
-  line-height: 1.2em;
-  margin: 0 0 0.4em 0;
-}
-
-h5 {
   font-size: 1.125em;
   line-height: 1.3333333em;
   margin: 0 0 0.4444444em 0;
 }
 
-h6 {
+h5 {
   font-size: 1em;
   line-height: 1.5em;
   margin: 0 0 0.5em 0;
+}
+
+h6 {
+  font-size: 0.875em;
+  line-height: 1.7142857em;
+  margin: 0 0 0.5714286em 0;
 }
 
 p, pre, label {
@@ -277,6 +230,53 @@ input[type="checkbox"]:focus {
   outline-offset: -2px;
 }
 
+/* ::Clearfixs and extends. Use which suits best */
+/* ----------------------------------------------------------- */
+.clearfix, .container, section {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+.pie-clearfix {
+  *zoom: 1;
+}
+.pie-clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.max-width {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ::Base styles Almost exclusively single element selectors */
+/* ------------------------------------------------------------ */
+html {
+  font-size: 100%;
+}
+
+body {
+  color: #666666;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #666666;
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: pre-line;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -hp-pre-wrap;
+  word-wrap: break-word;
+}
+a:hover, a:focus, a:active {
+  color: #222222;
+}
+
 /* ::Layout styles - Layouts hold one or more modules together. */
 /* ------------------------------------------------------------ */
 .container {
@@ -341,8 +341,12 @@ ul {
   display: none;
 }
 
-.is-shown, .is-block {
+.is-block {
   display: block;
+}
+
+.is-inline {
+  display: inline-block;
 }
 
 .is-uppercase {

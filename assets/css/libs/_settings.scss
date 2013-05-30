@@ -7,7 +7,7 @@
 // Define your main colour palette
 
 $primary							: #666;
-$secondary							: #222;	
+$secondary							: #222;
 $tertiary							: #444;
 
 
@@ -42,7 +42,7 @@ $success 							: green;
 
 $base-font-size						: 16px; 				// Sets the browser default size. Shouldn't need to change this.
 $base-line-height					: 8px;					// Baseline grid. Set to a sensible, small size.
-$round-to-nearest-half-line			: false;  				// Round the line height to the nearest half line height. Off by default 
+$round-to-nearest-half-line			: false;  				// Round the line height to the nearest half line height. Off by default
 
 
 
@@ -55,7 +55,7 @@ $round-to-nearest-half-line			: false;  				// Round the line height to the near
    @return $target / $context + 0em;
 }
 
-// Make px to ems using base-font-size 
+// Make px to ems using base-font-size
 // echo as: font-size: em-font(#px);
 
 @function em-font($target, $context: $base-font-size) {
@@ -63,7 +63,7 @@ $round-to-nearest-half-line			: false;  				// Round the line height to the near
 }
 
 
-// Make px to ems using base-line-height 
+// Make px to ems using base-line-height
 // echo as: font-size: em-base(#px);
 
 @function em-base($target, $context: $base-line-height) {

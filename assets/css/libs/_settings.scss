@@ -1,6 +1,18 @@
 // SET UP YOUR VARIABLES IN THIS FILE
 
 
+// Font Family
+// ------------------------------------------------------------
+
+// Define your main fonts
+
+$georgia: Georgia, Cambria, "Times New Roman", Times, serif;
+$helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$lucida-grande: "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+$monospace: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
+$verdana: Verdana, Geneva, sans-serif;
+
+
 // Colours
 // ------------------------------------------------------------
 
@@ -11,13 +23,11 @@ $secondary: #222;
 $tertiary:  #444;
 
 
-
 // Assign colours to variable roles
 
 $base-color:                $primary;
 $heading-color:             $secondary;
 $secondary-heading-color:   $tertiary;
-
 
 
 // Links
@@ -28,18 +38,14 @@ $secondary-action:          $action-respond;
 $secondary-action-respond:  $action;
 
 
-
 // Alerts, errors and UI interface
 
 $alert:     red;
 $success:   green;
 
 
-
-
 // Fonts, measure, leading and typefaces
 // ------------------------------------------------------------
-
 
 // Fonts size and line height defaults for our calculations
 

@@ -35,6 +35,24 @@
 }
 
 
+// Micro clearfix provides an easy way to contain floats without adding additional markup
+// http://nicolasgallagher.com/micro-clearfix-hack/
+// -------------------------------------------------------
+
+@mixin clearfix {
+  *zoom: 1;
+
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
 // Advanced typography settings
 // -------------------------------------------------------
 

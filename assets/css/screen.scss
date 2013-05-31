@@ -5,32 +5,13 @@
 @import "libs/reset";
 @import "libs/settings";
 @import "libs/mixins";
-
-// Import base typography into the cascade (if required)
-@import "libs/typography";
-
-// Import form styles into the cascade (if required)
-@import "libs/forms";
+@import "libs/typography";		// Import base typography into the cascade (if required)
+@import "libs/forms";					// Import form styles into the cascade (if required)
 
 
-/* ::Clearfixs and extends. Use which suits best */
-/* ----------------------------------------------------------- */
+/* ::Max width, for images etc... in RWD												*/
+/* ------------------------------------------------------------ */
 
-
-// Use clearfix if you need general clearfixing
-.clearfix {
-	@include clearfix;
-}
-
-// Use pie-clearfix if you need clearfixing that doesn't use overflow: hidden
-.pie-clearfix {
-	@include pie-clearfix;
-}
-
-
-// OTHER EXTENDS
-
-// Max width, for images etc... in RWD
 .max-width {
 	max-width: 100%;
 	height: auto;
@@ -77,7 +58,7 @@ a {
 
 
 
-/* ::Media queries */
+/* ::Media queries 																							*/
 /* ------------------------------------------------------------ */
 
 // If using gridset or another pre-defined grid, these should match up to the same breakpoints
@@ -123,7 +104,7 @@ a {
 }
 
 
-/* ::State styles */
+/* ::State styles 																							*/
 /* ------------------------------------------------------------ */
 
 .is-hidden {
@@ -148,7 +129,7 @@ a {
 }
 
 
-/* ::Debugs and #grid by Jon Gibbins */
+/* ::Debugs and #grid by Jon Gibbins													 */
 /* ----------------------------------------------------------- */
 
 #grid {

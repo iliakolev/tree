@@ -230,22 +230,8 @@ input[type="checkbox"]:focus {
   outline-offset: -2px;
 }
 
-/* ::Clearfixs and extends. Use which suits best */
-/* ----------------------------------------------------------- */
-.clearfix {
-  overflow: hidden;
-  *zoom: 1;
-}
-
-.pie-clearfix {
-  *zoom: 1;
-}
-.pie-clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
+/* ::Max width, for images etc... in RWD												*/
+/* ------------------------------------------------------------ */
 .max-width {
   max-width: 100%;
   height: auto;
@@ -308,7 +294,7 @@ a:hover, a:focus, a:active {
   clear: both;
 }
 
-/* ::Media queries */
+/* ::Media queries 																							*/
 /* ------------------------------------------------------------ */
 @media screen and (min-width: 30em) {
   .content {
@@ -334,7 +320,7 @@ a:hover, a:focus, a:active {
 @media screen and (max-width: 769px) {
   -webkit-text-size-adjust: none;
 }
-/* ::State styles */
+/* ::State styles 																							*/
 /* ------------------------------------------------------------ */
 .is-hidden {
   display: none;
@@ -357,7 +343,7 @@ a:hover, a:focus, a:active {
   text-transform: lowercase;
 }
 
-/* ::Debugs and #grid by Jon Gibbins */
+/* ::Debugs and #grid by Jon Gibbins													 */
 /* ----------------------------------------------------------- */
 #grid {
   width: 100%;

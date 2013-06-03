@@ -37,6 +37,8 @@
 
 // Micro clearfix provides an easy way to contain floats without adding additional markup
 // http://nicolasgallagher.com/micro-clearfix-hack/
+// E.g
+// div { @include clearfix; }
 // -------------------------------------------------------
 
 @mixin clearfix {
@@ -52,6 +54,7 @@
     clear: both;
   }
 }
+
 
 // Advanced typography settings
 // -------------------------------------------------------

@@ -1,6 +1,6 @@
 # Tree
 
-A quick start template for (hopefully) better websites.
+A quick start template for (hopefully) better websites, based on [Sassaparilla] (https://github.com/fffunction/sassaparilla).
 
 ## Overview
 

@@ -1,7 +1,7 @@
 # Require any additional compass plugins here.
 # -----------------------------------------------------------------------------
 
-# Responsive grids for compass http://susy.oddbird.net/
+# Responsive grids for compass http://susy.oddbird.net
 require 'susy'
 
 # Set this to the root of your project when deployed:

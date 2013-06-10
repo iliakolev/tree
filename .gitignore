@@ -1,1 +1,7 @@
+# cache
 .sass-cache
+
+# packages
+node_modules
+bower_components
+

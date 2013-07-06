@@ -1,12 +1,12 @@
 // ::Imports pre-render. Must be after reset
 // ------------------------------------------------------------
 
-@import "libs/base";
-@import "libs/reset";
-@import "libs/settings";
-@import "libs/mixins";
-@import "libs/typography";		// Import base typography into the cascade (if required)
-@import "libs/forms";					// Import form styles into the cascade (if required)
+@import "addons/base";
+@import "addons/reset";
+@import "addons/settings";
+@import "addons/mixins";
+@import "addons/typography";		// Import base typography into the cascade (if required)
+@import "addons/forms";					// Import form styles into the cascade (if required)
 
 
 /* ::Max width, for images etc... in RWD												*/
@@ -18,7 +18,7 @@
 }
 
 
-/* ::Base styles Almost exclusively single element selectors */
+/* ::Base styles Almost exclusively single element selectors    */
 /* ------------------------------------------------------------ */
 
 html {

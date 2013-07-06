@@ -1,13 +1,12 @@
 // ::Imports pre-render. Must be after reset
 // ------------------------------------------------------------
 
-@import "addons/base";
-@import "addons/reset";
-@import "addons/settings";
-@import "addons/mixins";
-@import "addons/states";
-@import "addons/typography";
-@import "addons/forms";
+@import "libs/base";
+@import "libs/reset";
+@import "libs/settings";
+@import "libs/mixins";
+@import "libs/typography";		// Import base typography into the cascade (if required)
+@import "libs/forms";					// Import form styles into the cascade (if required)
 
 
 /* ::Max width, for images etc... in RWD												*/
@@ -19,7 +18,7 @@
 }
 
 
-/* ::Base styles Almost exclusively single element selectors    */
+/* ::Base styles Almost exclusively single element selectors */
 /* ------------------------------------------------------------ */
 
 html {
@@ -40,12 +39,46 @@ a {
 }
 
 
+// -------------------------------------------------------------------------------------------------------
+
+// All the below can be removed if need be
+
+// -------------------------------------------------------------------------------------------------------
+
+
+
+
 /* ::Layout styles - Layouts hold one or more modules together. */
 /* ------------------------------------------------------------ */
 
 .content {
 	@include container;
 	@include susy-grid-background;
+}
+
+
+/* ::State styles 																							*/
+/* ------------------------------------------------------------ */
+
+.is-hidden {
+	display: none;
+}
+
+.is-block {
+	display: block;
+}
+
+.is-inline {
+	display: inline-block;
+}
+
+.is-uppercase {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.is-lowercase {
+	text-transform: lowercase;
 }
 
 

@@ -1,0 +1,23 @@
+/* ::State styles                                               */
+/* ------------------------------------------------------------ */
+
+.is-hidden {
+  display: none;
+}
+
+.is-block {
+  display: block;
+}
+
+.is-inline {
+  display: inline-block;
+}
+
+.is-uppercase {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.is-lowercase {
+  text-transform: lowercase;
+}

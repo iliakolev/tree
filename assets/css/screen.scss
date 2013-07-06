@@ -57,53 +57,6 @@ a {
 }
 
 
-
-/* ::Media queries 																							*/
-/* ------------------------------------------------------------ */
-
-// If using gridset or another pre-defined grid, these should match up to the same breakpoints
-
-// Below examples use a mobile-first approach
-
-
-// Eg for 480px
-@media screen and (min-width: em-font(480px)) {
-	.content {
-		width: 95%;
-	}
-}
-
-
-// Eg for 800px
-@media screen and (min-width: em-font(800px)) {
-	.content  {
-		min-width: em-font(780px);
-	}
-}
-
-// Eg for 1240px
-@media screen and (min-width: em-font(1240px)) {
-	.content {
-		max-width: em-font(1080px);
-	}
-}
-
-// Print styles
-@media print {
-	body {
-		// Smaller type for printing. Save a tree
-		font-size: percentage(10 / 16);
-		@include adjust-leading-to(2);
-	}
-}
-
-
-// IOS specifics
-@media screen and (max-width: 769px) {  // Absolute measure here, as we're talking about devices, not screen size
-	-webkit-text-size-adjust:none; 		// Stop iPhone/iPad from scaling text
-}
-
-
 /* ::State styles 																							*/
 /* ------------------------------------------------------------ */
 
@@ -147,7 +100,7 @@ a {
     height: $base-line-height;
 
     // Carry on...
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #DDDDDD;
     margin: 0;
     padding: 0;
 }

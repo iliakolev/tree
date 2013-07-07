@@ -58,20 +58,20 @@ $round-to-nearest-half-line:    false;    // Round the line height to the neares
 // ------------------------------------------------------------
 
 @function emify($target, $context) {
-   @if $target == 0 { @return 0 }
-   @return $target / $context + 0em;
+    @if $target == 0 { @return 0 }
+    @return $target / $context + 0em;
 }
 
 // Make px to ems using base-font-size
 // echo as: font-size: em-font(#px);
 
 @function em-font($target, $context: $base-font-size) {
-   @return emify($target, $context);
+    @return emify($target, $context);
 }
 
 // Make px to ems using base-line-height
 // echo as: font-size: em-base(#px);
 
 @function em-base($target, $context: $base-line-height) {
-   @return emify($target, $context);
+    @return emify($target, $context);
 }

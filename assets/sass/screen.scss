@@ -23,20 +23,20 @@
 /* ------------------------------------------------------------ */
 
 html {
-	font-size: 100%;
+  font-size: 100%;
 }
 
 body {
-    color: $base-color;
-	font-family: $helvetica;
+  color: $base-color;
+  font-family: $helvetica;
 }
 
 a {
-	color: $action;
-	@include force-wrap;					// force text links to wrap
-	   &:hover, &:focus, &:active {
-	       color: $action-respond
-	}
+  color: $action;
+  @include force-wrap;          // force text links to wrap
+    &:hover, &:focus, &:active {
+      color: $action-respond
+    }
 }
 
 
@@ -44,8 +44,8 @@ a {
 /* ------------------------------------------------------------ */
 
 .content {
-	@include container;
-	@include susy-grid-background;
+  @include container;
+  @include susy-grid-background;
 }
 
 
@@ -53,21 +53,21 @@ a {
 /* ----------------------------------------------------------- */
 
 #grid {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 #grid div.horiz{
-	// Use this one NOT using a global border-box setting
-	// height: $base-line-height - 1px;
+  // Use this one NOT using a global border-box setting
+  // height: $base-line-height - 1px;
 
-	// Use this one if you ARE using a global border-box setting
-    height: $base-line-height;
+  // Use this one if you ARE using a global border-box setting
+  height: $base-line-height;
 
-    // Carry on...
-    border-bottom: 1px solid #DDDDDD;
-    margin: 0;
-    padding: 0;
+  // Carry on...
+  border-bottom: 1px solid #DDDDDD;
+  margin: 0;
+  padding: 0;
 }

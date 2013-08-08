@@ -1,23 +1,23 @@
 /* ::State styles                                               */
 /* ------------------------------------------------------------ */
 
-.is-hidden {
+%is-hidden {
   display: none;
 }
 
-.is-block {
+%is-block {
   display: block;
 }
 
-.is-inline {
+%is-inline {
   display: inline-block;
 }
 
-.is-uppercase {
+%is-uppercase {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-.is-lowercase {
+%is-lowercase {
   text-transform: lowercase;
 }

@@ -1,33 +1,33 @@
 {
-  "name": "Tree",
-  "version": "0.1.0",
-  "description": "This is a project set-up using Grunt to take case of some standard tasks",
-  "main": "Gruntfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/iliakolev/tree.git"
-  },
-  "keywords": [
-    "Grunt",
-    "Javascript"
-  ],
-  "author": "Ilia Kolev",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/iliakolev/tree/issues"
-  },
-  "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-contrib-jshint": "~0.7.0",
-    "grunt-contrib-uglify": "~0.2.4",
-    "grunt-contrib-compass": "~0.6.0",
-    "time-grunt": "~0.1.1",
-    "matchdep": "~0.3.0",
-    "grunt-autoprefixer": "~0.4.0",
-    "grunt-csso": "~0.5.0"
-  }
+    "name": "Tree",
+    "version": "0.1.0",
+    "description": "This is a project set-up using Grunt to take case of some standard tasks",
+    "main": "Gruntfile.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/iliakolev/tree.git"
+    },
+    "keywords": [
+        "Grunt",
+        "Javascript"
+    ],
+    "author": "Ilia Kolev",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/iliakolev/tree/issues"
+    },
+    "devDependencies": {
+        "grunt": "~0.4.1",
+        "grunt-contrib-watch": "~0.5.3",
+        "grunt-contrib-jshint": "~0.7.0",
+        "grunt-contrib-uglify": "~0.2.4",
+        "grunt-contrib-compass": "~0.6.0",
+        "time-grunt": "~0.1.1",
+        "matchdep": "~0.3.0",
+        "grunt-autoprefixer": "~0.4.0",
+        "grunt-csso": "~0.5.0"
+    }
 }

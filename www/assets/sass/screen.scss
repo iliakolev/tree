@@ -1,9 +1,9 @@
-// ::Imports pre-render. Must be after normalizer
-// ------------------------------------------------------------
+/*------------------------------------*\
+    Imports pre-render
+\*------------------------------------*/
 
 @import "addons/base";
 @import "addons/normalizer";
-@import "addons/clearfix";
 @import "addons/settings";
 @import "addons/mixins";
 @import "addons/states";
@@ -11,8 +11,10 @@
 @import "addons/forms";
 
 
-/* ::Max width, for images etc... in RWD												*/
-/* ------------------------------------------------------------ */
+
+/*------------------------------------*\
+    Max width, for images in RWD
+\*------------------------------------*/
 
 .max-width {
 	max-width: 100%;
@@ -20,8 +22,10 @@
 }
 
 
-/* ::Base styles Almost exclusively single element selectors    */
-/* ------------------------------------------------------------ */
+
+/*------------------------------------*\
+    Base styles single selectors
+\*------------------------------------*/
 
 html {
   font-size: 100%;
@@ -34,18 +38,52 @@ body {
 
 a {
   color: $action;
-  @include force-wrap;          // force text links to wrap
-    &:hover, &:focus, &:active {
+  @include force-wrap;
+    &:hover,
+    &:focus,
+    &:active {
       color: $action-respond
     }
 }
 
 
-/* ::Layout styles - Layouts hold one or more modules together. */
-/* ------------------------------------------------------------ */
+/*------------------------------------*\
+    $HEADER
+\*------------------------------------*/
+
+.header {
+
+}
+
+
+
+/*------------------------------------*\
+    $CONTENT
+\*------------------------------------*/
 
 .content {
   @include container;
-  @include susy-grid-background;
+  // @include susy-grid-background;
 }
+
+
+
+/*------------------------------------*\
+    $SIDEBAR
+\*------------------------------------*/
+
+.sidebar {
+
+}
+
+
+
+/*------------------------------------*\
+    $FOOTER
+\*------------------------------------*/
+
+.footer {
+
+}
+
 

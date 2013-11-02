@@ -1,10 +1,6 @@
-// SET UP YOUR VARIABLES IN THIS FILE
-
-
-// Font Family
-// ------------------------------------------------------------
-
-// Define your main fonts
+/*------------------------------------*\
+    FONT FAMILY
+\*------------------------------------*/
 
 $georgia:        Georgia, Cambria, "Times New Roman", Times, serif;
 $helvetica:     "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -13,10 +9,10 @@ $monospace:      Consolas, "Liberation Mono", Courier, monospace;
 $verdana:        Verdana, Geneva, sans-serif;
 
 
-// Colours
-// ------------------------------------------------------------
 
-// Define your main colour palette
+/*------------------------------------*\
+    COLOURS
+\*------------------------------------*/
 
 $primary:   #222;
 $secondary: #333;
@@ -30,7 +26,10 @@ $heading-color:             $secondary;
 $secondary-heading-color:   $tertiary;
 
 
-// Links
+
+/*------------------------------------*\
+    LINKS
+\*------------------------------------*/
 
 $action:                    $primary;
 $action-respond:            $secondary;
@@ -38,24 +37,29 @@ $secondary-action:          $action-respond;
 $secondary-action-respond:  $action;
 
 
-// Alerts, errors and UI interface
+
+/*------------------------------------*\
+    ALERTS
+\*------------------------------------*/
 
 $alert:     red;
 $success:   green;
 
 
-// Fonts, measure, leading and typefaces
-// ------------------------------------------------------------
 
-// Fonts size and line height defaults for our calculations
+/*------------------------------------*\
+    TYPE BASE
+\*------------------------------------*/
 
 $base-font-size:                16px;     // Sets the browser default size. Shouldn't need to change this.
-$base-line-height:              8px;		  // Baseline grid. Set to a sensible, small size.
+$base-line-height:              6px;		  // Baseline grid. Set to a sensible, small size.
 $round-to-nearest-half-line:    false;    // Round the line height to the nearest half line height. Off by default
 
 
-// Functions for px to em conversions
-// ------------------------------------------------------------
+
+/*------------------------------------*\
+    PX TO EM CONVERSIONS
+\*------------------------------------*/
 
 @function emify($target, $context) {
     @if $target == 0 { @return 0 }

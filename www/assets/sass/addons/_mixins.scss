@@ -1,14 +1,9 @@
 @import "settings";
 
 
-// ADD YOUR OWN MIXINS AND HELPERS HERE
-// DESCRIBE WHAT EACH DOES AND HOW TO USE THEM
-
-
-// List styles
-// -------------------------------------------------------
-
-// Mixins for list style types
+/*------------------------------------*\
+    LIST STYLE MIXINS
+\*------------------------------------*/
 
 @mixin unordered {
   list-style-position: outside;
@@ -35,10 +30,10 @@
 }
 
 
-// Advanced typography settings
-// -------------------------------------------------------
 
-// Get advanced with type if needed for ligatures etc...
+/*------------------------------------*\
+    ADVANCED TYPE SETTINGS
+\*------------------------------------*/
 
 @mixin advancedtype {
   //font-variant-ligatures: contextual;            // Set the default for ligatures

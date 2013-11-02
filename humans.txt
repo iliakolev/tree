@@ -5,9 +5,6 @@
 
     <name> -- <role> -- <twitter>
 
-# THANKS
-
-    <name>
 
 # TECHNOLOGY COLOPHON
 

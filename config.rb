@@ -7,12 +7,12 @@ require 'susy'
 # Set this to the root of your project when deployed:
 # -----------------------------------------------------------------------------
 
-http_path       = "/"
-css_dir         = "assets/css"
-sass_dir        = "assets/sass"
-images_dir      = "assets/img"
-javascripts_dir = "assets/js"
-fonts_dir       = "assets/fonts"
+http_path       = "www/"
+css_dir         = "www/assets/css"
+sass_dir        = "www/assets/sass"
+images_dir      = "www/assets/img"
+javascripts_dir = "www/assets/js"
+fonts_dir       = "www/assets/fonts"
 # svg_dir       = "assets/svg"
 # docs_dir      = "assets/docs"
 # plugins_dir   = "assets/plugins"

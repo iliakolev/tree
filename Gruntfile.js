@@ -37,7 +37,7 @@ module.exports = function (grunt) {
          */
         jshint: {
             files: [
-                'assets/js/*.js',
+                'www/assets/js/*.js',
                 'Gruntfile.js'
             ],
             options: {
@@ -53,7 +53,7 @@ module.exports = function (grunt) {
         csso: {
             dist: {
                 files: {
-                    'assets/css/screen.css': ['assets/css/screen.css']
+                    'www/assets/css/screen.css': ['www/assets/css/screen.css']
                 }
             }
         },
@@ -87,7 +87,7 @@ module.exports = function (grunt) {
                         'android 4'
                     ]
                 },
-                src: 'assets/css/screen.css'
+                src: 'www/assets/css/screen.css'
             }
         },
 
@@ -101,7 +101,7 @@ module.exports = function (grunt) {
                 tasks: 'jshint'
             },
             sass: {
-                files: 'assets/sass/{,*/}*.{scss,sass}',
+                files: 'www/assets/sass/{,*/}*.{scss,sass}',
                 tasks: ['compass:dist', 'autoprefixer:dist', 'csso:dist'],
             },
         },

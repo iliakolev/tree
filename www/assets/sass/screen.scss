@@ -1,8 +1,8 @@
-// ::Imports pre-render. Must be after reset
+// ::Imports pre-render. Must be after normalizer
 // ------------------------------------------------------------
 
 @import "addons/base";
-@import "addons/reset";
+@import "addons/normalizer";
 @import "addons/settings";
 @import "addons/mixins";
 @import "addons/states";

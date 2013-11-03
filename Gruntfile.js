@@ -31,25 +31,69 @@ module.exports = function (grunt) {
         pkg: grunt.file.readJSON('package.json'),
 
         /**
+         * Set project info
+         */
+        project: {
+            www: 'www',
+            js: [
+                '<%= project.www %>/assets/js/vendor/*.js',
+                '<%= project.www %>/assets/js/src/*.js'
+            ]
+        },
+
+        /**
          * JSHint
          * https://github.com/gruntjs/grunt-contrib-jshint
          * Manage the options inside .jshintrc file
          */
         jshint: {
             files: [
-                'www/assets/js/*.js',
+                'www/assets/js/vendor/*.js',
+                'www/assets/js/src/*js',
                 'Gruntfile.js'
             ],
             options: {
-                jshintrc: '.jshintrc'
+                jshintrc: '.jshintrc',
+                ignores: [
+                    'www/assets/js/scripts.min.js',
+                    'www/assets/js/vendor/*.js'
+                ]
             }
         },
 
         /**
-        * CSSO
-        * Minify CSS files
-        * https://github.com/t32k/grunt-csso
-        */
+         * Uglify (minify) JavaScript files
+         * https://github.com/gruntjs/grunt-contrib-uglify
+         * Compresses and minifies all JavaScript files into one
+         */
+        uglify: {
+            dev: {
+                options: {
+                    mangle: false,
+                    compress: false,
+                    preserveComments: 'all',
+                    beautify: true
+                },
+                files: {
+                    'www/assets/js/scripts.min.js': '<%= project.js %>'
+                }
+            },
+            dist: {
+                options: {
+                    mangle: true,
+                    compress: true
+                },
+                files: {
+                    'www/assets/js/scripts.min.js': '<%= project.js %>'
+                }
+            }
+        },
+
+        /**
+         * CSSO
+         * Minify CSS files
+         * https://github.com/t32k/grunt-csso
+         */
         csso: {
             dist: {
                 files: {
@@ -96,9 +140,9 @@ module.exports = function (grunt) {
          * https://github.com/gruntjs/grunt-contrib-watch
          */
         watch: {
-            jshint: {
+            js: {
                 files: '<%= jshint.files %>',
-                tasks: 'jshint'
+                tasks: ['jshint', 'uglify:dev']
             },
             sass: {
                 files: 'www/assets/sass/{,*/}*.{scss,sass}',
@@ -112,10 +156,24 @@ module.exports = function (grunt) {
      * Run `grunt` on the command line
      */
     grunt.registerTask('default', [
-        'autoprefixer:dist',
-        'jshint',
-        'csso:dist',
         'compass:dist',
+        'autoprefixer:dist',
+        'csso:dist',
+        'jshint',
+        'uglify:dev',
         'watch'
+    ]);
+
+    /**
+     * Build task
+     * Run `grunt build` on the command line
+     * Then compress all JS/CSS files
+     */
+    grunt.registerTask('build', [
+        'compass:dist',
+        'autoprefixer:dist',
+        'csso:dist',
+        'jshint',
+        'uglify:dist'
     ]);
 };

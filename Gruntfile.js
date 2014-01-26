@@ -11,14 +11,16 @@
 module.exports = function (grunt) {
 
     /**
-     * Dynamically load npm tasks
-     */
-    require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
-
-    /**
      * Displays the elapsed execution time of grunt tasks
      */
     require('time-grunt')(grunt);
+
+    /**
+     * JIT plugin loader for Grunt
+     * https://github.com/shootaroo/jit-grunt
+     * https://github.com/gruntjs/grunt/issues/975#issuecomment-29058707
+     */
+    require('jit-grunt')(grunt);
 
     /**
      * Project configuration

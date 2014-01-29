@@ -18,8 +18,8 @@
     "strict": true,
     "trailing": false,
     "smarttabs": true,
+
     "globals" : {
-        "jQuery": true,
-        "Modernizr": true
-        }
+        "jQuery": true
+    }
 }

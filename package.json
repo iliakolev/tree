@@ -1,33 +1,36 @@
 {
-  "name": "Tree",
-  "version": "0.1.0",
-  "description": "This is a project set-up using Grunt to take case of some standard tasks",
-  "main": "Gruntfile.js",
-  "scripts": {
-    "preinstall": "npm install -g grunt-cli"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/iliakolev/tree.git"
-  },
-  "keywords": [
-    "Grunt",
-    "Javascript"
-  ],
-  "author": "Ilia Kolev",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/iliakolev/tree/issues"
-  },
-  "devDependencies": {
-    "grunt": "~0.4.2",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-contrib-jshint": "~0.8.0",
-    "grunt-contrib-uglify": "~0.3.2",
-    "grunt-contrib-compass": "~0.7.1",
-    "time-grunt": "~0.2.8",
-    "grunt-autoprefixer": "~0.6.5",
-    "grunt-csso": "~0.5.3",
-    "jit-grunt": "~0.2.1"
-  }
+    "name": "Tree",
+    "version": "0.1.0",
+    "description": "This is a project set-up using Grunt to take case of some standard tasks",
+    "main": "Gruntfile.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/iliakolev/tree.git"
+    },
+    "keywords": [
+        "Grunt",
+        "Javascript"
+    ],
+    "author": "Ilia Kolev",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/iliakolev/tree/issues"
+    },
+    "devDependencies": {
+        "bower": "~1.2.8",
+        "grunt": "~0.4.2",
+        "grunt-contrib-watch": "~0.5.3",
+        "grunt-contrib-jshint": "~0.8.0",
+        "grunt-contrib-uglify": "~0.3.2",
+        "grunt-contrib-compass": "~0.7.1",
+        "grunt-contrib-concat": "~0.3.0",
+        "grunt-autoprefixer": "~0.6.5",
+        "grunt-bowercopy": "~0.7.1",
+        "grunt-csso": "~0.5.3",
+        "time-grunt": "~0.2.8",
+        "jit-grunt": "~0.2.1"
+    },
+    "scripts": {
+      "postinstall" : "node_modules/.bin/bower install"
+    }
 }

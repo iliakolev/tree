@@ -44,6 +44,25 @@ module.exports = function (grunt) {
         },
 
         /**
+         * Bowercopy
+         * https://npmjs.org/package/grunt-bowercopy
+         * Scrupulously manage file locations for bower dependencies.
+         */
+        bowercopy: {
+            options: {
+                srcPrefix: 'bower_components'
+            },
+            libs: {
+                options: {
+                    destPrefix: 'www/assets/js/vendor'
+                },
+                files: {
+                    'jquery.min.js': 'jquery/jquery.min.js'
+                }
+            }
+        },
+
+        /**
          * JSHint
          * https://github.com/gruntjs/grunt-contrib-jshint
          * Manage the options inside .jshintrc file
@@ -64,27 +83,28 @@ module.exports = function (grunt) {
         },
 
         /**
+         * Concatenate JavaScript files
+         * https://github.com/gruntjs/grunt-contrib-concat
+         * Imports all .js files and appends project banner
+         */
+        concat: {
+            dev: {
+                files: {
+                    'www/assets/js/scripts.min.js': '<%= project.js %>'
+                }
+            },
+            options: {
+                nonull: true
+            }
+        },
+
+        /**
          * Uglify (minify) JavaScript files
          * https://github.com/gruntjs/grunt-contrib-uglify
          * Compresses and minifies all JavaScript files into one
          */
         uglify: {
-            dev: {
-                options: {
-                    mangle: false,
-                    compress: false,
-                    preserveComments: 'all',
-                    beautify: true
-                },
-                files: {
-                    'www/assets/js/scripts.min.js': '<%= project.js %>'
-                }
-            },
             dist: {
-                options: {
-                    mangle: true,
-                    compress: true
-                },
                 files: {
                     'www/assets/js/scripts.min.js': '<%= project.js %>'
                 }
@@ -142,9 +162,9 @@ module.exports = function (grunt) {
          * https://github.com/gruntjs/grunt-contrib-watch
          */
         watch: {
-            js: {
-                files: '<%= jshint.files %>',
-                tasks: ['jshint', 'uglify:dev']
+            concat: {
+                files: '<%= project.www %>/assets/js/{,*/}*.js',
+                tasks: ['concat:dev', 'jshint']
             },
             sass: {
                 files: 'www/assets/sass/{,*/}*.{scss,sass}',
@@ -161,8 +181,9 @@ module.exports = function (grunt) {
         'compass:dist',
         'autoprefixer:dist',
         'csso:dist',
+        'bowercopy',
         'jshint',
-        'uglify:dev',
+        'concat:dev',
         'watch'
     ]);
 
@@ -175,7 +196,8 @@ module.exports = function (grunt) {
         'compass:dist',
         'autoprefixer:dist',
         'csso:dist',
+        'bowercopy',
         'jshint',
-        'uglify:dist'
+        'uglify'
     ]);
 };

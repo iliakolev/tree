@@ -1,6 +1,8 @@
 {
   "name": "Tree",
   "dependencies": {
-    "jquery": "~1.11.0"
+    "jquery": "~1.11.0",
+    "susy": "~1.0.9",
+    "normalize-css": "~3.0.0"
   }
 }

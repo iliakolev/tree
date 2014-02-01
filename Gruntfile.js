@@ -52,12 +52,25 @@ module.exports = function (grunt) {
             options: {
                 srcPrefix: 'bower_components'
             },
-            libs: {
+            jquery: {
                 options: {
                     destPrefix: 'www/assets/js/vendor'
                 },
                 files: {
                     'jquery.min.js': 'jquery/jquery.min.js'
+                }
+            },
+            susy: {
+                files: {
+                    'www/assets/sass/addons': 'susy/sass'
+                }
+            },
+            normalizer: {
+                options: {
+                    destPrefix: 'www/assets/sass/addons'
+                },
+                files: {
+                    '_normalizer.scss': 'normalize-css/normalize.css'
                 }
             }
         },
@@ -178,10 +191,10 @@ module.exports = function (grunt) {
      * Run `grunt` on the command line
      */
     grunt.registerTask('default', [
+        'bowercopy',
         'compass:dist',
         'autoprefixer:dist',
         'csso:dist',
-        'bowercopy',
         'jshint',
         'concat:dev',
         'watch'
@@ -193,10 +206,10 @@ module.exports = function (grunt) {
      * Then compress all JS/CSS files
      */
     grunt.registerTask('build', [
+        'bowercopy',
         'compass:dist',
         'autoprefixer:dist',
         'csso:dist',
-        'bowercopy',
         'jshint',
         'uglify'
     ]);

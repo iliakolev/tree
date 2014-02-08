@@ -2,46 +2,32 @@
 # -----------------------------------------------------------------------------
 
 
-# Set this to the root of your project when deployed:
-# -----------------------------------------------------------------------------
-
+# Set this to the root of your project when deployed
 http_path       = "www/"
+
+# Project Assets Location
 css_dir         = "www/assets/css"
 sass_dir        = "www/assets/sass"
 images_dir      = "www/assets/img"
 javascripts_dir = "www/assets/js"
 fonts_dir       = "www/assets/fonts"
+
+# Set Cache Folder Location
 cache_path      = "/tmp/.sass-cache"
-# svg_dir       = "assets/svg"
-# docs_dir      = "assets/docs"
-# plugins_dir   = "assets/plugins"
 
+# Development
+# output_style = :expanded
+# environment = :development
 
-
-# Output style and comments
-# -----------------------------------------------------------------------------
-
-# You can select your preferred output style here (can be overridden via the command line):
-# output_style = :expanded or :nested or :compact or :compressed
-# Over-ride with force compile to change output style with: compass compile --output-style compressed --force
+# Production
 output_style = :compressed
+environment  = :production
 
-
-# Remove SASS/Compass relative comments.
+# Enable or disable line comments
 line_comments = false
 
-
-
-# SASS core
-# -----------------------------------------------------------------------------
-
-# Chrome needs a precision of 7 to round properly
-Sass::Script::Number.precision = 7
-
-
-
-# Stuff we don't really need below
-# -----------------------------------------------------------------------------
+# Color output
+color_output = false
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
-# relative_assets = true
+relative_assets = true

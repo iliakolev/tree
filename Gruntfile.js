@@ -83,7 +83,7 @@ module.exports = function (grunt) {
         jshint: {
             files: [
                 'www/assets/js/vendor/*.js',
-                'www/assets/js/src/*js',
+                'www/assets/js/src/*.js',
                 'Gruntfile.js'
             ],
             options: {

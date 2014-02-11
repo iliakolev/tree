@@ -50,7 +50,8 @@ module.exports = function (grunt) {
          */
         bowercopy: {
             options: {
-                srcPrefix: 'bower_components'
+                srcPrefix: 'bower_components',
+                clean: true
             },
             jquery: {
                 options: {
@@ -188,10 +189,9 @@ module.exports = function (grunt) {
 
     /**
      * Default task
-     * Run `grunt` on the command line
+     * Run 'grunt' on the command line
      */
     grunt.registerTask('default', [
-        'bowercopy',
         'compass:dist',
         'autoprefixer:dist',
         'csso:dist',
@@ -202,15 +202,25 @@ module.exports = function (grunt) {
 
     /**
      * Build task
-     * Run `grunt build` on the command line
+     * Run 'grunt build' on the command line
      * Then compress all JS/CSS files
      */
     grunt.registerTask('build', [
-        'bowercopy',
         'compass:dist',
         'autoprefixer:dist',
         'csso:dist',
         'jshint',
         'uglify'
     ]);
+
+    /**
+     * Bower task
+     * Alias bower to bowercopy
+     * Run 'grunt bower'
+     *
+     * When updating a bower dependency, update the version in bower.json, run
+     * 'grunt bower', and then commit the result. When adding a dependency,
+     * update the bowercopy task accordingly.
+     */
+    grunt.registerTask( 'bower', 'bowercopy' );
 };

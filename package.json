@@ -33,7 +33,6 @@
     },
     "scripts": {
         "build": "npm install && grunt",
-        "start": "grunt watch",
-        "test": "grunt"
+        "test": "grunt bower"
     }
 }

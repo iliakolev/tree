@@ -32,7 +32,8 @@
         "jit-grunt": "~0.2.1"
     },
     "scripts": {
-        "bowercopy": "grunt bower",
-        "test":  "grunt"
+      "build": "npm install && grunt bower",
+      "start": "grunt watch",
+      "test": "grunt"
     }
 }

@@ -178,13 +178,23 @@ module.exports = function (grunt) {
         watch: {
             concat: {
                 files: '<%= project.www %>/assets/js/{,*/}*.js',
-                tasks: ['concat:dev', 'jshint']
+                tasks: ['concat:dev', 'jshint', 'uglify']
             },
             sass: {
                 files: 'www/assets/sass/{,*/}*.{scss,sass}',
                 tasks: ['compass:dist', 'autoprefixer:dist', 'csso:dist'],
             },
-        },
+            livereload: {
+                options: {
+                    livereload: true
+                },
+                files: [
+                    '<%= project.www %>/{,*/}*.{html,php}',
+                    '<%= project.www %>/assets/js/{,*/}*.js',
+                    '<%= project.www %>/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
+                ]
+            }
+        }
     });
 
     /**
@@ -196,7 +206,6 @@ module.exports = function (grunt) {
         'autoprefixer:dist',
         'csso:dist',
         'jshint',
-        'concat:dev',
         'watch'
     ]);
 

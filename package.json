@@ -7,14 +7,13 @@
         "type": "git",
         "url": "https://github.com/iliakolev/tree.git"
     },
-    "keywords": [
-        "Grunt",
-        "Javascript"
-    ],
     "author": "Ilia Kolev",
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/iliakolev/tree/issues"
+    },
+    "scripts": {
+      "install": "bower install && grunt"
     },
     "devDependencies": {
         "bower": "~1.2.8",
@@ -30,9 +29,5 @@
         "grunt-csso": "~0.5.3",
         "time-grunt": "~0.2.9",
         "jit-grunt": "~0.2.1"
-    },
-    "scripts": {
-        "build": "npm install && grunt",
-        "test": "grunt bower"
     }
 }

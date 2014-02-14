@@ -190,6 +190,7 @@ module.exports = function (grunt) {
                 },
                 files: [
                     '<%= project.www %>/{,*/}*.{html,php}',
+                    '<%= project.www %>/assets/css/{,*/}*.css',
                     '<%= project.www %>/assets/js/{,*/}*.js',
                     '<%= project.www %>/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
                 ]

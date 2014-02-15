@@ -20,8 +20,8 @@ cache_path      = "/tmp/.sass-cache"
 # environment = :development
 
 # Production
-output_style = :compressed
-environment  = :production
+# output_style = :compressed
+# environment  = :production
 
 # Enable or disable line comments
 line_comments = false

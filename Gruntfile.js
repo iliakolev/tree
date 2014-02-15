@@ -83,13 +83,13 @@ module.exports = function (grunt) {
          */
         jshint: {
             files: [
-                'www/assets/js/vendor/*.js',
                 'www/assets/js/src/*.js',
                 'Gruntfile.js'
             ],
             options: {
                 jshintrc: '.jshintrc',
                 ignores: [
+                    'www/assets/js/scripts.js',
                     'www/assets/js/scripts.min.js',
                     'www/assets/js/vendor/*.js'
                 ]
@@ -99,16 +99,12 @@ module.exports = function (grunt) {
         /**
          * Concatenate JavaScript files
          * https://github.com/gruntjs/grunt-contrib-concat
-         * Imports all .js files and appends project banner
+         * Imports all .js files
          */
         concat: {
-            dev: {
-                files: {
-                    'www/assets/js/scripts.min.js': '<%= project.js %>'
-                }
-            },
-            options: {
-                nonull: true
+            dist: {
+                src: '<%= project.js %>',
+                dest:'www/assets/js/scripts.js'
             }
         },
 
@@ -120,7 +116,7 @@ module.exports = function (grunt) {
         uglify: {
             dist: {
                 files: {
-                    'www/assets/js/scripts.min.js': '<%= project.js %>'
+                    'www/assets/js/scripts.min.js': 'www/assets/js/scripts.js'
                 }
             }
         },
@@ -131,16 +127,19 @@ module.exports = function (grunt) {
          * https://github.com/t32k/grunt-csso
          */
         csso: {
+            options: {
+                report: 'min'
+            },
             dist: {
                 files: {
-                    'www/assets/css/screen.css': ['www/assets/css/screen.css']
+                    'www/assets/css/screen.min.css': ['www/assets/css/screen.css']
                 }
             }
         },
 
         /**
          * Compile Sass to CSS using Compass
-         * https://github.com/gruntjs/grunt-contrib-jshint
+         * https://github.com/gruntjs/grunt-contrib-compass
          */
         compass: {
             dist: {
@@ -176,13 +175,13 @@ module.exports = function (grunt) {
          * https://github.com/gruntjs/grunt-contrib-watch
          */
         watch: {
-            concat: {
-                files: '<%= project.www %>/assets/js/{,*/}*.js',
-                tasks: ['concat:dev', 'jshint', 'uglify']
+            js: {
+                files: '<%= project.js %>',
+                tasks: ['concat', 'jshint', 'uglify']
             },
             sass: {
                 files: 'www/assets/sass/{,*/}*.{scss,sass}',
-                tasks: ['compass:dist', 'autoprefixer:dist', 'csso:dist'],
+                tasks: ['compass', 'autoprefixer', 'csso'],
             },
             livereload: {
                 options: {
@@ -191,7 +190,7 @@ module.exports = function (grunt) {
                 files: [
                     '<%= project.www %>/{,*/}*.{html,php}',
                     '<%= project.www %>/assets/css/{,*/}*.css',
-                    '<%= project.www %>/assets/js/{,*/}*.js',
+                    '<%= project.js %>',
                     '<%= project.www %>/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
                 ]
             }
@@ -203,9 +202,9 @@ module.exports = function (grunt) {
      * Run 'grunt' on the command line
      */
     grunt.registerTask('default', [
-        'compass:dist',
-        'autoprefixer:dist',
-        'csso:dist',
+        'compass',
+        'autoprefixer',
+        'csso',
         'jshint',
         'watch'
     ]);
@@ -216,9 +215,9 @@ module.exports = function (grunt) {
      * Then compress all JS/CSS files
      */
     grunt.registerTask('build', [
-        'compass:dist',
-        'autoprefixer:dist',
-        'csso:dist',
+        'compass',
+        'autoprefixer',
+        'csso',
         'jshint',
         'uglify'
     ]);

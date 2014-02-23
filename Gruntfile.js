@@ -61,11 +61,6 @@ module.exports = function (grunt) {
                     'jquery.min.js': 'jquery/jquery.min.js'
                 }
             },
-            susy: {
-                files: {
-                    'www/assets/sass/addons': 'susy/sass'
-                }
-            },
             normalizer: {
                 options: {
                     destPrefix: 'www/assets/sass/addons'

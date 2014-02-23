@@ -6,11 +6,18 @@
 @import "compass";
 
 
+
+/*------------------------------------*\
+    BOX LAYOUT MODEL
+\*------------------------------------*/
+
+@include border-box-sizing;
+
+
+
 /*------------------------------------*\
     GRID
 \*------------------------------------*/
-
-@include border-box-sizing;     // border-box-sizing()
 
 $total-columns: 12;             // a 12-column grid
 $column-width:  60px;           // each column is 60px wide

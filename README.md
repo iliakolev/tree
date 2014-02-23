@@ -1,6 +1,6 @@
 # Tree
 
-Tree is a project starter framework
+Tree is a project starter framework.
 
 ## Credits
 

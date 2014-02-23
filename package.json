@@ -25,11 +25,11 @@
     "grunt-contrib-uglify": "~0.3.2",
     "grunt-contrib-compass": "~0.7.2",
     "grunt-contrib-concat": "~0.3.0",
-    "grunt-autoprefixer": "~0.6.5",
-    "grunt-bowercopy": "~0.7.1",
+    "grunt-autoprefixer": "~0.7.1",
+    "grunt-bowercopy": "~0.8.0",
     "grunt-csso": "~0.5.3",
     "time-grunt": "~0.2.9",
-    "jit-grunt": "~0.2.1"
+    "jit-grunt": "~0.2.2"
   },
   "scripts": {
     "test": "grunt bower && grunt build"

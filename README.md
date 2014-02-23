@@ -1,9 +1,13 @@
 # Tree
 
-A quick start template for (hopefully) better websites, based on [Sassaparilla] (https://github.com/fffunction/sassaparilla).
+Tree is a little framework for (hopefully) better websites
 
+## Credits
 
-## The legal bit
-This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License.
-To view a copy of this license, visit
-[The Creative Commons Website](http://creativecommons.org/licenses/by-sa/3.0/).
+Tree, although produced and maintained by one developer, could not have
+been possible without inspiration from an array of other projects.
+
+* **[inuitcss](https://twitter.com/inuitcss)**
+* **[Sassaparilla](https://twitter.com/fff_sass)**
+* **[FireShell](https://twitter.com/getfireshell)**
+

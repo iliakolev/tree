@@ -19,6 +19,9 @@ bower_components
 ## Sass
 .sass-cache
 
+## Environment normalisation:
+/.bundle/
+
 ## Windows
 Thumbs.db
 ehthumbs.db

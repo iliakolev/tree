@@ -8,10 +8,16 @@
 
 
 /*------------------------------------*\
-    GRID
+    BOX LAYOUT MODEL
 \*------------------------------------*/
 
-@include border-box-sizing;     // border-box-sizing()
+@include border-box-sizing;
+
+
+
+/*------------------------------------*\
+    GRID
+\*------------------------------------*/
 
 $total-columns: 12;             // a 12-column grid
 $column-width:  60px;           // each column is 60px wide

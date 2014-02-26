@@ -28,23 +28,24 @@
 \*------------------------------------*/
 
 html {
-  font-size: 100%;
+    font-size: 100%;
 }
 
 body {
-  color: $base-color;
-  font-family: $helvetica;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
+    color: $base-color;
+    font-family: $helvetica;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 }
 
 a {
-  color: $action;
-  @include force-wrap;
+    color: $action;
+    @include force-wrap;
+
     &:hover,
     &:focus,
     &:active {
-      color: $action-respond
+        color: $action-respond
     }
 }
 
@@ -64,8 +65,8 @@ a {
 \*------------------------------------*/
 
 .content {
-  @include container;
-  // @include susy-grid-background;
+    @include container;
+    // @include susy-grid-background;
 }
 
 

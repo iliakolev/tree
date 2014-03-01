@@ -29,7 +29,8 @@
     "grunt-bowercopy": "~0.8.0",
     "grunt-csso": "~0.5.3",
     "time-grunt": "~0.2.9",
-    "jit-grunt": "~0.2.2"
+    "jit-grunt": "~0.2.3",
+    "grunt-browser-sync": "^0.6.2"
   },
   "scripts": {
     "test": "grunt bower && grunt build"

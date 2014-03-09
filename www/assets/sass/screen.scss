@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 @import "addons/base";
-@import "addons/normalizer";
+@import "generic/normalize";
 @import "addons/settings";
 @import "addons/mixins";
 @import "addons/states";
@@ -17,8 +17,8 @@
 \*------------------------------------*/
 
 .max-width {
-	max-width: 100%;
-	height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 

@@ -64,10 +64,10 @@ module.exports = function (grunt) {
             },
             normalizer: {
                 options: {
-                    destPrefix: 'www/assets/sass/addons'
+                    destPrefix: 'www/assets/sass/generic'
                 },
                 files: {
-                    '_normalizer.scss': 'normalize-css/normalize.css'
+                    '_normalize.scss': 'tree-normalize/_normalize.scss'
                 }
             }
         },

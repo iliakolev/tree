@@ -40,7 +40,8 @@ module.exports = function (grunt) {
             js: [
                 '<%= project.www %>/assets/js/vendor/*.js',
                 '<%= project.www %>/assets/js/src/*.js'
-            ]
+            ],
+            css: '<%= project.www %>/assets/css/'
         },
 
         /**
@@ -127,7 +128,7 @@ module.exports = function (grunt) {
             },
             dist: {
                 files: {
-                    'www/assets/css/screen.min.css': ['www/assets/css/screen.css']
+                    '<%= project.css %>screen.min.css': ['<%= project.css %>screen.css']
                 }
             }
         },
@@ -161,7 +162,30 @@ module.exports = function (grunt) {
                         'android 4'
                     ]
                 },
-                src: 'www/assets/css/screen.css'
+                src: '<%= project.css %>screen.css'
+            }
+        },
+
+        /**
+         * Browser sync
+         * Keep multiple browsers & devices in sync
+         * https://github.com/shakyShane/grunt-browser-sync
+         */
+        browser_sync: {
+            dev: {
+                files: {
+                    src : [
+                        '<%= project.css %>screen.min.css',
+                        '<%= project.www %>/{,*/}*.{html,php}'
+                    ]
+                },
+                options: {
+                    watchTask: true,
+                    debugInfo: true,
+                    server: {
+                        baseDir: 'www'
+                    }
+                }
             }
         },
 
@@ -170,6 +194,9 @@ module.exports = function (grunt) {
          * https://github.com/gruntjs/grunt-contrib-watch
          */
         watch: {
+            options: {
+                livereload: true
+            },
             js: {
                 files: '<%= project.js %>',
                 tasks: ['concat', 'jshint', 'uglify']
@@ -178,16 +205,11 @@ module.exports = function (grunt) {
                 files: 'www/assets/sass/{,*/}*.{scss,sass}',
                 tasks: ['compass', 'autoprefixer', 'csso'],
             },
-            livereload: {
-                options: {
-                    livereload: true
-                },
-                files: [
-                    '<%= project.www %>/{,*/}*.{html,php}',
-                    '<%= project.www %>/assets/css/{,*/}*.css',
-                    '<%= project.js %>',
-                    '<%= project.www %>/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
-                ]
+            pages: {
+                files: '<%= project.www %>/{,*/}*.{html,php}',
+            },
+            images: {
+                files: '<%= project.www %>/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
             }
         }
     });
@@ -201,6 +223,7 @@ module.exports = function (grunt) {
         'autoprefixer',
         'csso',
         'jshint',
+        'browser_sync',
         'watch'
     ]);
 
@@ -220,11 +243,11 @@ module.exports = function (grunt) {
     /**
      * Bower task
      * Alias bower to bowercopy
-     * Run 'grunt bower'
+     * Run 'grunt bower' on the command line
      *
      * When updating a bower dependency, update the version in bower.json, run
      * 'grunt bower', and then commit the result. When adding a dependency,
      * update the bowercopy task accordingly.
      */
-    grunt.registerTask( 'bower', 'bowercopy' );
+    grunt.registerTask('bower', 'bowercopy');
 };

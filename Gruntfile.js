@@ -223,7 +223,6 @@ module.exports = function (grunt) {
         'autoprefixer',
         'csso',
         'jshint',
-        'browser_sync',
         'watch'
     ]);
 
@@ -238,6 +237,16 @@ module.exports = function (grunt) {
         'csso',
         'jshint',
         'uglify'
+    ]);
+
+    /**
+     * Sync task
+     * Run 'grunt sync' on the command line
+     * Alias sync to browser_sync + watch
+     */
+    grunt.registerTask('sync', [
+        'browser_sync',
+        'watch'
     ]);
 
     /**

@@ -69,6 +69,14 @@ module.exports = function (grunt) {
                 files: {
                     '_normalize.scss': 'tree-normalize/_normalize.scss'
                 }
+            },
+            box_sizing: {
+                options: {
+                    destPrefix: 'www/assets/sass/generic'
+                },
+                files: {
+                    '_box-sizing.scss': 'tree-box-sizing/_box-sizing.scss'
+                }
             }
         },
 

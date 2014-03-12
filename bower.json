@@ -2,6 +2,7 @@
   "name": "Tree",
   "dependencies": {
     "jquery": "~1.11.0",
-    "tree-normalize": "~0.1.0"
+    "tree-normalize": "~0.1.0",
+    "tree-box-sizing": "~0.1.0"
   }
 }

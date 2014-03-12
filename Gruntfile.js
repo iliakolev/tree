@@ -77,6 +77,14 @@ module.exports = function (grunt) {
                 files: {
                     '_box-sizing.scss': 'tree-box-sizing/_box-sizing.scss'
                 }
+            },
+            clearfix: {
+                options: {
+                    destPrefix: 'www/assets/sass/generic'
+                },
+                files: {
+                    '_clearfix.scss': 'tree-clearfix/_clearfix.scss'
+                }
             }
         },
 

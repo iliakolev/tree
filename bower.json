@@ -1,7 +1,8 @@
 {
-  "name": "Tree",
+  "name": "TreeFramework",
   "dependencies": {
     "jquery": "~1.11.0",
+    "tree-defaults": "~0.1.0",
     "tree-normalize": "~0.1.0",
     "tree-box-sizing": "~0.1.0",
     "tree-clearfix": "~0.1.0"

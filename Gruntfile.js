@@ -62,7 +62,15 @@ module.exports = function (grunt) {
                     'jquery.min.js': 'jquery/jquery.min.js'
                 }
             },
-            normalizer: {
+            tree_defaults: {
+                options: {
+                    destPrefix: 'www/assets/sass/settings'
+                },
+                files: {
+                    '_defaults.scss': 'tree-defaults/_defaults.scss'
+                }
+            },
+            tree_normalizer: {
                 options: {
                     destPrefix: 'www/assets/sass/generic'
                 },
@@ -70,7 +78,7 @@ module.exports = function (grunt) {
                     '_normalize.scss': 'tree-normalize/_normalize.scss'
                 }
             },
-            box_sizing: {
+            tree_box_sizing: {
                 options: {
                     destPrefix: 'www/assets/sass/generic'
                 },
@@ -78,7 +86,7 @@ module.exports = function (grunt) {
                     '_box-sizing.scss': 'tree-box-sizing/_box-sizing.scss'
                 }
             },
-            clearfix: {
+            tree_clearfix: {
                 options: {
                     destPrefix: 'www/assets/sass/generic'
                 },

@@ -70,6 +70,14 @@ module.exports = function (grunt) {
                     '_defaults.scss': 'tree-defaults/_defaults.scss'
                 }
             },
+            tree_functions: {
+                options: {
+                    destPrefix: 'www/assets/sass/tools'
+                },
+                files: {
+                    '_functions.scss': 'tree-functions/_functions.scss'
+                }
+            },
             tree_normalizer: {
                 options: {
                     destPrefix: 'www/assets/sass/generic'

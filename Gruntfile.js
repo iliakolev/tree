@@ -78,6 +78,14 @@ module.exports = function (grunt) {
                     '_functions.scss': 'tree-functions/_functions.scss'
                 }
             },
+            tree_mixins: {
+                options: {
+                    destPrefix: 'www/assets/sass/tools'
+                },
+                files: {
+                    '_mixins.scss': 'tree-mixins/_mixins.scss'
+                }
+            },
             tree_normalizer: {
                 options: {
                     destPrefix: 'www/assets/sass/generic'

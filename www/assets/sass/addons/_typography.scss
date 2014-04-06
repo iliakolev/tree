@@ -13,46 +13,38 @@
 // IE, if you have a baseline of 6px, multiples or divisions of often provide best results in ems
 
 h1 {
-    @include adjust-font-size-to(36px);
-    margin: 0 0 rhythm(3, 36px);
+    @include font-size(36px);
 }
 
 h2 {
-    @include adjust-font-size-to(24px);
-    margin: rhythm(4, 24px) 0 rhythm(2, 24px);
+    @include font-size(24px);
 }
 
 h3 {
-    @include adjust-font-size-to(21px);
-    margin: rhythm(4, 21px) 0 rhythm(2, 21px);
+    @include font-size(21px);
 }
 
 h4 {
-    @include adjust-font-size-to(18px);
-    margin: 0 0 rhythm(1, 18px);
+    @include font-size(18px);
 }
 
 h5 {
-    @include adjust-font-size-to(16px);
-    margin: 0 0 rhythm(1, 16px);
+    @include font-size(16px);
 }
 
 h6 {
-    @include adjust-font-size-to(14px);
-    margin: 0 0 rhythm(1, 14px);
+    @include font-size(14px);
 }
 
 p,
 pre,
 label {
-    @include adjust-font-size-to(16px);
-    margin: 0 0 rhythm(2, 16px);
+    @include font-size(16px);
 }
 
 ol,
 ul {
-    @include adjust-font-size-to(16px);
-    margin: 0 0 rhythm(4, 16px);
+    @include font-size(16px);
 }
 
 li {

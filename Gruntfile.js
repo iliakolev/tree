@@ -20,7 +20,9 @@ module.exports = function (grunt) {
      * https://github.com/shootaroo/jit-grunt
      * https://github.com/gruntjs/grunt/issues/975#issuecomment-29058707
      */
-    require('jit-grunt')(grunt);
+    require('jit-grunt')(grunt, {
+        scsslint: 'grunt-scss-lint'
+    });
 
     /**
      * Project configuration
@@ -59,7 +61,7 @@ module.exports = function (grunt) {
                     destPrefix: 'www/assets/js/vendor'
                 },
                 files: {
-                    'jquery.min.js': 'jquery/jquery.min.js'
+                    'jquery.min.js': 'jquery/dist/jquery.min.js'
                 }
             },
             tree_defaults: {
@@ -158,20 +160,19 @@ module.exports = function (grunt) {
         },
 
         /**
-         * CSSO
-         * Minify CSS files
-         * https://github.com/t32k/grunt-csso
+         * A Grunt task to lint your SCSS
+         * https://github.com/ahmednuaman/grunt-scss-lint
          */
-        csso: {
+        scsslint: {
+            files: [
+                '<%= project.www %>/assets/sass/{,*/}*.scss'
+            ],
             options: {
-                report: 'min'
-            },
-            dist: {
-                files: {
-                    '<%= project.css %>screen.min.css': ['<%= project.css %>screen.css']
-                }
+                config: '.scss-lint.yml',
+                reporterOutput: null
             }
         },
+
 
         /**
          * Compile Sass to CSS using Compass
@@ -203,6 +204,22 @@ module.exports = function (grunt) {
                     ]
                 },
                 src: '<%= project.css %>screen.css'
+            }
+        },
+
+        /**
+         * CSSO
+         * Minify CSS files
+         * https://github.com/t32k/grunt-csso
+         */
+        csso: {
+            options: {
+                report: 'min'
+            },
+            dist: {
+                files: {
+                    '<%= project.css %>screen.min.css': ['<%= project.css %>screen.css']
+                }
             }
         },
 
@@ -262,6 +279,7 @@ module.exports = function (grunt) {
         'compass',
         'autoprefixer',
         'csso',
+        'scsslint',
         'jshint',
         'watch'
     ]);
@@ -275,6 +293,7 @@ module.exports = function (grunt) {
         'compass',
         'autoprefixer',
         'csso',
+        'scsslint',
         'jshint',
         'uglify'
     ]);

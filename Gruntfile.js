@@ -104,6 +104,14 @@ module.exports = function (grunt) {
                     '_box-sizing.scss': 'tree-box-sizing/_box-sizing.scss'
                 }
             },
+            tree_shared: {
+                options: {
+                    destPrefix: 'www/assets/sass/generic'
+                },
+                files: {
+                    '_shared.scss': 'tree-shared/_shared.scss'
+                }
+            },
             tree_clearfix: {
                 options: {
                     destPrefix: 'www/assets/sass/generic'

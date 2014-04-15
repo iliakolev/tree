@@ -127,6 +127,14 @@ module.exports = function (grunt) {
                 files: {
                     '_clearfix.scss': 'tree-clearfix/_clearfix.scss'
                 }
+            },
+            tree_page: {
+                options: {
+                    destPrefix: 'www/assets/sass/base'
+                },
+                files: {
+                    '_page.scss': 'tree-page/_page.scss'
+                }
             }
         },
 

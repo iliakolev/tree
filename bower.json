@@ -9,6 +9,7 @@
     "tree-box-sizing": "~0.2.0",
     "tree-shared": "~0.2.1",
     "tree-clearfix": "~0.2.0",
+    "tree-page": "~0.1.0",
     "jquery": "~1.11.0"
   }
 }

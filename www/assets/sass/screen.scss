@@ -19,6 +19,8 @@
 @import "generic/shared";
 @import "generic/clearfix";
 
+@import "base/page";
+
 @import "addons/settings";
 @import "addons/mixins";
 @import "addons/states";
@@ -46,27 +48,22 @@
 //    #Base styles single selectors
 //\*------------------------------------*/
 
-html {
-    font-size: 100%;
-}
-
 body {
     -webkit-font-smoothing: antialiased;
-    color: $base-color;
     font-family: $helvetica;
     text-rendering: optimizeLegibility;
 }
 
-a {
-    color: $action;
-    @include force-wrap;
+// a {
+//    color: $action;
+//    @include force-wrap;
 
-    &:hover,
-    &:focus,
-    &:active {
-        color: $action-respond;
-    }
-}
+//    &:hover,
+//    &:focus,
+//    &:active {
+//        color: $action-respond;
+//    }
+// }
 
 
 
@@ -90,7 +87,7 @@ a {
 
 .content {
     @include container;
-    // @include susy-grid-background;
+    @include susy-grid-background;
 }
 
 

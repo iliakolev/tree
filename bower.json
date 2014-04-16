@@ -10,6 +10,7 @@
     "tree-shared": "~0.2.1",
     "tree-clearfix": "~0.2.0",
     "tree-page": "~0.1.0",
+    "treeframework-headings": "~0.1.1",
     "jquery": "~1.11.0"
   }
 }

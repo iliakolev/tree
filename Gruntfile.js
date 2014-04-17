@@ -1,5 +1,5 @@
 /*!
-* Tree Gruntfile
+* TreeFramework Gruntfile
 * @author Ilia Kolev
 */
 
@@ -64,7 +64,7 @@ module.exports = function (grunt) {
                     'jquery.min.js': 'jquery/dist/jquery.min.js'
                 }
             },
-            tree_defaults: {
+            treeDefaults: {
                 options: {
                     destPrefix: 'www/assets/sass/settings'
                 },
@@ -72,7 +72,7 @@ module.exports = function (grunt) {
                     '_defaults.scss': 'tree-defaults/_defaults.scss'
                 }
             },
-            tree_functions: {
+            treeFunctions: {
                 options: {
                     destPrefix: 'www/assets/sass/tools'
                 },
@@ -80,7 +80,7 @@ module.exports = function (grunt) {
                     '_functions.scss': 'tree-functions/_functions.scss'
                 }
             },
-            tree_mixins: {
+            treeMixins: {
                 options: {
                     destPrefix: 'www/assets/sass/tools'
                 },
@@ -88,7 +88,7 @@ module.exports = function (grunt) {
                     '_mixins.scss': 'tree-mixins/_mixins.scss'
                 }
             },
-            tree_normalizer: {
+            treeNormalizer: {
                 options: {
                     destPrefix: 'www/assets/sass/generic'
                 },
@@ -96,7 +96,7 @@ module.exports = function (grunt) {
                     '_normalize.scss': 'tree-normalize/_normalize.scss'
                 }
             },
-            tree_reset: {
+            treeReset: {
                 options: {
                     destPrefix: 'www/assets/sass/generic'
                 },
@@ -104,7 +104,7 @@ module.exports = function (grunt) {
                     '_reset.scss': 'treeframework-reset/_reset.scss'
                 }
             },
-            tree_box_sizing: {
+            treeBoxSizing: {
                 options: {
                     destPrefix: 'www/assets/sass/generic'
                 },
@@ -112,7 +112,7 @@ module.exports = function (grunt) {
                     '_box-sizing.scss': 'tree-box-sizing/_box-sizing.scss'
                 }
             },
-            tree_shared: {
+            treeShared: {
                 options: {
                     destPrefix: 'www/assets/sass/generic'
                 },
@@ -120,7 +120,7 @@ module.exports = function (grunt) {
                     '_shared.scss': 'tree-shared/_shared.scss'
                 }
             },
-            tree_clearfix: {
+            treeClearfix: {
                 options: {
                     destPrefix: 'www/assets/sass/generic'
                 },
@@ -128,7 +128,7 @@ module.exports = function (grunt) {
                     '_clearfix.scss': 'tree-clearfix/_clearfix.scss'
                 }
             },
-            tree_page: {
+            treePage: {
                 options: {
                     destPrefix: 'www/assets/sass/base'
                 },
@@ -136,7 +136,7 @@ module.exports = function (grunt) {
                     '_page.scss': 'tree-page/_page.scss'
                 }
             },
-            tree_headings: {
+            treeHeadings: {
                 options: {
                     destPrefix: 'www/assets/sass/base'
                 },
@@ -260,7 +260,7 @@ module.exports = function (grunt) {
          * Keep multiple browsers & devices in sync
          * https://github.com/shakyShane/grunt-browser-sync
          */
-        browser_sync: {
+        browserSync: {
             dev: {
                 files: {
                     src : [
@@ -333,10 +333,10 @@ module.exports = function (grunt) {
     /**
      * Sync task
      * Run 'grunt sync' on the command line
-     * Alias sync to browser_sync + watch
+     * Alias sync to browserSync + watch
      */
     grunt.registerTask('sync', [
-        'browser_sync',
+        'browserSync',
         'watch'
     ]);
 

@@ -1,13 +1,13 @@
-/*!
-* TreeFramework Gruntfile
-* @author Ilia Kolev
-*/
+/**
+ * TreeFramework Gruntfile
+ * @author Ilia Kolev
+ */
 
 'use strict';
 
 /**
-* Grunt module
-*/
+ * Grunt module
+ */
 module.exports = function (grunt) {
 
     /**
@@ -18,7 +18,6 @@ module.exports = function (grunt) {
     /**
      * JIT plugin loader for Grunt
      * https://github.com/shootaroo/jit-grunt
-     * https://github.com/gruntjs/grunt/issues/975#issuecomment-29058707
      */
     require('jit-grunt')(grunt, {
         scsslint: 'grunt-scss-lint'
@@ -288,14 +287,20 @@ module.exports = function (grunt) {
             },
             js: {
                 files: '<%= project.js %>',
-                tasks: ['concat', 'jshint', 'uglify']
+                tasks: ['concat', 'jshint', 'uglify'],
+                options: {
+                    spawn: false
+                }
             },
             sass: {
                 files: 'www/assets/sass/{,*/}*.{scss,sass}',
                 tasks: ['compass', 'autoprefixer', 'csso'],
+                options: {
+                    spawn: false
+                }
             },
             pages: {
-                files: '<%= project.www %>/{,*/}*.{html,php}',
+                files: '<%= project.www %>/{,*/}*.{html,php}'
             },
             images: {
                 files: '<%= project.www %>/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'

@@ -11,6 +11,7 @@
     "tree-clearfix": "~0.2.0",
     "tree-page": "~0.1.0",
     "treeframework-headings": "~0.1.1",
+    "tree-lists": "~0.1.0",
     "jquery": "~1.11.0"
   }
 }

@@ -142,6 +142,14 @@ module.exports = function (grunt) {
                 files: {
                     '_headings.scss': 'treeframework-headings/_headings.scss'
                 }
+            },
+            treeLists: {
+                options: {
+                    destPrefix: 'www/assets/sass/base'
+                },
+                files: {
+                    '_lists.scss': 'tree-lists/_lists.scss'
+                }
             }
         },
 

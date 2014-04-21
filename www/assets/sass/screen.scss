@@ -20,6 +20,7 @@
 @import "generic/clearfix";
 
 @import "base/page";
+@import "base/headings";
 
 @import "addons/settings";
 @import "addons/mixins";
@@ -87,7 +88,7 @@ body {
 
 .content {
     @include container;
-    @include susy-grid-background;
+    // @include susy-grid-background;
 }
 
 

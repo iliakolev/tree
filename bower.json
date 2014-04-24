@@ -12,6 +12,7 @@
     "tree-page": "~0.1.0",
     "treeframework-headings": "~0.1.1",
     "tree-lists": "~0.1.0",
+    "tree-tables": "~0.0.1",
     "jquery": "~1.11.0"
   }
 }

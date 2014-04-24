@@ -150,6 +150,14 @@ module.exports = function (grunt) {
                 files: {
                     '_lists.scss': 'tree-lists/_lists.scss'
                 }
+            },
+            treeTables: {
+                options: {
+                    destPrefix: 'www/assets/sass/base'
+                },
+                files: {
+                    '_tables.scss': 'tree-tables/_tables.scss'
+                }
             }
         },
 

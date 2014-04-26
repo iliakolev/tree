@@ -23,25 +23,13 @@
 @import "base/headings";
 @import "base/lists";
 @import "base/tables";
+@import "base/images";
 
 @import "addons/settings";
 @import "addons/mixins";
 @import "addons/states";
 @import "addons/typography";
 @import "addons/forms";
-
-
-
-
-
-///*------------------------------------*\
-//    #Max width, for images in RWD
-//\*------------------------------------*/
-
-.max-width {
-    max-width: 100%;
-    height: auto;
-}
 
 
 

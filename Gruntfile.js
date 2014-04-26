@@ -158,6 +158,14 @@ module.exports = function (grunt) {
                 files: {
                     '_tables.scss': 'tree-tables/_tables.scss'
                 }
+            },
+            treeImages: {
+                options: {
+                    destPrefix: 'www/assets/sass/base'
+                },
+                files: {
+                    '_images.scss': 'tree-images/_images.scss'
+                }
             }
         },
 

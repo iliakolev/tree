@@ -355,56 +355,30 @@ li > ol {
   width: 100%;
 }
 
-.table--fixed {
-  table-layout: fixed;
+img {
+  max-height: 100%;
+  font-style: italic;
 }
 
-.table--compact th,
-.table--compact td {
-  padding: 6px;
+img[width],
+img[height] {
+  max-width: none;
 }
 
-.table--cosy th,
-.table--cosy td {
-  padding: 12px;
+.layout {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: -24px;
 }
 
-.table--comfy th,
-.table--comfy td {
-  padding: 24px;
-}
-
-.table--cells th,
-.table--cells td {
-  border: 1px solid #cccccc;
-}
-
-.table--rows,
-.table--rows th,
-.table--rows td {
-  border: 0 solid #cccccc;
-}
-
-.table--rows {
-  border-top-width: 1px;
-}
-.table--rows th,
-.table--rows td {
-  border-bottom-width: 1px;
-}
-
-.table--columns,
-.table--columns th,
-.table--columns td {
-  border: 0 solid #cccccc;
-}
-
-.table--columns {
-  border-left-width: 1px;
-}
-.table--columns th,
-.table--columns td {
-  border-right-width: 1px;
+.layout__item {
+  display: inline-block;
+  padding-left: 24px;
+  vertical-align: top;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 p,
@@ -488,11 +462,6 @@ input[type="radio"]:focus,
 input[type="checkbox"]:focus {
   outline: thin dotted #333;
   outline-offset: -2px;
-}
-
-.max-width {
-  max-width: 100%;
-  height: auto;
 }
 
 body {

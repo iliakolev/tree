@@ -166,6 +166,14 @@ module.exports = function (grunt) {
                 files: {
                     '_images.scss': 'tree-images/_images.scss'
                 }
+            },
+            treeLayout: {
+                options: {
+                    destPrefix: 'www/assets/sass/objects'
+                },
+                files: {
+                    '_layout.scss': 'tree-layout/_layout.scss'
+                }
             }
         },
 

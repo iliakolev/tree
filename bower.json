@@ -14,6 +14,7 @@
     "tree-lists": "~0.1.0",
     "tree-tables": "~0.0.1",
     "tree-images": "~0.1.0",
+    "tree-layout": "~0.2.4",
     "jquery": "~1.11.0"
   }
 }

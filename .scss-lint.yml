@@ -22,7 +22,7 @@ linters:
     enabled: false
 
   EmptyLineBetweenBlocks:
-    enabled: true
+    enabled: false
 
   EmptyRule:
     enabled: true
@@ -34,7 +34,7 @@ linters:
     enabled: true
 
   Indentation:
-    enabled: true
+    enabled: false
     width: 4
 
   LeadingZero:
@@ -70,10 +70,10 @@ linters:
     enabled: false
 
   SpaceAfterPropertyName:
-    enabled: true
+    enabled: false
 
   SpaceBeforeBrace:
-    enabled: true
+    enabled: false
 
   SpaceBetweenParens:
     enabled: true
@@ -84,7 +84,7 @@ linters:
     style: double_quotes # or single_quotes
 
   TrailingSemicolonAfterPropertyValue:
-    enabled: true
+    enabled: false
 
   UrlQuotes:
     enabled: true

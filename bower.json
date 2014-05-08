@@ -1,21 +1,28 @@
 {
   "name": "TreeFramework",
+  "version": "0.0.1",
+  "homepage": "https://github.com/iliakolev/tree",
+  "authors": [
+    "Ilia Kolev <contact@iliakolev.com>"
+  ],
+  "license": "MIT",
+  "private": true,
   "dependencies": {
-    "tree-defaults": "~0.1.0",
-    "tree-functions": "~0.1.0",
-    "tree-mixins": "~0.2.1",
-    "treeframework-reset": "~0.1.0",
-    "tree-normalize": "~0.2.0",
-    "tree-box-sizing": "~0.2.0",
-    "tree-shared": "~0.2.1",
-    "tree-clearfix": "~0.2.0",
-    "tree-page": "~0.1.0",
-    "treeframework-headings": "~0.1.1",
-    "tree-lists": "~0.1.0",
-    "tree-tables": "~0.0.1",
-    "tree-images": "~0.1.0",
-    "tree-layout": "~0.2.4",
-    "tree-widths": "~0.1.0",
+    "tree-defaults": "latest",
+    "tree-functions": "latest",
+    "tree-mixins": "latest",
+    "treeframework-reset": "latest",
+    "tree-normalize": "latest",
+    "tree-box-sizing": "latest",
+    "tree-shared": "latest",
+    "tree-clearfix": "latest",
+    "tree-page": "latest",
+    "treeframework-headings": "latest",
+    "tree-lists": "latest",
+    "tree-tables": "latest",
+    "tree-images": "latest",
+    "tree-layout": "latest",
+    "tree-widths": "latest",
     "jquery": "~1.11.0"
   }
 }

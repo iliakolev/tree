@@ -1,12 +1,12 @@
 // We import types of file in the following order:
 //
-// Settings -- Sass vars, etc.
-// Tools -- Functions and mixins.
-// Generic -- Generic, high-level styling, like resets, etc.
-// Base -- Unclasses HTML elements (e.g. `h2`, `ul`).
-// Object -- Objects and abstractions.
+// Settings   -- Sass vars, etc.
+// Tools      -- Functions and mixins.
+// Generic    -- Generic, high-level styling, like resets, etc.
+// Base       -- Unclasses HTML elements (e.g. `h2`, `ul`).
+// Object     -- Objects and abstractions.
 // Components -- Your designed UI elements (TreeFramework includes none of these).
-// Trumps -- Overrides and helper classes.
+// Trumps     -- Overrides and helper classes.
 
 @import "settings/defaults";
 
@@ -26,6 +26,7 @@
 @import "base/images";
 
 @import "objects/layout";
+@import "objects/bare-list";
 
 @import "trumps/widths";
 

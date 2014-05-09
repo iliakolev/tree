@@ -175,6 +175,14 @@ module.exports = function (grunt) {
                     '_layout.scss': 'tree-layout/_layout.scss'
                 }
             },
+            treeBareList: {
+                options: {
+                    destPrefix: 'www/assets/sass/objects'
+                },
+                files: {
+                    '_bare-list.scss': 'tree-bare-list/_bare-list.scss'
+                }
+            },
             treeWidths: {
                 options: {
                     destPrefix: 'www/assets/sass/trumps'

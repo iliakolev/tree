@@ -22,6 +22,7 @@
     "tree-tables": "latest",
     "tree-images": "latest",
     "tree-layout": "latest",
+    "tree-bare-list": "latest",
     "tree-widths": "latest",
     "jquery": "~1.11.0"
   }

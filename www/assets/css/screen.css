@@ -381,6 +381,12 @@ img[height] {
   box-sizing: border-box;
 }
 
+.bare-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 [class~="1/2"],
 [class~="2/4"],
 [class~="3/6"],

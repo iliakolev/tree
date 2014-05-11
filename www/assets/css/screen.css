@@ -387,6 +387,17 @@ img[height] {
   list-style: none;
 }
 
+.block-list {
+  margin: 0;
+  padding: 0;
+  list-style: 0;
+}
+
+.block-list__item,
+.block-list > li {
+  padding: 24px;
+}
+
 [class~="1/2"],
 [class~="2/4"],
 [class~="3/6"],

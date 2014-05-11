@@ -151,14 +151,6 @@ module.exports = function (grunt) {
                     '_lists.scss': 'tree-lists/_lists.scss'
                 }
             },
-            treeTables: {
-                options: {
-                    destPrefix: 'www/assets/sass/base'
-                },
-                files: {
-                    '_tables.scss': 'tree-tables/_tables.scss'
-                }
-            },
             treeImages: {
                 options: {
                     destPrefix: 'www/assets/sass/base'
@@ -189,6 +181,14 @@ module.exports = function (grunt) {
                 },
                 files: {
                     '_block-list.scss': 'tree-block-list/_block-list.scss'
+                }
+            },
+            treeTables: {
+                options: {
+                    destPrefix: 'www/assets/sass/objects'
+                },
+                files: {
+                    '_tables.scss': 'tree-tables/_tables.scss'
                 }
             },
             treeWidths: {

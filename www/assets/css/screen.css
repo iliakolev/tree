@@ -351,10 +351,6 @@ li > ol {
   margin-bottom: 0;
 }
 
-.table {
-  width: 100%;
-}
-
 img {
   max-height: 100%;
   font-style: italic;
@@ -396,6 +392,10 @@ img[height] {
 .block-list__item,
 .block-list > li {
   padding: 24px;
+}
+
+.table {
+  width: 100%;
 }
 
 [class~="1/2"],

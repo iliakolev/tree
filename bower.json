@@ -19,11 +19,11 @@
     "tree-page": "latest",
     "treeframework-headings": "latest",
     "tree-lists": "latest",
-    "tree-tables": "latest",
     "tree-images": "latest",
     "tree-layout": "latest",
     "tree-bare-list": "latest",
     "tree-block-list": "latest",
+    "tree-tables": "latest",
     "tree-widths": "latest",
     "jquery": "~1.11.0"
   }

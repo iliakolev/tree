@@ -289,7 +289,8 @@ dd {
   margin-left: 3rem;
 }
 
-.clearfix:after {
+.clearfix:after,
+.media:after {
   clear: both;
   content: "";
   display: table;
@@ -396,6 +397,27 @@ img[height] {
 
 .table {
   width: 100%;
+}
+
+.media {
+  display: block;
+}
+
+.media__img {
+  float: left;
+  margin-right: 24px;
+}
+.media__img > img {
+  display: block;
+}
+
+.media__body {
+  overflow: hidden;
+  display: block;
+}
+.media__body,
+.media__body > :last-child {
+  margin-bottom: 0;
 }
 
 [class~="1/2"],

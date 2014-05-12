@@ -191,6 +191,14 @@ module.exports = function (grunt) {
                     '_tables.scss': 'tree-tables/_tables.scss'
                 }
             },
+            treeMedia: {
+                options: {
+                    destPrefix: 'www/assets/sass/objects'
+                },
+                files: {
+                    '_media.scss': 'tree-media/_media.scss'
+                }
+            },
             treeWidths: {
                 options: {
                     destPrefix: 'www/assets/sass/trumps'

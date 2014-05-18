@@ -100,7 +100,7 @@ module.exports = function (grunt) {
                     destPrefix: 'www/assets/sass/generic'
                 },
                 files: {
-                    '_reset.scss': 'treeframework-reset/_reset.scss'
+                    '_reset.scss': 'tree-reset/_reset.scss'
                 }
             },
             treeBoxSizing: {

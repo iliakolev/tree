@@ -290,12 +290,9 @@ module.exports = function (grunt) {
             dist: {
                 options: {
                     browsers: [
-                        'last 2 version',
-                        'safari 6',
-                        'ie 9',
-                        'opera 12.1',
-                        'ios 6',
-                        'android 4'
+                        'last 3 version',
+                        'ie 8',
+                        'ie 9'
                     ]
                 },
                 src: '<%= project.css %>screen.css'

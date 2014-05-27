@@ -1,7 +1,7 @@
 // We import types of file in the following order:
 //
 // Settings   -- Sass vars, etc.
-// Tools      -- Functions and mixins.
+// Tools      -- Functions , mixins and aliases.
 // Generic    -- Generic, high-level styling, like resets, etc.
 // Base       -- Unclasses HTML elements (e.g. `h2`, `ul`).
 // Object     -- Objects and abstractions.
@@ -12,6 +12,7 @@
 
 @import "tools/functions";
 @import "tools/mixins";
+@import "tools/aliases";
 
 @import "generic/normalize";
 @import "generic/reset";

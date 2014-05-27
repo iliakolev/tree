@@ -79,7 +79,15 @@ module.exports = function (grunt) {
                     '_functions.scss': 'tree-functions/_functions.scss'
                 }
             },
-            treeMixins: {
+            treeAliases: {
+                options: {
+                    destPrefix: 'www/assets/sass/tools'
+                },
+                files: {
+                    '_aliases.scss': 'tree-aliases/_aliases.scss'
+                }
+            },
+            btreeMixins: {
                 options: {
                     destPrefix: 'www/assets/sass/tools'
                 },

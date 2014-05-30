@@ -297,6 +297,7 @@ dd {
 }
 
 html {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
   line-height: 1.5;
   background-color: white;
@@ -374,8 +375,6 @@ img[height] {
   padding-left: 24px;
   vertical-align: top;
   width: 100%;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 
 .bare-list {
@@ -619,25 +618,4 @@ input[type="radio"]:focus,
 input[type="checkbox"]:focus {
   outline: thin dotted #333;
   outline-offset: -2px;
-}
-
-body {
-  -webkit-font-smoothing: antialiased;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-rendering: optimizeLegibility;
-}
-
-.content {
-  *zoom: 1;
-  max-width: 59em;
-  _width: 59em;
-  padding-left: 1em;
-  padding-right: 1em;
-  margin-left: auto;
-  margin-right: auto;
-}
-.content:after {
-  content: "";
-  display: table;
-  clear: both;
 }

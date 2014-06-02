@@ -290,7 +290,8 @@ dd {
 }
 
 .clearfix:after,
-.media:after {
+.media:after,
+.box:after {
   clear: both;
   content: "";
   display: table;
@@ -416,6 +417,14 @@ img[height] {
 }
 .media__body,
 .media__body > :last-child {
+  margin-bottom: 0;
+}
+
+.box {
+  display: block;
+  padding: 24px;
+}
+.box > :last-child {
   margin-bottom: 0;
 }
 

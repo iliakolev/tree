@@ -87,7 +87,7 @@ module.exports = function (grunt) {
                     '_aliases.scss': 'tree-aliases/_aliases.scss'
                 }
             },
-            btreeMixins: {
+            treeMixins: {
                 options: {
                     destPrefix: 'www/assets/sass/tools'
                 },
@@ -205,6 +205,14 @@ module.exports = function (grunt) {
                 },
                 files: {
                     '_media.scss': 'tree-media/_media.scss'
+                }
+            },
+            treeBox: {
+                options: {
+                    destPrefix: 'www/assets/sass/objects'
+                },
+                files: {
+                    '_box.scss': 'tree-box/_box.scss'
                 }
             },
             treeWidths: {

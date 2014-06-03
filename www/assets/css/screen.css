@@ -420,6 +420,29 @@ img[height] {
   margin-bottom: 0;
 }
 
+.flag {
+  display: table;
+  width: 100%;
+}
+
+.flag__img,
+.flag__body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.flag__img {
+  padding-right: 24px;
+}
+.flag__img > img {
+  display: block;
+  max-width: none;
+}
+
+.flag__body {
+  width: 100%;
+}
+
 .box {
   display: block;
   padding: 24px;

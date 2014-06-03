@@ -26,6 +26,7 @@
     "tree-block-list": "latest",
     "tree-tables": "latest",
     "tree-media": "latest",
+    "tree-flag": "latest",
     "tree-box": "latest",
     "tree-widths": "latest",
     "jquery": "~1.11.0"

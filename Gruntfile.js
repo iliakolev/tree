@@ -207,6 +207,14 @@ module.exports = function (grunt) {
                     '_media.scss': 'tree-media/_media.scss'
                 }
             },
+            treeFlag: {
+                options: {
+                    destPrefix: 'www/assets/sass/objects'
+                },
+                files: {
+                    '_flag.scss': 'tree-flag/_flag.scss'
+                }
+            },
             treeBox: {
                 options: {
                     destPrefix: 'www/assets/sass/objects'

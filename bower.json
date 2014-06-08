@@ -28,6 +28,7 @@
     "tree-media": "latest",
     "tree-flag": "latest",
     "tree-box": "latest",
+    "tree-buttons": "latest",
     "tree-widths": "latest",
     "jquery": "~1.11.0"
   }

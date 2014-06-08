@@ -223,6 +223,14 @@ module.exports = function (grunt) {
                     '_box.scss': 'tree-box/_box.scss'
                 }
             },
+            treeButtons: {
+                options: {
+                    destPrefix: 'www/assets/sass/objects'
+                },
+                files: {
+                    '_buttons.scss': 'tree-buttons/_buttons.scss'
+                }
+            },
             treeWidths: {
                 options: {
                     destPrefix: 'www/assets/sass/trumps'

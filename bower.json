@@ -29,6 +29,7 @@
     "tree-flag": "latest",
     "tree-box": "latest",
     "tree-buttons": "latest",
+    "tree-tabs": "latest",
     "tree-widths": "latest",
     "jquery": "~1.11.0"
   }

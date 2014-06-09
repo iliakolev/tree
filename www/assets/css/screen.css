@@ -487,6 +487,24 @@ img[height] {
   border-color: #2f8cde;
 }
 
+.tabs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  text-align: center;
+}
+
+.tabs__item {
+  display: table-cell;
+}
+
+.tabs__link {
+  display: block;
+}
+
 [class~="1/2"],
 [class~="2/4"],
 [class~="3/6"],

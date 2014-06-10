@@ -246,6 +246,14 @@ module.exports = function (grunt) {
                 files: {
                     '_widths.scss': 'tree-widths/_widths.scss'
                 }
+            },
+            treeSpacing: {
+                options: {
+                    destPrefix: 'www/assets/sass/trumps'
+                },
+                files: {
+                    '_spacing.scss': 'tree-spacing/_spacing.scss'
+                }
             }
         },
 

@@ -175,6 +175,14 @@ module.exports = function (grunt) {
                     '_layout.scss': 'tree-layout/_layout.scss'
                 }
             },
+            treeNav: {
+                options: {
+                    destPrefix: 'www/assets/sass/objects'
+                },
+                files: {
+                    '_nav.scss': 'tree-nav/_nav.scss'
+                }
+            },
             treeBareList: {
                 options: {
                     destPrefix: 'www/assets/sass/objects'

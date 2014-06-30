@@ -386,6 +386,22 @@ img[height] {
   width: 100%;
 }
 
+.nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav > li {
+  display: inline-block;
+}
+.nav > li > a {
+  display: inline-block;
+  padding: 24px;
+}
+.nav > li > a:hover {
+  text-decoration: none;
+}
+
 .bare-list {
   margin: 0;
   padding: 0;
@@ -395,7 +411,7 @@ img[height] {
 .block-list {
   margin: 0;
   padding: 0;
-  list-style: 0;
+  list-style: none;
 }
 
 .block-list__item,

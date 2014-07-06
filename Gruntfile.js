@@ -370,6 +370,7 @@ module.exports = function (grunt) {
          */
         csso: {
             options: {
+                restructure: false,
                 report: 'min'
             },
             dist: {

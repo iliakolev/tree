@@ -143,6 +143,14 @@ module.exports = function (grunt) {
                     '_page.scss': 'tree-page/_page.scss'
                 }
             },
+            treeParagraphs: {
+                options: {
+                    destPrefix: 'www/assets/sass/base'
+                },
+                files: {
+                    '_paragraphs.scss': 'tree-paragraphs/_paragraphs.scss'
+                }
+            },
             treeHeadings: {
                 options: {
                     destPrefix: 'www/assets/sass/base'

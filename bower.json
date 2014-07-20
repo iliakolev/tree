@@ -1,11 +1,11 @@
 {
   "name": "TreeFramework",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "homepage": "https://github.com/iliakolev/tree",
   "authors": [
-    "Ilia Kolev <contact@iliakolev.com>"
+    "Ilia Kolev <info@iliakolev.com>"
   ],
-  "license": "MIT",
+  "license": "Apache",
   "private": true,
   "dependencies": {
     "tree-defaults": "latest",
@@ -24,7 +24,7 @@
     "tree-images": "latest",
     "tree-layout": "latest",
     "tree-nav": "latest",
-    "tree-bare-list": "latest",
+    "tree-list-bare": "latest",
     "tree-block-list": "latest",
     "tree-ui-list": "latest",
     "tree-link": "latest",

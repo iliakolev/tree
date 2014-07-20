@@ -183,12 +183,12 @@ module.exports = function (grunt) {
                     '_nav.scss': 'tree-nav/_nav.scss'
                 }
             },
-            treeBareList: {
+            treeListBare: {
                 options: {
                     destPrefix: 'www/assets/sass/objects'
                 },
                 files: {
-                    '_bare-list.scss': 'tree-bare-list/_bare-list.scss'
+                    '_list-bare.scss': 'tree-list-bare/_list-bare.scss'
                 }
             },
             treeBlockList: {

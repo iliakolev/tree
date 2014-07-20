@@ -127,14 +127,6 @@ module.exports = function (grunt) {
                     '_shared.scss': 'tree-shared/_shared.scss'
                 }
             },
-            treeClearfix: {
-                options: {
-                    destPrefix: 'www/assets/sass/generic'
-                },
-                files: {
-                    '_clearfix.scss': 'tree-clearfix/_clearfix.scss'
-                }
-            },
             treePage: {
                 options: {
                     destPrefix: 'www/assets/sass/base'
@@ -269,6 +261,14 @@ module.exports = function (grunt) {
                 },
                 files: {
                     '_tabs.scss': 'tree-tabs/_tabs.scss'
+                }
+            },
+            treeClearfix: {
+                options: {
+                    destPrefix: 'www/assets/sass/trumps'
+                },
+                files: {
+                    '_clearfix.scss': 'tree-clearfix/_clearfix.scss'
                 }
             },
             treeWidths: {

@@ -191,12 +191,12 @@ module.exports = function (grunt) {
                     '_list-bare.scss': 'tree-list-bare/_list-bare.scss'
                 }
             },
-            treeBlockList: {
+            treeListBlock: {
                 options: {
                     destPrefix: 'www/assets/sass/objects'
                 },
                 files: {
-                    '_block-list.scss': 'tree-block-list/_block-list.scss'
+                    '_list-block.scss': 'tree-list-block/_list-block.scss'
                 }
             },
             treeListUi: {

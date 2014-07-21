@@ -1,6 +1,6 @@
 {
   "name": "TreeFramework",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/iliakolev/tree",
   "authors": [
     "Ilia Kolev <info@iliakolev.com>"
@@ -26,7 +26,7 @@
     "tree-nav": "latest",
     "tree-list-bare": "latest",
     "tree-block-list": "latest",
-    "tree-ui-list": "latest",
+    "tree-list-ui": "latest",
     "tree-link": "latest",
     "tree-tables": "latest",
     "tree-media": "latest",

@@ -199,12 +199,12 @@ module.exports = function (grunt) {
                     '_block-list.scss': 'tree-block-list/_block-list.scss'
                 }
             },
-            treeUiList: {
+            treeListUi: {
                 options: {
                     destPrefix: 'www/assets/sass/objects'
                 },
                 files: {
-                    '_ui-list.scss': 'tree-ui-list/_ui-list.scss'
+                    '_list-ui.scss': 'tree-list-ui/_list-ui.scss'
                 }
             },
             treeLink: {

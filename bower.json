@@ -25,6 +25,7 @@
     "tree-layout": "latest",
     "tree-nav": "latest",
     "tree-list-bare": "latest",
+    "tree-list-inline": "latest",
     "tree-list-block": "latest",
     "tree-list-ui": "latest",
     "tree-link": "latest",

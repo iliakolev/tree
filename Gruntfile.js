@@ -71,6 +71,14 @@ module.exports = function (grunt) {
                     '_defaults.scss': 'tree-defaults/_defaults.scss'
                 }
             },
+            treeResponsiveSettings: {
+                options: {
+                    destPrefix: 'www/assets/sass/settings'
+                },
+                files: {
+                    '_responsive.scss': 'tree-responsive-settings/_responsive.scss'
+                }
+            },
             treeFunctions: {
                 options: {
                     destPrefix: 'www/assets/sass/tools'

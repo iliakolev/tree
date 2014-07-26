@@ -9,6 +9,7 @@
   "private": true,
   "dependencies": {
     "tree-defaults": "latest",
+    "tree-responsive-settings": "latest",
     "tree-functions": "latest",
     "tree-mixins": "latest",
     "tree-aliases": "latest",

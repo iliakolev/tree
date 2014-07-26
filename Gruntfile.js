@@ -103,6 +103,14 @@ module.exports = function (grunt) {
                     '_mixins.scss': 'tree-mixins/_mixins.scss'
                 }
             },
+            treeResponsiveTools: {
+                options: {
+                    destPrefix: 'www/assets/sass/tools'
+                },
+                files: {
+                    '_responsive.scss': 'tree-responsive-tools/_responsive.scss'
+                }
+            },
             treeNormalizer: {
                 options: {
                     destPrefix: 'www/assets/sass/generic'

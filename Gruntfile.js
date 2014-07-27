@@ -55,14 +55,6 @@ module.exports = function (grunt) {
                 srcPrefix: 'bower_components',
                 clean: true
             },
-            jquery: {
-                options: {
-                    destPrefix: 'www/assets/js/vendor'
-                },
-                files: {
-                    'jquery.min.js': 'jquery/dist/jquery.min.js'
-                }
-            },
             treeDefaults: {
                 options: {
                     destPrefix: 'www/assets/sass/settings'
@@ -309,6 +301,22 @@ module.exports = function (grunt) {
                 },
                 files: {
                     '_spacing.scss': 'tree-spacing/_spacing.scss'
+                }
+            },
+            treeSpacingResponsive: {
+                options: {
+                    destPrefix: 'www/assets/sass/trumps'
+                },
+                files: {
+                    '_spacing-responsive.scss': 'tree-responsive-spacing/_spacing-responsive.scss'
+                }
+            },
+            jquery: {
+                options: {
+                    destPrefix: 'www/assets/js/vendor'
+                },
+                files: {
+                    'jquery.min.js': 'jquery/dist/jquery.min.js'
                 }
             }
         },

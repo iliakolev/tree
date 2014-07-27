@@ -38,6 +38,7 @@
     "tree-buttons": "latest",
     "tree-tabs": "latest",
     "tree-widths": "latest",
+    "tree-responsive-widths": "latest",
     "tree-spacing": "latest",
     "tree-responsive-spacing": "latest",
     "jquery": "~1.11.0"

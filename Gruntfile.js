@@ -231,12 +231,12 @@ module.exports = function (grunt) {
                     '_list-ui.scss': 'tree-list-ui/_list-ui.scss'
                 }
             },
-            treeLink: {
+            treeLinkBlock: {
                 options: {
                     destPrefix: 'www/assets/sass/objects'
                 },
                 files: {
-                    '_link.scss': 'tree-link/_link.scss'
+                    '_link-block.scss': 'tree-link-block/_link-block.scss'
                 }
             },
             treeTables: {

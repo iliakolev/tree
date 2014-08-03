@@ -239,6 +239,14 @@ module.exports = function (grunt) {
                     '_link-block.scss': 'tree-link-block/_link-block.scss'
                 }
             },
+            treeLinkClean: {
+                options: {
+                    destPrefix: 'www/assets/sass/objects'
+                },
+                files: {
+                    '_link-clean.scss': 'tree-link-clean/_link-clean.scss'
+                }
+            },
             treeTables: {
                 options: {
                     destPrefix: 'www/assets/sass/objects'

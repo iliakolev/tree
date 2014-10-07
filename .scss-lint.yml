@@ -24,6 +24,9 @@ linters:
   DuplicateProperty:
     enabled: false
 
+  ElsePlacement:
+    enabled: true
+
   EmptyLineBetweenBlocks:
     enabled: false
     ignore_single_line_blocks: true
@@ -103,7 +106,7 @@ linters:
     enabled: true
     style: double_quotes # or single_quotes
 
-  TrailingSemicolonAfterPropertyValue:
+  TrailingSemicolon:
     enabled: false
 
   UnnecessaryMantissa:

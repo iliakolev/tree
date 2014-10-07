@@ -1,6 +1,6 @@
 {
   "name": "Tree",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "This is a project set-up using Grunt to take case of some standard tasks",
   "main": "Gruntfile.js",
   "repository": {

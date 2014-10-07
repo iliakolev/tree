@@ -287,6 +287,14 @@ module.exports = function (grunt) {
                     '_buttons.scss': 'tree-buttons/_buttons.scss'
                 }
             },
+            treePack: {
+                options: {
+                    destPrefix: 'www/assets/sass/objects'
+                },
+                files: {
+                    '_pack.scss': 'tree-pack/_pack.scss'
+                }
+            },
             treeTabs: {
                 options: {
                     destPrefix: 'www/assets/sass/objects'

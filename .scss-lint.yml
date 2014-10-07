@@ -1,4 +1,5 @@
 # Default application configuration that all configurations inherit from.
+# Documentation: https://github.com/causes/scss-lint/blob/master/lib/scss_lint/linter/README.md
 exclude: 'www/assets/sass/generic/_normalize.scss'
 
 linters:
@@ -25,13 +26,25 @@ linters:
 
   EmptyLineBetweenBlocks:
     enabled: false
+    ignore_single_line_blocks: true
 
   EmptyRule:
     enabled: true
 
+  FinalNewline:
+    enabled: true
+    present: true
+
   HexLength:
     enabled: true
     style: short # or 'long'
+
+  HexNotation:
+    enabled: true
+    style: lowercase
+
+  HexValidation:
+    enabled: true
 
   IdWithExtraneousSelector:
     enabled: true
@@ -43,8 +56,12 @@ linters:
   LeadingZero:
     enabled: true
 
+  MergeableSelector:
+    enabled: false
+
   NameFormat:
     enabled: false
+    convention: BEM
 
   PlaceholderInExtend:
     enabled: true
@@ -87,6 +104,15 @@ linters:
     style: double_quotes # or single_quotes
 
   TrailingSemicolonAfterPropertyValue:
+    enabled: false
+
+  UnnecessaryMantissa:
+    enabled: true
+
+  UnnecessaryParentReference:
+    enabled: true
+
+  UrlFormat:
     enabled: false
 
   UrlQuotes:

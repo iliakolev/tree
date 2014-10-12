@@ -28,5 +28,5 @@ line_comments = false
 # Color output
 color_output = false
 
-# To enable relative paths to assets via compass helper functions. Uncomment:
+# Relative paths to assets via compass helper functions.
 relative_assets = true

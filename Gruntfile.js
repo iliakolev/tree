@@ -16,7 +16,9 @@ module.exports = function (grunt) {
     require('time-grunt')(grunt);
 
     /**
-     * JIT plugin loader for Grunt
+     * Jit-grunt
+     *
+     * Plugin loader for Grunt.
      * https://github.com/shootaroo/jit-grunt
      */
     require('jit-grunt')(grunt, {
@@ -29,12 +31,13 @@ module.exports = function (grunt) {
     grunt.initConfig({
 
         /**
-         * Store your Package file so you can reference its specific data whenever necessary
+         * Store your Package file so you can reference its specific data
+         * whenever necessary.
          */
         pkg: grunt.file.readJSON('package.json'),
 
         /**
-         * Set project info
+         * Set project info.
          */
         project: {
             www: 'www',
@@ -42,315 +45,354 @@ module.exports = function (grunt) {
                 '<%= project.www %>/assets/js/vendor/*.js',
                 '<%= project.www %>/assets/js/src/*.js'
             ],
+            sass: '<%= project.www %>/assets/sass/',
             css: '<%= project.www %>/assets/css/'
         },
 
         /**
          * Bowercopy
-         * https://npmjs.org/package/grunt-bowercopy
+         *
          * Scrupulously manage file locations for bower dependencies.
+         * https://npmjs.org/package/grunt-bowercopy
          */
         bowercopy: {
             options: {
-                srcPrefix: 'bower_components',
-                clean: true
+                srcPrefix: 'bower_components'
             },
+
             treeDefaults: {
                 options: {
                     destPrefix: 'www/assets/sass/settings'
                 },
                 files: {
-                    '_defaults.scss': 'tree-defaults/_defaults.scss'
+                    '_defaults.scss': 'tree-defaults/_settings.defaults.scss'
                 }
             },
+
             treeResponsiveSettings: {
                 options: {
                     destPrefix: 'www/assets/sass/settings'
                 },
                 files: {
-                    '_responsive.scss': 'tree-responsive-settings/_responsive.scss'
+                    '_responsive.scss': 'tree-responsive-settings/_settings.responsive.scss'
                 }
             },
+
             treeFunctions: {
                 options: {
                     destPrefix: 'www/assets/sass/tools'
                 },
                 files: {
-                    '_functions.scss': 'tree-functions/_functions.scss'
+                    '_functions.scss': 'tree-functions/_tools.functions.scss'
                 }
             },
-            treeAliases: {
-                options: {
-                    destPrefix: 'www/assets/sass/tools'
-                },
-                files: {
-                    '_aliases.scss': 'tree-aliases/_aliases.scss'
-                }
-            },
+
             treeMixins: {
                 options: {
                     destPrefix: 'www/assets/sass/tools'
                 },
                 files: {
-                    '_mixins.scss': 'tree-mixins/_mixins.scss'
+                    '_mixins.scss': 'tree-mixins/_tools.mixins.scss'
                 }
             },
+
             treeResponsiveTools: {
                 options: {
                     destPrefix: 'www/assets/sass/tools'
                 },
                 files: {
-                    '_responsive.scss': 'tree-responsive-tools/_responsive.scss'
+                    '_responsive.scss': 'tree-responsive-tools/_tools.responsive.scss'
                 }
             },
+
+            treeAliases: {
+                options: {
+                    destPrefix: 'www/assets/sass/tools'
+                },
+                files: {
+                    '_aliases.scss': 'tree-aliases/_tools.aliases.scss'
+                }
+            },
+
             treeNormalizer: {
                 options: {
                     destPrefix: 'www/assets/sass/generic'
                 },
                 files: {
-                    '_normalize.scss': 'tree-normalize/_normalize.scss'
+                    '_normalize.scss': 'tree-normalize/_generic.normalize.scss'
                 }
             },
+
             treeReset: {
                 options: {
                     destPrefix: 'www/assets/sass/generic'
                 },
                 files: {
-                    '_reset.scss': 'tree-reset/_reset.scss'
+                    '_reset.scss': 'tree-reset/_generic.reset.scss'
                 }
             },
+
             treeBoxSizing: {
                 options: {
                     destPrefix: 'www/assets/sass/generic'
                 },
                 files: {
-                    '_box-sizing.scss': 'tree-box-sizing/_box-sizing.scss'
+                    '_box-sizing.scss': 'tree-box-sizing/_generic.box-sizing.scss'
                 }
             },
+
             treeShared: {
                 options: {
                     destPrefix: 'www/assets/sass/generic'
                 },
                 files: {
-                    '_shared.scss': 'tree-shared/_shared.scss'
+                    '_shared.scss': 'tree-shared/_generic.shared.scss'
                 }
             },
+
             treePage: {
                 options: {
                     destPrefix: 'www/assets/sass/base'
                 },
                 files: {
-                    '_page.scss': 'tree-page/_page.scss'
+                    '_page.scss': 'tree-page/_base.page.scss'
                 }
             },
-            treeParagraphs: {
-                options: {
-                    destPrefix: 'www/assets/sass/base'
-                },
-                files: {
-                    '_paragraphs.scss': 'tree-paragraphs/_paragraphs.scss'
-                }
-            },
+
             treeHeadings: {
                 options: {
                     destPrefix: 'www/assets/sass/base'
                 },
                 files: {
-                    '_headings.scss': 'treeframework-headings/_headings.scss'
+                    '_headings.scss': 'treeframework-headings/_base.headings.scss'
                 }
             },
+
+            treeParagraphs: {
+                options: {
+                    destPrefix: 'www/assets/sass/base'
+                },
+                files: {
+                    '_paragraphs.scss': 'tree-paragraphs/_base.paragraphs.scss'
+                }
+            },
+
             treeLinks: {
                 options: {
                     destPrefix: 'www/assets/sass/base'
                 },
                 files: {
-                    '_links.scss': 'tree-links/_links.scss'
+                    '_links.scss': 'tree-links/_base.links.scss'
                 }
             },
+
             treeLists: {
                 options: {
                     destPrefix: 'www/assets/sass/base'
                 },
                 files: {
-                    '_lists.scss': 'tree-lists/_lists.scss'
+                    '_lists.scss': 'tree-lists/_base.lists.scss'
                 }
             },
+
             treeImages: {
                 options: {
                     destPrefix: 'www/assets/sass/base'
                 },
                 files: {
-                    '_images.scss': 'tree-images/_images.scss'
+                    '_images.scss': 'tree-images/_base.images.scss'
                 }
             },
+
             treeLayout: {
                 options: {
-                    destPrefix: 'www/assets/sass/objects'
+                    destPrefix: 'www/assets/sass/object'
                 },
                 files: {
-                    '_layout.scss': 'tree-layout/_layout.scss'
+                    '_layout.scss': 'tree-layout/_object.layout.scss'
                 }
             },
+
             treeNav: {
                 options: {
-                    destPrefix: 'www/assets/sass/objects'
+                    destPrefix: 'www/assets/sass/object'
                 },
                 files: {
-                    '_nav.scss': 'tree-nav/_nav.scss'
+                    '_nav.scss': 'tree-nav/_object.nav.scss'
                 }
             },
+
             treeListBare: {
                 options: {
-                    destPrefix: 'www/assets/sass/objects'
+                    destPrefix: 'www/assets/sass/object'
                 },
                 files: {
-                    '_list-bare.scss': 'tree-list-bare/_list-bare.scss'
+                    '_list-bare.scss': 'tree-list-bare/_object.list-bare.scss'
                 }
             },
+
             treeListInline: {
                 options: {
-                    destPrefix: 'www/assets/sass/objects'
+                    destPrefix: 'www/assets/sass/object'
                 },
                 files: {
-                    '_list-inline.scss': 'tree-list-inline/_list-inline.scss'
+                    '_list-inline.scss': 'tree-list-inline/_object.list-inline.scss'
                 }
             },
+
             treeListBlock: {
                 options: {
-                    destPrefix: 'www/assets/sass/objects'
+                    destPrefix: 'www/assets/sass/object'
                 },
                 files: {
-                    '_list-block.scss': 'tree-list-block/_list-block.scss'
+                    '_list-block.scss': 'tree-list-block/_object.list-block.scss'
                 }
             },
+
             treeListUi: {
                 options: {
-                    destPrefix: 'www/assets/sass/objects'
+                    destPrefix: 'www/assets/sass/object'
                 },
                 files: {
-                    '_list-ui.scss': 'tree-list-ui/_list-ui.scss'
+                    '_list-ui.scss': 'tree-list-ui/_object.list-ui.scss'
                 }
             },
+
             treeLinkBlock: {
                 options: {
-                    destPrefix: 'www/assets/sass/objects'
+                    destPrefix: 'www/assets/sass/object'
                 },
                 files: {
-                    '_link-block.scss': 'tree-link-block/_link-block.scss'
+                    '_link-block.scss': 'tree-link-block/_object.link-block.scss'
                 }
             },
+
             treeLinkClean: {
                 options: {
-                    destPrefix: 'www/assets/sass/objects'
+                    destPrefix: 'www/assets/sass/object'
                 },
                 files: {
-                    '_link-clean.scss': 'tree-link-clean/_link-clean.scss'
+                    '_link-clean.scss': 'tree-link-clean/_object.link-clean.scss'
                 }
             },
+
             treeTables: {
                 options: {
-                    destPrefix: 'www/assets/sass/objects'
+                    destPrefix: 'www/assets/sass/object'
                 },
                 files: {
-                    '_tables.scss': 'tree-tables/_tables.scss'
+                    '_tables.scss': 'tree-tables/_object.tables.scss'
                 }
             },
+
             treeMedia: {
                 options: {
-                    destPrefix: 'www/assets/sass/objects'
+                    destPrefix: 'www/assets/sass/object'
                 },
                 files: {
-                    '_media.scss': 'tree-media/_media.scss'
+                    '_media.scss': 'tree-media/_object.media.scss'
                 }
             },
+
             treeFlag: {
                 options: {
-                    destPrefix: 'www/assets/sass/objects'
+                    destPrefix: 'www/assets/sass/object'
                 },
                 files: {
-                    '_flag.scss': 'tree-flag/_flag.scss'
+                    '_flag.scss': 'tree-flag/_object.flag.scss'
                 }
             },
+
             treeBox: {
                 options: {
-                    destPrefix: 'www/assets/sass/objects'
+                    destPrefix: 'www/assets/sass/object'
                 },
                 files: {
-                    '_box.scss': 'tree-box/_box.scss'
+                    '_box.scss': 'tree-box/_object.box.scss'
                 }
             },
+
             treeSprite: {
                 options: {
-                    destPrefix: 'www/assets/sass/objects'
+                    destPrefix: 'www/assets/sass/object'
                 },
                 files: {
-                    '_sprite.scss': 'tree-sprite/_sprite.scss'
+                    '_sprite.scss': 'tree-sprite/_object.sprite.scss'
                 }
             },
+
             treeButtons: {
                 options: {
-                    destPrefix: 'www/assets/sass/objects'
+                    destPrefix: 'www/assets/sass/object'
                 },
                 files: {
-                    '_buttons.scss': 'tree-buttons/_buttons.scss'
+                    '_buttons.scss': 'tree-buttons/_object.buttons.scss'
                 }
             },
+
             treePack: {
                 options: {
-                    destPrefix: 'www/assets/sass/objects'
+                    destPrefix: 'www/assets/sass/object'
                 },
                 files: {
-                    '_pack.scss': 'tree-pack/_pack.scss'
+                    '_pack.scss': 'tree-pack/_object.pack.scss'
                 }
             },
+
             treeTabs: {
                 options: {
-                    destPrefix: 'www/assets/sass/objects'
+                    destPrefix: 'www/assets/sass/object'
                 },
                 files: {
-                    '_tabs.scss': 'tree-tabs/_tabs.scss'
+                    '_tabs.scss': 'tree-tabs/_object.tabs.scss'
                 }
             },
+
             treeClearfix: {
                 options: {
-                    destPrefix: 'www/assets/sass/trumps'
+                    destPrefix: 'www/assets/sass/trump'
                 },
                 files: {
-                    '_clearfix.scss': 'tree-clearfix/_clearfix.scss'
+                    '_clearfix.scss': 'tree-clearfix/_trump.clearfix.scss'
                 }
             },
+
             treeWidths: {
                 options: {
-                    destPrefix: 'www/assets/sass/trumps'
+                    destPrefix: 'www/assets/sass/trump'
                 },
                 files: {
-                    '_widths.scss': 'tree-widths/_widths.scss'
+                    '_widths.scss': 'tree-widths/_trump.widths.scss'
                 }
             },
+
             treeWidthsResponsive: {
                 options: {
-                    destPrefix: 'www/assets/sass/trumps'
+                    destPrefix: 'www/assets/sass/trump'
                 },
                 files: {
-                    '_widths-responsive.scss': 'tree-responsive-widths/_widths-responsive.scss'
+                    '_widths-responsive.scss': 'tree-widths-responsive/_trump.widths-responsive.scss'
                 }
             },
+
             treeSpacing: {
                 options: {
-                    destPrefix: 'www/assets/sass/trumps'
+                    destPrefix: 'www/assets/sass/trump'
                 },
                 files: {
-                    '_spacing.scss': 'tree-spacing/_spacing.scss'
+                    '_spacing.scss': 'tree-spacing/_trump.spacing.scss'
                 }
             },
+
             treeSpacingResponsive: {
                 options: {
-                    destPrefix: 'www/assets/sass/trumps'
+                    destPrefix: 'www/assets/sass/trump'
                 },
                 files: {
-                    '_spacing-responsive.scss': 'tree-responsive-spacing/_spacing-responsive.scss'
+                    '_spacing-responsive.scss': 'tree-spacing-responsive/_trump.spacing-responsive.scss'
                 }
             },
+
             jquery: {
                 options: {
                     destPrefix: 'www/assets/js/vendor'
@@ -363,8 +405,9 @@ module.exports = function (grunt) {
 
         /**
          * JSHint
+         *
+         * Detect errors and potential problems in your JavaScript code.
          * https://github.com/gruntjs/grunt-contrib-jshint
-         * Manage the options inside .jshintrc file
          */
         jshint: {
             files: [
@@ -382,9 +425,10 @@ module.exports = function (grunt) {
         },
 
         /**
-         * Concatenate JavaScript files
+         * Concat
+         *
+         * Concatenate JavaScript files.
          * https://github.com/gruntjs/grunt-contrib-concat
-         * Imports all .js files
          */
         concat: {
             dist: {
@@ -394,12 +438,13 @@ module.exports = function (grunt) {
         },
 
         /**
-         * Uglify (minify) JavaScript files
+         * Uglify
+         *
+         * Minify files with UglifyJS.
          * https://github.com/gruntjs/grunt-contrib-uglify
-         * Compresses and minifies all JavaScript files into one
          */
         uglify: {
-            dist: {
+            javascript: {
                 files: {
                     'www/assets/js/scripts.min.js': 'www/assets/js/scripts.js'
                 }
@@ -407,12 +452,14 @@ module.exports = function (grunt) {
         },
 
         /**
-         * A Grunt task to lint your SCSS
+         * Scss-lint
+         *
+         * Lint your .scss files.
          * https://github.com/ahmednuaman/grunt-scss-lint
          */
         scsslint: {
             files: [
-                '<%= project.www %>/assets/sass/{,*/}*.scss'
+                '<%= project.sass %>{,*/}*.scss'
             ],
             options: {
                 config: '.scss-lint.yml',
@@ -422,7 +469,9 @@ module.exports = function (grunt) {
 
 
         /**
-         * Compile Sass to CSS using Compass
+         * Compass
+         *
+         * Compile Sass to CSS using Compass.
          * https://github.com/gruntjs/grunt-contrib-compass
          */
         compass: {
@@ -435,7 +484,8 @@ module.exports = function (grunt) {
 
         /**
          * Autoprefixer
-         * Adds vendor prefixes automatically
+         *
+         * Adds vendor prefixes automatically.
          * https://github.com/nDmitry/grunt-autoprefixer
          */
         autoprefixer: {
@@ -445,15 +495,16 @@ module.exports = function (grunt) {
                         'last 3 version',
                         'ie 8',
                         'ie 9'
-                    ]
+                    ],
                 },
-                src: '<%= project.css %>screen.css'
+                src: '<%= project.css %>main.css'
             }
         },
 
         /**
          * CSSO
-         * Minify CSS files
+         *
+         * Minify CSS files.
          * https://github.com/t32k/grunt-csso
          */
         csso: {
@@ -463,21 +514,22 @@ module.exports = function (grunt) {
             },
             dist: {
                 files: {
-                    '<%= project.css %>screen.min.css': ['<%= project.css %>screen.css']
+                    '<%= project.css %>main.min.css': ['<%= project.css %>main.css']
                 }
             }
         },
 
         /**
          * Browser sync
-         * Keep multiple browsers & devices in sync
+         *
+         * Keep multiple browsers & devices in sync.
          * https://github.com/shakyShane/grunt-browser-sync
          */
         browserSync: {
             dev: {
                 files: {
                     src : [
-                        '<%= project.css %>screen.min.css',
+                        '<%= project.css %>main.min.css',
                         '<%= project.www %>/{,*/}*.{html,php}'
                     ]
                 },
@@ -492,6 +544,8 @@ module.exports = function (grunt) {
         },
 
         /**
+         * Watch
+         *
          * Runs tasks against changed watched files
          * https://github.com/gruntjs/grunt-contrib-watch
          */
@@ -507,7 +561,7 @@ module.exports = function (grunt) {
                 }
             },
             sass: {
-                files: 'www/assets/sass/{,*/}*.{scss,sass}',
+                files: '<%= project.sass %>{,*/}*.scss',
                 tasks: ['compass', 'autoprefixer', 'csso'],
                 options: {
                     spawn: false
@@ -524,7 +578,7 @@ module.exports = function (grunt) {
 
     /**
      * Default task
-     * Run 'grunt' on the command line
+     * Run 'grunt' on the command line.
      */
     grunt.registerTask('default', [
         'compass',
@@ -537,8 +591,7 @@ module.exports = function (grunt) {
 
     /**
      * Build task
-     * Run 'grunt build' on the command line
-     * Then compress all JS/CSS files
+     * Run 'grunt build' on the command line.
      */
     grunt.registerTask('build', [
         'compass',

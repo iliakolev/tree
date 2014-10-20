@@ -39,6 +39,7 @@
 // Link-clean............A link without any text-decoration at all.
 // Tables................Table styles.
 // Media.................The media object.
+// Block.................Stack an image above some text content.
 // Flag..................The flag object.
 // Box...................The box object.
 // Sprite................The sprite object.
@@ -118,6 +119,7 @@
 @import "object/link-clean";
 @import "object/tables";
 @import "object/media";
+@import "object/block";
 @import "object/flag";
 @import "object/box";
 @import "object/sprite";

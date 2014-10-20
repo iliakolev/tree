@@ -294,6 +294,15 @@ module.exports = function (grunt) {
                 }
             },
 
+            treeBlock: {
+                options: {
+                    destPrefix: 'www/assets/sass/object'
+                },
+                files: {
+                    '_block.scss': 'tree-block/_object.block.scss'
+                }
+            },
+
             treeFlag: {
                 options: {
                     destPrefix: 'www/assets/sass/object'

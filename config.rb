@@ -1,6 +1,3 @@
-# Require any additional compass plugins here.
-# -----------------------------------------------------------------------------
-
 # Set this to the root of your project when deployed
 http_path       = "www/"
 
@@ -16,7 +13,7 @@ cache_path      = "/tmp/.sass-cache"
 
 # Development
 # output_style = :expanded
-# environment = :development
+# environment  = :development
 
 # Production
 # output_style = :compressed
@@ -28,5 +25,5 @@ line_comments = false
 # Color output
 color_output = false
 
-# Relative paths to assets via compass helper functions.
+# Relative paths to assets via compass helper functions
 relative_assets = true

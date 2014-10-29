@@ -26,6 +26,7 @@ linters:
 
   ElsePlacement:
     enabled: true
+    style: same_line # or 'new_line'
 
   EmptyLineBetweenBlocks:
     enabled: false

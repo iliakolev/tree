@@ -6,9 +6,6 @@ linters:
   BorderZero:
     enabled: true
 
-  CapitalizationInSelector:
-    enabled: true
-
   ColorKeyword:
     enabled: true
 
@@ -58,6 +55,7 @@ linters:
 
   LeadingZero:
     enabled: true
+    style: exclude_zero # or 'include_zero'
 
   MergeableSelector:
     enabled: false

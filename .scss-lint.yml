@@ -19,7 +19,10 @@ linters:
     enabled: true
 
   DuplicateProperty:
-    enabled: false
+    enabled: true
+    exclude:
+      - www/assets/sass/generic/_shared.scss
+      - www/assets/sass/tools/_mixins.scss
 
   ElsePlacement:
     enabled: true

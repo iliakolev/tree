@@ -1,14 +1,11 @@
 /**
- * TreeFramework Gruntfile
- * @author Ilia Kolev
+ * Tree Gruntfile
+ * Copyright 2013-2014 Ilia Kolev
+ * Licensed under MIT (https://github.com/iliakolev/tree/blob/master/LICENSE)
  */
 
-'use strict';
-
-/**
- * Grunt module
- */
 module.exports = function (grunt) {
+    'use strict';
 
     /**
      * Displays the elapsed execution time of grunt tasks

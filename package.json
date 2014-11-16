@@ -1,15 +1,17 @@
 {
-  "name": "Tree",
-  "version": "0.3.0",
-  "description": "This is a project set-up using Grunt to take case of some standard tasks",
+  "name": "tree",
+  "description": "Starting point front-end framework for developing projects on the web.",
+  "version": "0.4.5",
   "main": "Gruntfile.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/iliakolev/tree.git"
   },
   "keywords": [
-    "Grunt",
-    "Javascript"
+    "css",
+    "front-end",
+    "framework",
+    "web"
   ],
   "author": "Ilia Kolev",
   "license": "MIT",

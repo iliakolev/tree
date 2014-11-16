@@ -1,14 +1,14 @@
-<!DOCTYPE html>
+<!doctype  html>
 <html lang="en-US">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Tree</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="shortcut icon" href="favicon.png" />
-        <link rel="stylesheet" href="assets/css/screen.min.css">
+        <link rel="stylesheet" href="assets/css/main.min.css">
 
         <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     </head>
@@ -22,38 +22,241 @@
         <!-- end .header -->
 
         <main class="content" role="main">
-            <h1>Definition</h1>
 
-            <p>Although "tree" is a term of common parlance, there is no universally recognised
-            precise definition what a tree is, neither botanically nor in common language.</p>
+            <!-- HEADERS -->
+            <h1>h1 Definition</h1>
+            <h2>h2 Overview</h2>
+            <h3>h3 Distribution</h3>
+            <h4>h4 Parts and function</h4>
+            <h5>h5 Evolutionary history</h5>
+            <h6>h6 Tree ecology</h6>
 
-            <p>In its broadest sense, a tree is any plant with the general form of an elongated
-            stem, or trunk, which supports the photosynthetic leaves or branches at some distance
-            above the ground.</p>
 
-            <p>Trees are also typically defined by height, with smaller plants being classified
-            as shrubs,however the minimum height which defines a tree varies widely, from 10 m
-            to 0.5 m. By these broadest definitions, large herbaceous plants such as papaya and
-            bananas are trees, despite not being considered as trees under more rigorous definitions.</p>
 
-            <h3>Overview</h3>
 
-            <p>Trees are an evolutionary adaptation to competition for space. By growing taller
-            trees are able to compete better for sunlight. They have modified structures that
-            allow them to grow much taller and spread out their foliage, such as thicker stems
-            that are composed of specialized cells that add structural strength and durability.
-            They are long-lived perennial plants that can increase their size each year by
-            producing woody stems. They differ from shrubs, which are also woody plants, by
-            usually growing larger and having a single main stem; but the distinction between
-            a small tree and a large shrub is not always clear, made more confusing by the fact
-            that trees may be reduced in size under harsher environmental conditions such as on
-            mountains and subarctic areas. The tree form has evolved separately in unrelated
-            classes of plants in response to similar environmental challenges, making it a
-            classic example of parallel evolution. With an estimated 100,000 species, the
-            number of trees worldwide might total twenty-five percent of all living plant
-            species. Their greatest number grow in tropical regions and many of these areas
-            have not yet been fully surveyed by botanists, making tree diversity and ranges
-            poorly known.</p>
+
+            <!-- LISTS -->
+            <h4>Unordered List</h4>
+            <ul>
+                <li>List item 1</li>
+                <li>List item 1
+                    <ul>
+                        <li>List item 2</li>
+                        <li>List item 2</li>
+                    </ul>
+                </li>
+                <li>List item 1</li>
+                <li>List item 1</li>
+            </ul>
+
+            <h4>Ordered List</h4>
+            <ol>
+                <li>List item 1</li>
+                <li>List item 1
+                    <ol>
+                        <li>List item 2</li>
+                        <li>List item 2</li>
+                    </ol>
+                </li>
+                <li>List item 1</li>
+                <li>List item 1</li>
+            </ol>
+
+
+
+
+
+            <!-- OBJECT - LAYOUT -->
+            <div class="layout">
+                <div class="layout__item  8/10">
+                    <h4>Objects - Layout</h4>
+                    <p>TreeFramework layout system uses `box-sizing: border-box;` and
+                    `display: inline-block;` to create an extremely powerful, flexible
+                    alternative to the traditional grid system. Combine the layout items with
+                    the widths found in `trumps.widths`.</p>
+                </div>
+
+                <div class="layout__item  2/10">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, non, fugiat, magni iste esse excepturi iure eum eaque nemo vel ratione ipsa error explicabo! Nemo, accusamus magni ut molestias esse.
+                </div>
+
+                <div class="layout__item  2/10">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, non, fugiat, magni iste esse excepturi iure eum eaque nemo vel ratione ipsa error explicabo! Nemo, accusamus magni ut molestias esse.
+                </div>
+
+                <div class="layout__item  2/10">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, non, fugiat, magni iste esse excepturi iure eum eaque nemo vel ratione ipsa error explicabo! Nemo, accusamus magni ut molestias esse.
+                </div>
+
+                <div class="layout__item  2/10">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, non, fugiat, magni iste esse excepturi iure eum eaque nemo vel ratione ipsa error explicabo! Nemo, accusamus magni ut molestias esse.
+                </div>
+            </div>
+
+
+
+
+
+            <!-- OBJECT - Nav -->
+            <h4>Object - nav</h4>
+            <ul class="nav  nav--stacked">
+                <li><a href="#">Roots</a></li>
+                <li><a href="#">Trunk</a></li>
+                <li><a href="#">Leaves</a></li>
+                <li><a href="#">Seeds</a></li>
+            </ul>
+
+
+
+
+
+            <!-- OBJECT - bare-list -->
+            <h4>Object - bare-list</h4>
+            <p>The bare-list object simply removes any indents and bullet points from lists.</p>
+            <ul class="bare-list">
+                <li>Cats</li>
+                <li>Horses</li>
+                <li>Dogs</li>
+            </ul>
+
+
+
+
+
+            <!-- OBJECT - block-list -->
+            <h4>Object - block-list</h4>
+            <p>The block-list object simply creates blocky lists from uls or ols.</p>
+            <ul class="block-list">
+                <li>Apple</li>
+                <li>Orange</li>
+                <li>Banana</li>
+            </ul>
+
+
+
+
+
+            <!-- OBJECT - tables -->
+            <h4>Default Table</h4>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Make</th>
+                        <th>Model</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Honda</td>
+                        <td>Accord</td>
+                        <td>2009</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Toyota</td>
+                        <td>Camry</td>
+                        <td>2012</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Hyundai</td>
+                        <td>Elantra</td>
+                        <td>2010</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+
+
+            <!-- OBJECT - media -->
+            <h4>Object - media</h4>
+            <p>Place any image- and text-like content side-by-side, as per:
+            stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code</p>
+            <div class="media">
+                <img class="media__img" src="http://lorempixel.com/g/400/200" alt="">
+                <p class="media__body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Et, distinctio, facere aut voluptas optio expedita rem aperiam
+                    doloremque dolor neque nam maxime eligendi magni accusantium
+                    saepe maiores id repudiandae incidunt!
+                </p>
+            </div>
+
+
+
+
+
+            <!-- OBJECT - box -->
+            <h4>Default box</h4>
+
+            <div class="box">Simple object to make boxed-off content.</div>
+
+
+
+
+
+            <!-- OJECT - flag -->
+            <h4>Default flag</h4>
+
+            <div class="flag">
+                <div class="flag__img">
+                    <img src="http://lorempixel.com/n/400/200" alt="">
+                </div>
+                <div class="flag__body">
+                    <p>The flag object shares a lot of common traits with the
+                    media object; its sole purpose is displaying image- and
+                    text-like content side-by-side. Where the flag object
+                    differs, however, is its ability to vertically align the
+                    image and text to the tops, middles or bottoms of each
+                    other.</p>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- OJECT - button -->
+            <h4>Buttons</h4>
+
+            <button class="btn  btn--primary">Primary button</button>
+
+
+
+
+
+            <!-- OJECT - tabs -->
+            <h4>Tabs</h4>
+
+            <ul class="tabs">
+                <li class="tabs__item"><a class="tabs__link" href="">Talks</a></li>
+                <li class="tabs__item"><a class="tabs__link" href="">Sponsorship</a></li>
+                <li class="tabs__item"><a class="tabs__link" href="">Location</a></li>
+                <li class="tabs__item"><a class="tabs__link" href="">Tickets</a></li>
+            </ul>
+
+
+
+
+
+            <!-- OJECT - ui-list -->
+            <h4>The ui-list object</h4>
+
+            <ul class="ui-list">
+                <li>creates blocky</li>
+                <li>keyline-delimited</li>
+                <li>list items</li>
+            </ul>
+
         </main>
         <!-- end .content -->
 
@@ -65,10 +268,12 @@
         </footer>
         <!-- end .footer -->
 
-        <!-- SCRIPTS -->
+        <!-- JS -->
         <script src="assets/js/scripts.min.js"></script>
-        <!-- remove html-inspector from production -->
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/html-inspector/0.5.1/html-inspector.js"></script>
-        <script> HTMLInspector.inspect() </script>
+        
+        <!-- Remove from production -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/html-inspector/0.8.1/html-inspector.js"></script>
+        <script>HTMLInspector.inspect();</script>
+        <script src="//localhost:35729/livereload.js"></script>
     </body>
 </html>

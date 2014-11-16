@@ -440,7 +440,7 @@ module.exports = function (grunt) {
          * https://github.com/gruntjs/grunt-contrib-concat
          */
         concat: {
-            dist: {
+            js: {
                 src: '<%= project.js %>',
                 dest:'www/assets/js/scripts.js'
             }
@@ -453,10 +453,12 @@ module.exports = function (grunt) {
          * https://github.com/gruntjs/grunt-contrib-uglify
          */
         uglify: {
-            javascript: {
-                files: {
-                    'www/assets/js/scripts.min.js': 'www/assets/js/scripts.js'
-                }
+            options: {
+                preserveComments: 'some'
+            },
+            core: {
+                src: '<%= concat.js.dest %>',
+                dest: 'www/assets/js/scripts.min.js'
             }
         },
 

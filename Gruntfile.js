@@ -8,7 +8,10 @@ module.exports = function (grunt) {
     'use strict';
 
     /**
-     * Displays the elapsed execution time of grunt tasks
+     * Time-grunt
+     *
+     * Display the elapsed execution time of grunt tasks.
+     * https://github.com/sindresorhus/time-grunt
      */
     require('time-grunt')(grunt);
 

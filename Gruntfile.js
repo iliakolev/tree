@@ -619,11 +619,11 @@ module.exports = function (grunt) {
     ]);
 
     /**
-     * Sync task
-     * Run 'grunt sync' on the command line
-     * Alias sync to browserSync + watch
+     * Serve task
+     * Run 'grunt serve' on the command line
+     * Alias serve to browserSync + watch
      */
-    grunt.registerTask('sync', [
+    grunt.registerTask('serve', [
         'browserSync',
         'watch'
     ]);

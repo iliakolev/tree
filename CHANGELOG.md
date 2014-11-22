@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.8
+
+* grunt-scss-lint - move exclude files to Gruntfile.js
+
 ## 0.4.7
 
 * Remove `www/assets` folder

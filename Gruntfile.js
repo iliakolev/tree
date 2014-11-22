@@ -474,7 +474,11 @@ module.exports = function (grunt) {
             ],
             options: {
                 config: '.scss-lint.yml',
-                reporterOutput: null
+                exclude: [
+                    'www/sass/generic/_normalize.scss',
+                    'www/sass/generic/_shared.scss',
+                    'www/sass/tools/_mixins.scss'
+                ]
             }
         },
 

@@ -2,11 +2,11 @@
 http_path       = "www/"
 
 # Project Assets Location
-css_dir         = "www/assets/css"
-sass_dir        = "www/assets/sass"
-images_dir      = "www/assets/img"
-javascripts_dir = "www/assets/js"
-fonts_dir       = "www/assets/fonts"
+css_dir         = "www/css"
+sass_dir        = "www/sass"
+images_dir      = "www/images"
+javascripts_dir = "www/js"
+fonts_dir       = "www/fonts"
 
 # Set Cache Folder Location
 cache_path      = "/tmp/.sass-cache"

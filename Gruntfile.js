@@ -39,14 +39,14 @@ module.exports = function (grunt) {
         /**
          * Set project info.
          */
-        project: {
-            www: 'www',
+        tree: {
+            root: 'www/',
+            css: 'www/css/',
+            sass: 'www/sass/',
             js: [
-                '<%= project.www %>/assets/js/vendor/*.js',
-                '<%= project.www %>/assets/js/src/*.js'
-            ],
-            sass: '<%= project.www %>/assets/sass/',
-            css: '<%= project.www %>/assets/css/'
+                'www/js/vendor/*.js',
+                'www/js/src/*.js'
+            ]
         },
 
         /**
@@ -62,7 +62,7 @@ module.exports = function (grunt) {
 
             treeDefaults: {
                 options: {
-                    destPrefix: 'www/assets/sass/settings'
+                    destPrefix: 'www/sass/settings'
                 },
                 files: {
                     '_defaults.scss': 'tree-defaults/_settings.defaults.scss'
@@ -71,7 +71,7 @@ module.exports = function (grunt) {
 
             treeResponsiveSettings: {
                 options: {
-                    destPrefix: 'www/assets/sass/settings'
+                    destPrefix: 'www/sass/settings'
                 },
                 files: {
                     '_responsive.scss': 'tree-responsive-settings/_settings.responsive.scss'
@@ -80,7 +80,7 @@ module.exports = function (grunt) {
 
             treeFunctions: {
                 options: {
-                    destPrefix: 'www/assets/sass/tools'
+                    destPrefix: 'www/sass/tools'
                 },
                 files: {
                     '_functions.scss': 'tree-functions/_tools.functions.scss'
@@ -89,7 +89,7 @@ module.exports = function (grunt) {
 
             treeMixins: {
                 options: {
-                    destPrefix: 'www/assets/sass/tools'
+                    destPrefix: 'www/sass/tools'
                 },
                 files: {
                     '_mixins.scss': 'tree-mixins/_tools.mixins.scss'
@@ -98,7 +98,7 @@ module.exports = function (grunt) {
 
             treeResponsiveTools: {
                 options: {
-                    destPrefix: 'www/assets/sass/tools'
+                    destPrefix: 'www/sass/tools'
                 },
                 files: {
                     '_responsive.scss': 'tree-responsive-tools/_tools.responsive.scss'
@@ -107,7 +107,7 @@ module.exports = function (grunt) {
 
             treeAliases: {
                 options: {
-                    destPrefix: 'www/assets/sass/tools'
+                    destPrefix: 'www/sass/tools'
                 },
                 files: {
                     '_aliases.scss': 'tree-aliases/_tools.aliases.scss'
@@ -116,7 +116,7 @@ module.exports = function (grunt) {
 
             treeNormalizer: {
                 options: {
-                    destPrefix: 'www/assets/sass/generic'
+                    destPrefix: 'www/sass/generic'
                 },
                 files: {
                     '_normalize.scss': 'tree-normalize/_generic.normalize.scss'
@@ -125,7 +125,7 @@ module.exports = function (grunt) {
 
             treeReset: {
                 options: {
-                    destPrefix: 'www/assets/sass/generic'
+                    destPrefix: 'www/sass/generic'
                 },
                 files: {
                     '_reset.scss': 'tree-reset/_generic.reset.scss'
@@ -134,7 +134,7 @@ module.exports = function (grunt) {
 
             treeBoxSizing: {
                 options: {
-                    destPrefix: 'www/assets/sass/generic'
+                    destPrefix: 'www/sass/generic'
                 },
                 files: {
                     '_box-sizing.scss': 'tree-box-sizing/_generic.box-sizing.scss'
@@ -143,7 +143,7 @@ module.exports = function (grunt) {
 
             treeShared: {
                 options: {
-                    destPrefix: 'www/assets/sass/generic'
+                    destPrefix: 'www/sass/generic'
                 },
                 files: {
                     '_shared.scss': 'tree-shared/_generic.shared.scss'
@@ -152,7 +152,7 @@ module.exports = function (grunt) {
 
             treePage: {
                 options: {
-                    destPrefix: 'www/assets/sass/base'
+                    destPrefix: 'www/sass/base'
                 },
                 files: {
                     '_page.scss': 'tree-page/_base.page.scss'
@@ -161,7 +161,7 @@ module.exports = function (grunt) {
 
             treeHeadings: {
                 options: {
-                    destPrefix: 'www/assets/sass/base'
+                    destPrefix: 'www/sass/base'
                 },
                 files: {
                     '_headings.scss': 'treeframework-headings/_base.headings.scss'
@@ -170,7 +170,7 @@ module.exports = function (grunt) {
 
             treeParagraphs: {
                 options: {
-                    destPrefix: 'www/assets/sass/base'
+                    destPrefix: 'www/sass/base'
                 },
                 files: {
                     '_paragraphs.scss': 'tree-paragraphs/_base.paragraphs.scss'
@@ -179,7 +179,7 @@ module.exports = function (grunt) {
 
             treeLinks: {
                 options: {
-                    destPrefix: 'www/assets/sass/base'
+                    destPrefix: 'www/sass/base'
                 },
                 files: {
                     '_links.scss': 'tree-links/_base.links.scss'
@@ -188,7 +188,7 @@ module.exports = function (grunt) {
 
             treeLists: {
                 options: {
-                    destPrefix: 'www/assets/sass/base'
+                    destPrefix: 'www/sass/base'
                 },
                 files: {
                     '_lists.scss': 'tree-lists/_base.lists.scss'
@@ -197,7 +197,7 @@ module.exports = function (grunt) {
 
             treeImages: {
                 options: {
-                    destPrefix: 'www/assets/sass/base'
+                    destPrefix: 'www/sass/base'
                 },
                 files: {
                     '_images.scss': 'tree-images/_base.images.scss'
@@ -206,7 +206,7 @@ module.exports = function (grunt) {
 
             treeLayout: {
                 options: {
-                    destPrefix: 'www/assets/sass/object'
+                    destPrefix: 'www/sass/object'
                 },
                 files: {
                     '_layout.scss': 'tree-layout/_object.layout.scss'
@@ -215,7 +215,7 @@ module.exports = function (grunt) {
 
             treeNav: {
                 options: {
-                    destPrefix: 'www/assets/sass/object'
+                    destPrefix: 'www/sass/object'
                 },
                 files: {
                     '_nav.scss': 'tree-nav/_object.nav.scss'
@@ -224,7 +224,7 @@ module.exports = function (grunt) {
 
             treeListBare: {
                 options: {
-                    destPrefix: 'www/assets/sass/object'
+                    destPrefix: 'www/sass/object'
                 },
                 files: {
                     '_list-bare.scss': 'tree-list-bare/_object.list-bare.scss'
@@ -233,7 +233,7 @@ module.exports = function (grunt) {
 
             treeListInline: {
                 options: {
-                    destPrefix: 'www/assets/sass/object'
+                    destPrefix: 'www/sass/object'
                 },
                 files: {
                     '_list-inline.scss': 'tree-list-inline/_object.list-inline.scss'
@@ -242,7 +242,7 @@ module.exports = function (grunt) {
 
             treeListBlock: {
                 options: {
-                    destPrefix: 'www/assets/sass/object'
+                    destPrefix: 'www/sass/object'
                 },
                 files: {
                     '_list-block.scss': 'tree-list-block/_object.list-block.scss'
@@ -251,7 +251,7 @@ module.exports = function (grunt) {
 
             treeListUi: {
                 options: {
-                    destPrefix: 'www/assets/sass/object'
+                    destPrefix: 'www/sass/object'
                 },
                 files: {
                     '_list-ui.scss': 'tree-list-ui/_object.list-ui.scss'
@@ -260,7 +260,7 @@ module.exports = function (grunt) {
 
             treeLinkBlock: {
                 options: {
-                    destPrefix: 'www/assets/sass/object'
+                    destPrefix: 'www/sass/object'
                 },
                 files: {
                     '_link-block.scss': 'tree-link-block/_object.link-block.scss'
@@ -269,7 +269,7 @@ module.exports = function (grunt) {
 
             treeLinkClean: {
                 options: {
-                    destPrefix: 'www/assets/sass/object'
+                    destPrefix: 'www/sass/object'
                 },
                 files: {
                     '_link-clean.scss': 'tree-link-clean/_object.link-clean.scss'
@@ -278,7 +278,7 @@ module.exports = function (grunt) {
 
             treeTables: {
                 options: {
-                    destPrefix: 'www/assets/sass/object'
+                    destPrefix: 'www/sass/object'
                 },
                 files: {
                     '_tables.scss': 'tree-tables/_object.tables.scss'
@@ -287,7 +287,7 @@ module.exports = function (grunt) {
 
             treeMedia: {
                 options: {
-                    destPrefix: 'www/assets/sass/object'
+                    destPrefix: 'www/sass/object'
                 },
                 files: {
                     '_media.scss': 'tree-media/_object.media.scss'
@@ -296,7 +296,7 @@ module.exports = function (grunt) {
 
             treeBlock: {
                 options: {
-                    destPrefix: 'www/assets/sass/object'
+                    destPrefix: 'www/sass/object'
                 },
                 files: {
                     '_block.scss': 'tree-block/_object.block.scss'
@@ -305,7 +305,7 @@ module.exports = function (grunt) {
 
             treeFlag: {
                 options: {
-                    destPrefix: 'www/assets/sass/object'
+                    destPrefix: 'www/sass/object'
                 },
                 files: {
                     '_flag.scss': 'tree-flag/_object.flag.scss'
@@ -314,7 +314,7 @@ module.exports = function (grunt) {
 
             treeBox: {
                 options: {
-                    destPrefix: 'www/assets/sass/object'
+                    destPrefix: 'www/sass/object'
                 },
                 files: {
                     '_box.scss': 'tree-box/_object.box.scss'
@@ -323,7 +323,7 @@ module.exports = function (grunt) {
 
             treeSprite: {
                 options: {
-                    destPrefix: 'www/assets/sass/object'
+                    destPrefix: 'www/sass/object'
                 },
                 files: {
                     '_sprite.scss': 'tree-sprite/_object.sprite.scss'
@@ -332,7 +332,7 @@ module.exports = function (grunt) {
 
             treeButtons: {
                 options: {
-                    destPrefix: 'www/assets/sass/object'
+                    destPrefix: 'www/sass/object'
                 },
                 files: {
                     '_buttons.scss': 'tree-buttons/_object.buttons.scss'
@@ -341,7 +341,7 @@ module.exports = function (grunt) {
 
             treePack: {
                 options: {
-                    destPrefix: 'www/assets/sass/object'
+                    destPrefix: 'www/sass/object'
                 },
                 files: {
                     '_pack.scss': 'tree-pack/_object.pack.scss'
@@ -350,7 +350,7 @@ module.exports = function (grunt) {
 
             treeTabs: {
                 options: {
-                    destPrefix: 'www/assets/sass/object'
+                    destPrefix: 'www/sass/object'
                 },
                 files: {
                     '_tabs.scss': 'tree-tabs/_object.tabs.scss'
@@ -359,7 +359,7 @@ module.exports = function (grunt) {
 
             treeClearfix: {
                 options: {
-                    destPrefix: 'www/assets/sass/trump'
+                    destPrefix: 'www/sass/trump'
                 },
                 files: {
                     '_clearfix.scss': 'tree-clearfix/_trump.clearfix.scss'
@@ -368,7 +368,7 @@ module.exports = function (grunt) {
 
             treeWidths: {
                 options: {
-                    destPrefix: 'www/assets/sass/trump'
+                    destPrefix: 'www/sass/trump'
                 },
                 files: {
                     '_widths.scss': 'tree-widths/_trump.widths.scss'
@@ -377,7 +377,7 @@ module.exports = function (grunt) {
 
             treeWidthsResponsive: {
                 options: {
-                    destPrefix: 'www/assets/sass/trump'
+                    destPrefix: 'www/sass/trump'
                 },
                 files: {
                     '_widths-responsive.scss': 'tree-widths-responsive/_trump.widths-responsive.scss'
@@ -386,7 +386,7 @@ module.exports = function (grunt) {
 
             treeSpacing: {
                 options: {
-                    destPrefix: 'www/assets/sass/trump'
+                    destPrefix: 'www/sass/trump'
                 },
                 files: {
                     '_spacing.scss': 'tree-spacing/_trump.spacing.scss'
@@ -395,7 +395,7 @@ module.exports = function (grunt) {
 
             treeSpacingResponsive: {
                 options: {
-                    destPrefix: 'www/assets/sass/trump'
+                    destPrefix: 'www/sass/trump'
                 },
                 files: {
                     '_spacing-responsive.scss': 'tree-spacing-responsive/_trump.spacing-responsive.scss'
@@ -404,7 +404,7 @@ module.exports = function (grunt) {
 
             jquery: {
                 options: {
-                    destPrefix: 'www/assets/js/vendor'
+                    destPrefix: 'www/js/vendor'
                 },
                 files: {
                     'jquery.min.js': 'jquery/dist/jquery.min.js'
@@ -419,18 +419,18 @@ module.exports = function (grunt) {
          * https://github.com/gruntjs/grunt-contrib-jshint
          */
         jshint: {
-            files: [
-                'www/assets/js/src/*.js',
-                'Gruntfile.js'
-            ],
             options: {
                 jshintrc: '.jshintrc',
                 ignores: [
-                    'www/assets/js/scripts.js',
-                    'www/assets/js/scripts.min.js',
-                    'www/assets/js/vendor/*.js'
+                    'www/js/scripts.js',
+                    'www/js/scripts.min.js',
+                    'www/js/vendor/*.js'
                 ]
-            }
+            },
+            files: [
+                'www/js/src/*.js',
+                'Gruntfile.js'
+            ]
         },
 
         /**
@@ -441,8 +441,8 @@ module.exports = function (grunt) {
          */
         concat: {
             js: {
-                src: '<%= project.js %>',
-                dest:'www/assets/js/scripts.js'
+                src: '<%= tree.js %>',
+                dest:'www/js/scripts.js'
             }
         },
 
@@ -458,7 +458,7 @@ module.exports = function (grunt) {
             },
             core: {
                 src: '<%= concat.js.dest %>',
-                dest: 'www/assets/js/scripts.min.js'
+                dest: 'www/js/scripts.min.js'
             }
         },
 
@@ -470,7 +470,7 @@ module.exports = function (grunt) {
          */
         scsslint: {
             files: [
-                '<%= project.sass %>{,*/}*.scss'
+                '<%= tree.sass %>{,*/}*.scss'
             ],
             options: {
                 config: '.scss-lint.yml',
@@ -513,7 +513,7 @@ module.exports = function (grunt) {
                         'Safari >= 6'
                     ]
                 },
-                src: '<%= project.css %>main.css'
+                src: '<%= tree.css %>main.css'
             }
         },
 
@@ -530,7 +530,7 @@ module.exports = function (grunt) {
             },
             dist: {
                 files: {
-                    '<%= project.css %>main.min.css': ['<%= project.css %>main.css']
+                    '<%= tree.css %>main.min.css': ['<%= tree.css %>main.css']
                 }
             }
         },
@@ -545,8 +545,8 @@ module.exports = function (grunt) {
             dev: {
                 files: {
                     src : [
-                        '<%= project.css %>main.min.css',
-                        '<%= project.www %>/{,*/}*.{html,php}'
+                        '<%= tree.css %>main.min.css',
+                        '<%= tree.root %>/{,*/}*.{html,php}'
                     ]
                 },
                 options: {
@@ -570,24 +570,24 @@ module.exports = function (grunt) {
                 livereload: true
             },
             js: {
-                files: '<%= project.js %>',
+                files: '<%= tree.js %>',
                 tasks: ['jshint', 'concat', 'uglify'],
                 options: {
                     spawn: false
                 }
             },
             sass: {
-                files: '<%= project.sass %>{,*/}*.scss',
+                files: '<%= tree.sass %>{,*/}*.scss',
                 tasks: ['compass', 'autoprefixer', 'csso'],
                 options: {
                     spawn: false
                 }
             },
             pages: {
-                files: '<%= project.www %>/{,*/}*.{html,php}'
+                files: '<%= tree.root %>/{,*/}*.{html,php}'
             },
             images: {
-                files: '<%= project.www %>/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
+                files: '<%= tree.root %>/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
             }
         }
     });

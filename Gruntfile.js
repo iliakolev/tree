@@ -593,6 +593,21 @@ module.exports = function (grunt) {
             images: {
                 files: '<%= tree.root %>/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
             }
+        },
+
+        /**
+         * Perfbudget
+         *
+         * Performance budgeting.
+         * https://github.com/tkadlec/grunt-perfbudget
+         */
+        perfbudget: {
+            default: {
+                options: {
+                    url: 'http://iliakolev.com',
+                    key: 'API_KEY_HERE'
+                }
+            }
         }
     });
 
@@ -625,7 +640,6 @@ module.exports = function (grunt) {
     /**
      * Serve task
      * Run 'grunt serve' on the command line
-     * Alias serve to browserSync + watch
      */
     grunt.registerTask('serve', [
         'browserSync',
@@ -633,8 +647,13 @@ module.exports = function (grunt) {
     ]);
 
     /**
+     * Budget task
+     * Run 'grunt budget' on the command line
+     */
+    grunt.registerTask('budget', 'perfbudget');
+
+    /**
      * Bower task
-     * Alias bower to bowercopy
      * Run 'grunt bower' on the command line
      *
      * When updating a bower dependency, update the version in bower.json, run

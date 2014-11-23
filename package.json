@@ -1,7 +1,7 @@
 {
   "name": "tree",
   "description": "Starting point front-end framework for developing projects on the web.",
-  "version": "0.4.8",
+  "version": "0.4.9",
   "main": "Gruntfile.js",
   "repository": {
     "type": "git",
@@ -31,6 +31,7 @@
     "grunt-contrib-uglify": "~0.6.0",
     "grunt-contrib-watch": "~0.6.1",
     "grunt-csso": "~0.6.3",
+    "grunt-perfbudget": "^0.1.6",
     "grunt-scss-lint": "^0.3.3",
     "jit-grunt": "~0.9.0",
     "time-grunt": "~1.0.0"

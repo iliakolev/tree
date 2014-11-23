@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.9
+
+* Add grunt task for performance budgeting (grunt-perfbudget).
+
 ## 0.4.8
 
 * grunt-scss-lint - move exclude files to Gruntfile.js

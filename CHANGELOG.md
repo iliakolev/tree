@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.10
+
+* Bump grunt- dependencies.
+
 ## 0.4.9
 
 * Add grunt task for performance budgeting (grunt-perfbudget).

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.11
+
+* Rename grunt task from 'grunt bower' to 'grunt depend'.
+
 ## 0.4.10
 
 * Bump grunt- dependencies.

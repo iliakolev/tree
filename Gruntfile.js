@@ -653,12 +653,12 @@ module.exports = function (grunt) {
     grunt.registerTask('budget', 'perfbudget');
 
     /**
-     * Bower task
-     * Run 'grunt bower' on the command line
+     * Depend task
+     * Run 'grunt depend' on the command line
      *
      * When updating a bower dependency, update the version in bower.json, run
-     * 'grunt bower', and then commit the result. When adding a dependency,
+     * 'grunt depend', and then commit the result. When adding a dependency,
      * update the bowercopy task accordingly.
      */
-    grunt.registerTask('bower', 'bowercopy');
+    grunt.registerTask('depend', 'bowercopy');
 };

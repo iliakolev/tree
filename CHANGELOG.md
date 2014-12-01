@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.12
+
+* Bump grunt-csso to 0.6.5
+
 ## 0.4.11
 
 * Rename grunt task from 'grunt bower' to 'grunt depend'.

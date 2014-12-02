@@ -658,7 +658,7 @@ module.exports = function (grunt) {
      *
      * When updating a bower dependency, update the version in bower.json, run
      * 'grunt depend', and then commit the result. When adding a dependency,
-     * update the bowercopy task accordingly.
+     * update the depend task accordingly.
      */
     grunt.registerTask('depend', 'bowercopy');
 };

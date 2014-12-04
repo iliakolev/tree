@@ -31,7 +31,7 @@ module.exports = function (grunt) {
     grunt.initConfig({
 
         /**
-         * Store your Package file so you can reference its specific data
+         * Store your package file so you can reference its specific data
          * whenever necessary.
          */
         pkg: grunt.file.readJSON('package.json'),
@@ -542,7 +542,7 @@ module.exports = function (grunt) {
         /**
          * Browser sync
          *
-         * Keep multiple browsers & devices in sync.
+         * Keep multiple browsers and devices in sync.
          * https://github.com/shakyShane/grunt-browser-sync
          */
         browserSync: {
@@ -566,7 +566,7 @@ module.exports = function (grunt) {
         /**
          * Watch
          *
-         * Runs tasks against changed watched files
+         * Runs tasks against changed watched files.
          * https://github.com/gruntjs/grunt-contrib-watch
          */
         watch: {
@@ -639,7 +639,7 @@ module.exports = function (grunt) {
 
     /**
      * Serve task
-     * Run 'grunt serve' on the command line
+     * Run 'grunt serve' on the command line.
      */
     grunt.registerTask('serve', [
         'browserSync',
@@ -648,13 +648,13 @@ module.exports = function (grunt) {
 
     /**
      * Budget task
-     * Run 'grunt budget' on the command line
+     * Run 'grunt budget' on the command line.
      */
     grunt.registerTask('budget', 'perfbudget');
 
     /**
      * Depend task
-     * Run 'grunt depend' on the command line
+     * Run 'grunt depend' on the command line.
      *
      * When updating a bower dependency, update the version in bower.json, run
      * 'grunt depend', and then commit the result. When adding a dependency,

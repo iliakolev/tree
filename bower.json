@@ -1,6 +1,6 @@
 {
   "name": "tree",
-  "version": "0.4.12",
+  "version": "0.4.13",
   "homepage": "https://github.com/iliakolev/tree",
   "authors": [
     "Ilia Kolev <info@iliakolev.com>"
@@ -17,7 +17,7 @@
     "tree-normalize": "3.0.3",
     "tree-reset": "0.1.5",
     "tree-box-sizing": "0.2.7",
-    "tree-shared": "0.2.6",
+    "tree-shared": "0.2.7",
     "tree-page": "0.2.0",
     "treeframework-headings": "0.2.8",
     "tree-paragraphs": "0.1.4",

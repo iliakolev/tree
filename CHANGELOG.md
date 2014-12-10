@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.4.16
+
+* Enable CSS Source Maps in Compass.
+* Enable Autoprefixer support for Source Maps.
+
 ## 0.4.12
 
 * Bump grunt-csso to 0.6.5

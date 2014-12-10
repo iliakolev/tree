@@ -19,6 +19,9 @@ cache_path      = "/tmp/.sass-cache"
 # output_style = :compressed
 # environment  = :production
 
+# Enable sourcemaps
+sourcemap = true
+
 # Enable or disable line comments
 line_comments = false
 

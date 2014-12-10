@@ -515,7 +515,10 @@ module.exports = function (grunt) {
                         'iOS >= 6',
                         'Opera >= 12',
                         'Safari >= 6'
-                    ]
+                    ],
+                    map: {
+                        inline: false
+                    }
                 },
                 src: '<%= tree.css %>main.css'
             }

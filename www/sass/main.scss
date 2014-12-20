@@ -53,6 +53,7 @@
 // Widths-responsive.....Polyfill for responsive width classes.
 // Spacing...............Helper classes for spacings like margin and padding.
 // Spacing-responsive....Breakpoint classes for nudging margins and paddings.
+// Hidden................Hides content.
 
 
 
@@ -139,3 +140,4 @@
 @import "trump/widths-responsive";
 @import "trump/spacing";
 @import "trump/spacing-responsive";
+@import "trump/hidden";

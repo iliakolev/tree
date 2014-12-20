@@ -1,6 +1,6 @@
 {
   "name": "tree",
-  "version": "0.4.17",
+  "version": "0.5.0",
   "homepage": "https://github.com/iliakolev/tree",
   "authors": [
     "Ilia Kolev <info@iliakolev.com>"
@@ -46,6 +46,7 @@
     "tree-widths-responsive": "0.1.4",
     "tree-spacing": "0.1.4",
     "tree-spacing-responsive": "0.1.2",
+    "tree-hidden": "0.1.2",
     "jquery": "~2.1.1"
   }
 }

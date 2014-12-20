@@ -402,6 +402,15 @@ module.exports = function (grunt) {
                 }
             },
 
+            treeHidden: {
+                options: {
+                    destPrefix: 'www/sass/trump'
+                },
+                files: {
+                    '_hidden.scss': 'tree-hidden/_trump.hidden.scss'
+                }
+            },
+
             jquery: {
                 options: {
                     destPrefix: 'www/js/vendor'

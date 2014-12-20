@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.5.0
+
+* Add [tree-hidden](https://github.com/treeframework/trump.hidden)
+
 ## 0.4.17
 
 * Remove html-inspector.

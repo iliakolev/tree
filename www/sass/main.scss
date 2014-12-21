@@ -54,6 +54,7 @@
 // Spacing...............Helper classes for spacings like margin and padding.
 // Spacing-responsive....Breakpoint classes for nudging margins and paddings.
 // Hidden................Hides content.
+// Hidden-responsive.....Hides content via media query.
 
 
 
@@ -141,3 +142,4 @@
 @import "trump/spacing";
 @import "trump/spacing-responsive";
 @import "trump/hidden";
+@import "trump/hidden-responsive";

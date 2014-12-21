@@ -411,6 +411,15 @@ module.exports = function (grunt) {
                 }
             },
 
+            treeHiddenResponsive: {
+                options: {
+                    destPrefix: 'www/sass/trump'
+                },
+                files: {
+                    '_hidden-responsive.scss': 'tree-hidden-responsive/_trump.hidden-responsive.scss'
+                }
+            },
+
             jquery: {
                 options: {
                     destPrefix: 'www/js/vendor'

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.6.0
+
+* Add [tree-hidden-responsive](https://github.com/treeframework/trump.hidden-responsive)
+
 ## 0.5.0
 
 * Add [tree-hidden](https://github.com/treeframework/trump.hidden)

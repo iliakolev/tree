@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.6.1
+
+* Bump grunt dependencies.
+
 ## 0.6.0
 
 * Add [tree-hidden-responsive](https://github.com/treeframework/trump.hidden-responsive)

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.6.2
+
+* Update grunt-autoprefixer from 2.0.0 to 2.1.0
+
 ## 0.6.1
 
 * Bump grunt dependencies.

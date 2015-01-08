@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.6.4
+
+* Bump grunt-csso to 0.7.0
+
 ## 0.6.3
 
 * Bump tree-mixins, treeframework-headings, tree-paragraphs.

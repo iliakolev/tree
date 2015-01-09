@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.6.5
+
+* Bundle tree bower dependencies into [tree-starter-kit](https://github.com/treeframework/tree-starter-kit).
+
 ## 0.6.4
 
 * Bump grunt-csso to 0.7.0

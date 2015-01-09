@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.6.6
+
+* Bump Gemfile.lock
+
 ## 0.6.5
 
 * Bundle tree bower dependencies into [tree-starter-kit](https://github.com/treeframework/tree-starter-kit).

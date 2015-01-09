@@ -1,7 +1,7 @@
 {
   "name": "tree",
   "description": "Starting point front-end framework for developing projects on the web.",
-  "version": "0.6.6",
+  "version": "0.6.7",
   "main": "Gruntfile.js",
   "repository": {
     "type": "git",

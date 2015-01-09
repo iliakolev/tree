@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.6.7
+
+* Bump [tree-starter-kit](https://github.com/treeframework/tree-starter-kit)
+  0.1.2
+* Add JQuery as a bower dependency.
+
 ## 0.6.6
 
 * Bump Gemfile.lock

@@ -1,12 +1,13 @@
 {
   "name": "tree",
-  "version": "0.6.6",
+  "version": "0.6.7",
   "homepage": "https://github.com/iliakolev/tree",
   "authors": [
     "Ilia Kolev <info@iliakolev.com>"
   ],
   "license": "MIT",
   "dependencies": {
-    "tree-starter-kit": "0.1.1"
+    "tree-starter-kit": "0.1.2",
+    "jquery": "2.1.3"
   }
 }

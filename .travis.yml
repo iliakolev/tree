@@ -4,6 +4,6 @@ node_js:
 before_install:
     - gem update --system
     - gem install compass -v 1.0.1
-    - gem install scss-lint -v 0.29.0
+    - gem install scss-lint -v 0.32.0
     - npm install -g grunt-cli
 

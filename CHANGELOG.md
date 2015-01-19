@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.6.10
+
+* Bump [grunt-autoprefixer](https://github.com/nDmitry/grunt-autoprefixer) 2.2.0
+
+## 0.6.9
+
+* Revert pack to individual packages instead of a bundle.
+
 ## 0.6.8
 
 * Bump [tree-starter-kit](https://github.com/treeframework/tree-starter-kit)

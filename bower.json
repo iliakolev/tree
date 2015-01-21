@@ -1,9 +1,9 @@
 {
   "name": "tree",
-  "version": "0.6.10",
+  "version": "0.6.11",
   "homepage": "https://github.com/iliakolev/tree",
   "authors": [
-    "Ilia Kolev <info@iliakolev.com>"
+    "Ilia Kolev <info@iliakolev.com> (http://iliakolev.com)"
   ],
   "license": "MIT",
   "dependencies": {
@@ -24,7 +24,7 @@
     "tree-lists": "0.1.5",
     "tree-images": "0.1.6",
     "tree-layout": "0.3.12",
-    "tree-nav": "0.1.3",
+    "tree-nav": "0.2.0",
     "tree-list-bare": "0.3.5",
     "tree-list-inline": "0.1.6",
     "tree-list-block": "0.2.0",

@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.6.11
+
+* Update rules in .scss-lint.yml:
+    - allow element with attribute
+    - ignore vendor prefixes:
+        - www/sass/base/_page.scss
+        - www/sass/generic/_box-sizing.scss
+
+* Set scss-lint gem version v0.32.0
+* Bump [tree-nav](https://github.com/treeframework/object.nav) v0.2.0
+
 ## 0.6.10
 
 * Bump [grunt-autoprefixer](https://github.com/nDmitry/grunt-autoprefixer) 2.2.0

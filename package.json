@@ -1,7 +1,7 @@
 {
   "name": "tree",
   "description": "Starting point front-end framework for developing projects on the web.",
-  "version": "0.6.10",
+  "version": "0.6.11",
   "main": "Gruntfile.js",
   "repository": {
     "type": "git",
@@ -13,7 +13,9 @@
     "framework",
     "web"
   ],
-  "author": "Ilia Kolev",
+  "authors": [
+    "Ilia Kolev <info@iliakolev.com> (http://iliakolev.com)"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/iliakolev/tree/issues"

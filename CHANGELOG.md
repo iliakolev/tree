@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.6.12
+
+* Remove config.rb ( Compass is no longer required )
+* Remove [grunt-contrib-compass](https://github.com/gruntjs/grunt-contrib-compass)
+* Add [grunt-contrib-sass](https://github.com/gruntjs/grunt-contrib-sass)
+* Bump [tree-page](https://github.com/treeframework/base.page) v0.2.1
+
+
 ## 0.6.11
 
 * Update rules in .scss-lint.yml:

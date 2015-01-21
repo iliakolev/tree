@@ -502,16 +502,20 @@ module.exports = function (grunt) {
 
 
         /**
-         * Compass
+         * Sass
          *
-         * Compile Sass to CSS using Compass.
-         * https://github.com/gruntjs/grunt-contrib-compass
+         * Compile Sass to CSS.
+         * https://github.com/gruntjs/grunt-contrib-sass
          */
-        compass: {
+        sass: {
             dist: {
-                options: {
-                    config: 'config.rb'
-                }
+                files: [{
+                    expand: true,
+                    cwd: '<%= tree.sass %>',
+                    src: ['*.scss'],
+                    dest: '<%= tree.css %>',
+                    ext: '.css'
+                }],
             }
         },
 
@@ -603,7 +607,7 @@ module.exports = function (grunt) {
             },
             sass: {
                 files: '<%= tree.sass %>{,*/}*.scss',
-                tasks: ['compass', 'autoprefixer', 'csso'],
+                tasks: ['sass', 'autoprefixer', 'csso'],
                 options: {
                     spawn: false
                 }
@@ -637,7 +641,7 @@ module.exports = function (grunt) {
      * Run 'grunt' on the command line.
      */
     grunt.registerTask('default', [
-        'compass',
+        'sass',
         'autoprefixer',
         'csso',
         'scsslint',
@@ -650,7 +654,7 @@ module.exports = function (grunt) {
      * Run 'grunt build' on the command line.
      */
     grunt.registerTask('build', [
-        'compass',
+        'sass',
         'autoprefixer',
         'csso',
         'scsslint',

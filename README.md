@@ -1,8 +1,9 @@
 # Tree
 
+[![Dependency Status](https://gemnasium.com/iliakolev/tree.svg)](https://gemnasium.com/iliakolev/tree)
+
 This repo is mostly for me, but you are welcome to make suggestions. [inuitcss](https://twitter.com/inuitcss) is the project to fork.
 I'm mostly catching up and learning as I go.
-
 
 ## Credits
 

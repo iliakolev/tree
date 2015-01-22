@@ -1,5 +1,6 @@
 # Tree
 
+[![Build Status](https://travis-ci.org/iliakolev/tree.svg?branch=master)](https://travis-ci.org/iliakolev/tree)
 [![Dependency Status](https://gemnasium.com/iliakolev/tree.svg)](https://gemnasium.com/iliakolev/tree)
 
 This repo is mostly for me, but you are welcome to make suggestions. [inuitcss](https://twitter.com/inuitcss) is the project to fork.

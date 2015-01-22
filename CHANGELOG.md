@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.6.13
+
+* Bump [scss-lint](https://github.com/causes/scss-lint) v0.33.0
+
 ## 0.6.12
 
 * Remove config.rb ( Compass is no longer required )

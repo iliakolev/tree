@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.6.14
+
+* Bump [grunt-contrib-jshint](https://github.com/gruntjs/grunt-contrib-jshint)
+  v0.11.0
+    - Update to JSHint ~2.6.0.
+
 ## 0.6.13
 
 * Bump [scss-lint](https://github.com/causes/scss-lint) v0.33.0

@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-    - '0.10'
+    - '0.11'
 before_install:
     - gem update --system
     - gem install scss-lint -v 0.33.0

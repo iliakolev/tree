@@ -1,5 +1,6 @@
 # Tree
 
+[![License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)][license]
 [![Build Status](https://travis-ci.org/iliakolev/tree.svg?branch=master)](https://travis-ci.org/iliakolev/tree)
 [![Dependency Status](https://gemnasium.com/iliakolev/tree.svg)](https://gemnasium.com/iliakolev/tree)
 

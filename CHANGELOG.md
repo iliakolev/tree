@@ -3,7 +3,7 @@
 ## 0.7.0
 
 * Rename `tree-paragraphs` to [tree-lede](https://github.com/treeframework/base.lede).
-* Add new module (tree-headings-trump)[https://github.com/treeframework/trump.headings].
+* Add new module [tree-headings-trump](https://github.com/treeframework/trump.headings).
 * Bump dependencies.
 
 ## 0.6.14

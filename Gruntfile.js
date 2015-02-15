@@ -168,12 +168,12 @@ module.exports = function (grunt) {
                 }
             },
 
-            treeParagraphs: {
+            treeLede: {
                 options: {
                     destPrefix: 'www/sass/base'
                 },
                 files: {
-                    '_paragraphs.scss': 'tree-paragraphs/_base.paragraphs.scss'
+                    '_lede.scss': 'tree-lede/_base.lede.scss'
                 }
             },
 
@@ -399,6 +399,15 @@ module.exports = function (grunt) {
                 },
                 files: {
                     '_spacing-responsive.scss': 'tree-spacing-responsive/_trump.spacing-responsive.scss'
+                }
+            },
+
+            treeHeadingsTrump: {
+                options: {
+                    destPrefix: 'www/sass/trump'
+                },
+                files: {
+                    '_headings.scss': 'tree-headings-trump/_trump.headings.scss'
                 }
             },
 

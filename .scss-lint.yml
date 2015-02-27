@@ -2,10 +2,19 @@
 # Documentation: https://github.com/causes/scss-lint/blob/master/lib/scss_lint/linter/README.md
 
 linters:
+  BangFormat:
+    enabled: true
+    space_before_bang: true
+    space_after_bang: false
+
   BorderZero:
     enabled: true
+    convention: zero
 
   ColorKeyword:
+    enabled: true
+
+  ColorVariable:
     enabled: true
 
   Comment:
@@ -46,11 +55,21 @@ linters:
   HexValidation:
     enabled: true
 
-  IdWithExtraneousSelector:
+  IdSelector:
     enabled: true
+
+  ImportantRule:
+    enabled: false
+
+  ImportPath:
+    enabled: true
+    leading_underscore: false
+    filename_extension: false
 
   Indentation:
     enabled: false
+    allow_non_nested_indentation: false
+    character: space
     width: 4
 
   LeadingZero:
@@ -58,17 +77,30 @@ linters:
     style: exclude_zero
 
   MergeableSelector:
-    enabled: false
+    enabled: true
+    force_nesting: true
 
   NameFormat:
-    enabled: false
+    enabled: true
+    allow_leading_underscore: true
     convention: BEM
+
+  NestingDepth:
+    enabled: true
+    max_depth: 3
 
   PlaceholderInExtend:
     enabled: true
 
+  PropertyCount:
+    enabled: false
+    include_nested: false
+    max_properties: 10
+
   PropertySortOrder:
     enabled: false
+    ignore_unspecified: false
+    separate_groups: false
 
   PropertySpelling:
     enabled: true
@@ -76,13 +108,23 @@ linters:
 
   QualifyingElement:
     allow_element_with_attribute: true
+    allow_element_with_class: false
+    allow_element_with_id: false
 
   SelectorDepth:
     enabled: true
     max_depth: 3
 
+  SelectorFormat:
+    enabled: true
+    convention: BEM
+
   Shorthand:
     enabled: true
+
+  SingleLinePerProperty:
+    enabled: true
+    allow_single_line_rule_sets: true
 
   SingleLinePerSelector:
     enabled: true
@@ -91,13 +133,16 @@ linters:
     enabled: true
 
   SpaceAfterPropertyColon:
-    enabled: false
+    enabled: true
+    style: at_least_one_space
 
   SpaceAfterPropertyName:
-    enabled: false
+    enabled: true
 
   SpaceBeforeBrace:
     enabled: false
+    style: space
+    allow_single_line_padding: false
 
   SpaceBetweenParens:
     enabled: true
@@ -108,6 +153,9 @@ linters:
     style: double_quotes
 
   TrailingSemicolon:
+    enabled: true
+
+  TrailingZero:
     enabled: false
 
   UnnecessaryMantissa:
@@ -117,13 +165,19 @@ linters:
     enabled: true
 
   UrlFormat:
-    enabled: false
+    enabled: true
 
   UrlQuotes:
     enabled: true
 
+  VariableForProperty:
+    enabled: false
+    properties: []
+
   VendorPrefixes:
     enable: true
+    identifier_list: base
+    include: []
     exclude:
       - www/sass/base/_page.scss
       - www/sass/generic/_box-sizing.scss

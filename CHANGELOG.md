@@ -1,4 +1,12 @@
-# Changelog
+# Tree Changelog
+
+## [0.7.1] - 2015-02-27
+
+* Bump Gems
+    * sass
+    * scss-lint
+* Update `.travis.yml`
+* Update `.scss-lint.yml`
 
 ## 0.7.0
 

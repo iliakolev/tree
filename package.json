@@ -1,7 +1,7 @@
 {
   "name": "tree",
   "description": "Starting point front-end framework for developing projects on the web.",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "author": "Ilia Kolev <info@iliakolev.com>",
   "bugs": {
     "url": "https://github.com/iliakolev/tree/issues"

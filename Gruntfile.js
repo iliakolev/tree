@@ -96,6 +96,15 @@ module.exports = function (grunt) {
                 }
             },
 
+            treeWidthsTools: {
+                options: {
+                    destPrefix: 'www/sass/tools'
+                },
+                files: {
+                    '_widths.scss': 'tree-widths-tools/_tools.widths.scss'
+                }
+            },
+
             treeResponsiveTools: {
                 options: {
                     destPrefix: 'www/sass/tools'

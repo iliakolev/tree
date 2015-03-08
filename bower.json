@@ -1,14 +1,15 @@
 {
   "name": "tree",
-  "version": "0.7.1",
+  "version": "0.8.0",
   "homepage": "https://github.com/iliakolev/tree",
   "author": "Ilia Kolev <info@iliakolev.com>",
   "license": "MIT",
   "dependencies": {
     "tree-defaults": "0.2.5",
-    "tree-responsive-settings": "0.1.2",
+    "tree-responsive-settings": "0.1.4",
     "tree-functions": "0.2.5",
     "tree-mixins": "0.4.1",
+    "tree-widths-tools": "0.1.0",
     "tree-responsive-tools": "0.1.4",
     "tree-aliases": "0.1.5",
     "tree-normalize": "3.0.3",
@@ -38,14 +39,14 @@
     "tree-buttons": "0.1.7",
     "tree-pack": "0.1.5",
     "tree-tabs": "0.1.6",
-    "tree-clearfix": "0.2.7",
-    "tree-widths": "0.2.6",
-    "tree-widths-responsive": "0.1.5",
-    "tree-spacing": "0.1.5",
+    "tree-clearfix": "0.2.8",
+    "tree-widths": "0.3.0",
+    "tree-widths-responsive": "0.2.0",
+    "tree-spacing": "0.1.6",
     "tree-spacing-responsive": "0.1.3",
     "tree-headings-trump": "0.1.2",
-    "tree-hidden": "0.1.3",
-    "tree-hidden-responsive": "0.1.2",
+    "tree-hidden": "0.2.0",
+    "tree-hidden-responsive": "0.2.0",
     "jquery": "2.1.3"
   }
 }

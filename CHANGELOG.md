@@ -1,5 +1,22 @@
 # Tree Changelog
 
+## [0.8.0] - 2015-03-08
+
+* [FEATURE] New widths mixin to generate a wider array of classes.
+* Bump dependencies:
+    * grunt-contib-ugllify v0.8.0
+    * grunt-contrib-concat v0.5.1
+    * time-grunt v1.1.0
+    * tree-responsive-settings v0.1.4; Switch from px to em based media queries.
+    * tree-clearfix v0.2.8
+    * [BREAKING] tree-widths v0.3.0; Uses new widths mixin.
+    * [BREAKING] tree-widths-responsive v0.2.0; Uses new widths mixin.
+    * [BREAKING] tree-hidden v0.2.0; Added utility class: u-; Derpecate
+      placeholders.
+    * [BREAKING] tree-hidden-responsive v0.2.0; Added utility class: u-.
+    * [FEATURE] tree-spacing v0.1.6; Option to alter tiny, small, large and huge
+      margins/paddings.
+
 ## [0.7.1] - 2015-02-27
 
 * Bump Gems

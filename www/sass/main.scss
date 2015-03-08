@@ -1,6 +1,6 @@
 // *************************************
 //
-//   #TREE-STARTER
+//   #TREE
 //
 // *************************************
 
@@ -13,6 +13,7 @@
 // TOOLS
 // Functions.............Default functions.
 // Mixins................Default mixins.
+// Widths................Suite of utility classes.
 // Responsive............Responsive tooling (requires responsive settings).
 // Aliases...............Aliases onto longer variables and mixins.
 // Normalize.css.........A level playing field.
@@ -76,6 +77,7 @@
 
 @import "tools/functions";
 @import "tools/mixins";
+@import "tools/widths";
 @import "tools/responsive";
 @import "tools/aliases";
 

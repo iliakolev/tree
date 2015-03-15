@@ -267,24 +267,6 @@ module.exports = function (grunt) {
                 }
             },
 
-            treeLinkBlock: {
-                options: {
-                    destPrefix: 'www/sass/object'
-                },
-                files: {
-                    '_link-block.scss': 'tree-link-block/_object.link-block.scss'
-                }
-            },
-
-            treeLinkClean: {
-                options: {
-                    destPrefix: 'www/sass/object'
-                },
-                files: {
-                    '_link-clean.scss': 'tree-link-clean/_object.link-clean.scss'
-                }
-            },
-
             treeTables: {
                 options: {
                     destPrefix: 'www/sass/object'
@@ -435,6 +417,24 @@ module.exports = function (grunt) {
                 },
                 files: {
                     '_hidden-responsive.scss': 'tree-hidden-responsive/_trump.hidden-responsive.scss'
+                }
+            },
+
+            treeLinkBlock: {
+                options: {
+                    destPrefix: 'www/sass/trump'
+                },
+                files: {
+                    '_link-block.scss': 'tree-link-block/_trump.link-block.scss'
+                }
+            },
+
+            treeLinkClean: {
+                options: {
+                    destPrefix: 'www/sass/trump'
+                },
+                files: {
+                    '_link-clean.scss': 'tree-link-clean/_trump.link-clean.scss'
                 }
             },
 

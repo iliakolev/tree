@@ -1,5 +1,14 @@
 # Tree Changelog
 
+## [0.8.1] - 2015-03-15
+
+[BREAKING] Promote `tree-link-clean` and `tree-link-block` to `Trump` layer.
+
+* Bump dependencies:
+    * `grunt-csso v0.7.1`
+    * `tree-link-clean v0.2.0`
+    * `tree-link-block v0.2.0`
+
 ## [0.8.0] - 2015-03-08
 
 * [FEATURE] New widths mixin to generate a wider array of classes.

@@ -12,8 +12,6 @@
 
 * Bump dependencies:
     * grunt-csso v0.7.1
-    * tree-link-clean v0.2.0
-    * tree-link-block v0.2.0
 
 ## [0.8.0] - 2015-03-08
 

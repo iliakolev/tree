@@ -1,13 +1,19 @@
 # Tree Changelog
 
-## [0.8.1] - 2015-03-15
-
-[BREAKING] Promote `tree-link-clean` and `tree-link-block` to `Trump` layer.
+## [0.8.2] - 2015-03-15
 
 * Bump dependencies:
-    * `grunt-csso v0.7.1`
-    * `tree-link-clean v0.2.0`
-    * `tree-link-block v0.2.0`
+    * tree-link-clean v0.2.0
+    * tree-link-block v0.2.0
+
+## [0.8.1] - 2015-03-15
+
+[BREAKING] Promote tree-link-clean and tree-link-block to Trump layer.
+
+* Bump dependencies:
+    * grunt-csso v0.7.1
+    * tree-link-clean v0.2.0
+    * tree-link-block v0.2.0
 
 ## [0.8.0] - 2015-03-08
 
@@ -31,12 +37,12 @@
 * Bump Gems
     * sass
     * scss-lint
-* Update `.travis.yml`
-* Update `.scss-lint.yml`
+* Update .travis.yml
+* Update .scss-lint.yml
 
 ## 0.7.0
 
-* Rename `tree-paragraphs` to [tree-lede](https://github.com/treeframework/base.lede).
+* Rename tree-paragraphs to [tree-lede](https://github.com/treeframework/base.lede).
 * Add new module [tree-headings-trump](https://github.com/treeframework/trump.headings).
 * Bump dependencies.
 

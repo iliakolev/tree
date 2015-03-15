@@ -36,8 +36,6 @@
 // List-inline...........Displays a list as one horizontal row.
 // List-block............Creates blocky list items out of a `ul` or `ol`.
 // List-ui...............Keyline-delimited list items.
-// Link-block............Displays a link as block.
-// Link-clean............A link without any text-decoration at all.
 // Tables................Table styles.
 // Media.................The media object.
 // Block.................Stack an image above some text content.
@@ -57,6 +55,8 @@
 // Headings..............Heading-related helper classes.
 // Hidden................Hides content.
 // Hidden-responsive.....Hides content via media query.
+// Link-block............Displays a link as block.
+// Link-clean............A link without any text-decoration at all.
 
 
 
@@ -120,8 +120,6 @@
 @import "object/list-inline";
 @import "object/list-block";
 @import "object/list-ui";
-@import "object/link-block";
-@import "object/link-clean";
 @import "object/tables";
 @import "object/media";
 @import "object/block";
@@ -147,3 +145,5 @@
 @import "trump/headings";
 @import "trump/hidden";
 @import "trump/hidden-responsive";
+@import "trump/link-block";
+@import "trump/link-clean";

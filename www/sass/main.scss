@@ -24,7 +24,6 @@
 // BASE
 // Page..................Page-level styles (HTML element).
 // Headings..............Heading styles.
-// Lede..................Introductory text.
 // Links.................Hyperlink styles.
 // Lists.................List styles.
 // Images................Images styles.
@@ -53,6 +52,7 @@
 // Spacing...............Helper classes for spacings like margin and padding.
 // Spacing-responsive....Breakpoint classes for nudging margins and paddings.
 // Headings..............Heading-related helper classes.
+// Lede..................Introductory text.
 // Hidden................Hides content.
 // Hidden-responsive.....Hides content via media query.
 // Link-block............Displays a link as block.
@@ -102,7 +102,6 @@
 
 @import "base/page";
 @import "base/headings";
-@import "base/lede";
 @import "base/links";
 @import "base/lists";
 @import "base/images";
@@ -143,6 +142,7 @@
 @import "trump/spacing";
 @import "trump/spacing-responsive";
 @import "trump/headings";
+@import "trump/lede";
 @import "trump/hidden";
 @import "trump/hidden-responsive";
 @import "trump/link-block";

@@ -1,5 +1,9 @@
 # Tree Changelog
 
+## [0.8.3] - 2015-03-16
+
+[BREAKING] Promote tree-lede to Trump layer; utility class: .u-.
+
 ## [0.8.2] - 2015-03-15
 
 * Bump dependencies:

@@ -177,15 +177,6 @@ module.exports = function (grunt) {
                 }
             },
 
-            treeLede: {
-                options: {
-                    destPrefix: 'www/sass/base'
-                },
-                files: {
-                    '_lede.scss': 'tree-lede/_base.lede.scss'
-                }
-            },
-
             treeLinks: {
                 options: {
                     destPrefix: 'www/sass/base'
@@ -399,6 +390,15 @@ module.exports = function (grunt) {
                 },
                 files: {
                     '_headings.scss': 'tree-headings-trump/_trump.headings.scss'
+                }
+            },
+
+            treeLede: {
+                options: {
+                    destPrefix: 'www/sass/trump'
+                },
+                files: {
+                    '_lede.scss': 'tree-lede/_trump.lede.scss'
                 }
             },
 

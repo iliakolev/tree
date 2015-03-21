@@ -1,5 +1,11 @@
 # Tree Changelog
 
+## [0.8.4] - 2015-03-21
+
+* Bump dependencies:
+    * scss-lint v0.35.0
+    * grunt-contrib-jshint v0.11.1
+
 ## [0.8.3] - 2015-03-16
 
 [BREAKING] Promote tree-lede to Trump layer; utility class: .u-.

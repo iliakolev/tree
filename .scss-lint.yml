@@ -174,13 +174,13 @@ linters:
     enabled: false
     properties: []
 
-  VendorPrefixes:
+  VendorPrefix:
     enable: true
     identifier_list: base
-    include: []
-    exclude:
-      - www/sass/base/_page.scss
-      - www/sass/generic/_box-sizing.scss
+    additional_identifiers: []
+    excluded_identifiers:
+      - text-size-adjust
+      - box-sizing
 
   ZeroUnit:
     enabled: true

@@ -3,7 +3,7 @@ node_js:
     - '0.12'
 before_install:
     - gem update --system
-    - gem install scss-lint -v 0.34.0
+    - gem install scss-lint -v 0.35.0
     - npm install -g grunt-cli
 notifications:
     email:

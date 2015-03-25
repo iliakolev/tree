@@ -1,5 +1,26 @@
 # Tree Changelog
 
+## [0.8.5] - 2015-03-25
+
+* New www/dist/ directory to hold css and js files.
+* Move .scss-lint.yml to www/sass/ dir.
+* Move .jshintrc to www/js/ dir.
+* Move main.js to www/js/ dir.
+* index.html fix paths.
+* Grunfile Changes:
+    * Remove bowercopy (simplify).
+    * Remove git-grunt; added load-grunt-tasks.
+    * Remove grunt-csso; added grunt-contrib-cssmin.
+    * Remove grunt-browser-sync.
+    * Add grunt-contrib-clean.
+    * Add grunt-html.
+    * Add grunt-jscs.
+    * Add grunt-contrib-connect.
+    * Default tasks: dist-css, dist-js, dist, validate-budget, validate-html,
+      build, default, test and server.
+* main.csss - Import tree packages directly from bower_components folder.
+
+
 ## [0.8.4] - 2015-03-21
 
 * Bump dependencies:

@@ -7,7 +7,7 @@
 * Move .jshintrc to www/js/ dir.
 * Move main.js to www/js/ dir.
 * index.html fix paths.
-* Grunfile Changes:
+* Gruntfile Changes:
     * Remove bowercopy (simplify).
     * Remove git-grunt; added load-grunt-tasks.
     * Remove grunt-csso; added grunt-contrib-cssmin.

@@ -1,10 +1,14 @@
 language: node_js
 node_js:
-    - '0.12'
+  - "0.10"
+  - "0.12"
 before_install:
-    - gem update --system
-    - gem install scss-lint -v 0.35.0
-    - npm install -g grunt-cli
+  - rvm use 1.9.3
+install:
+  - travis_retry npm install -g grunt-cli
+  - travis_retry npm install
+  - travis_retry gem install --no-document "sass:~>3.4.13" "scss-lint:~>0.35.0"
+matrix:
+  fast_finish: true
 notifications:
-    email:
-        - info@iliakolev.com
+  email: info@iliakolev.com

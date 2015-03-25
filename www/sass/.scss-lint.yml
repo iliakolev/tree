@@ -1,5 +1,7 @@
 # Default application configuration that all configurations inherit from.
 # Documentation: https://github.com/causes/scss-lint/blob/master/lib/scss_lint/linter/README.md
+exclude:
+  - ../../bower_components/tree-normalize/_generic.normalize.scss
 
 linters:
   BangFormat:
@@ -28,6 +30,9 @@ linters:
 
   DuplicateProperty:
     enabled: true
+    exclude:
+      - ../../bower_components/tree-mixins/_tools.mixins.scss
+      - ../../bower_components/tree-shared/_generic.shared.scss
 
   ElsePlacement:
     enabled: true

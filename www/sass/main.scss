@@ -16,6 +16,8 @@
 // Widths................Suite of utility classes.
 // Responsive............Responsive tooling (requires responsive settings).
 // Aliases...............Aliases onto longer variables and mixins.
+//
+// GENERIC
 // Normalize.css.........A level playing field.
 // Reset.................A pared back reset to remove margins.
 // Box-sizing............Better default `box-sizing`.
@@ -65,8 +67,8 @@
 //   #SETTINGS
 // *************************************
 
-@import "settings/defaults";
-@import "settings/responsive";
+@import "bower_components/tree-defaults/settings.defaults";
+@import "bower_components/tree-responsive-settings/settings.responsive";
 
 
 
@@ -75,11 +77,11 @@
 //   #TOOLS
 // *************************************
 
-@import "tools/functions";
-@import "tools/mixins";
-@import "tools/widths";
-@import "tools/responsive";
-@import "tools/aliases";
+@import "bower_components/tree-functions/tools.functions";
+@import "bower_components/tree-mixins/tools.mixins";
+@import "bower_components/tree-widths-tools/tools.widths";
+@import "bower_components/tree-responsive-tools/tools.responsive";
+@import "bower_components/tree-aliases/tools.aliases";
 
 
 
@@ -88,10 +90,10 @@
 //   #GENERIC
 // *************************************
 
-@import "generic/normalize";
-@import "generic/reset";
-@import "generic/box-sizing";
-@import "generic/shared";
+@import "bower_components/tree-normalize/generic.normalize";
+@import "bower_components/tree-reset/generic.reset";
+@import "bower_components/tree-box-sizing/generic.box-sizing";
+@import "bower_components/tree-shared/generic.shared";
 
 
 
@@ -100,11 +102,11 @@
 //   #BASE
 // *************************************
 
-@import "base/page";
-@import "base/headings";
-@import "base/links";
-@import "base/lists";
-@import "base/images";
+@import "bower_components/tree-page/base.page";
+@import "bower_components/treeframework-headings/base.headings";
+@import "bower_components/tree-links/base.links";
+@import "bower_components/tree-lists/base.lists";
+@import "bower_components/tree-images/base.images";
 
 
 
@@ -113,21 +115,21 @@
 //   #OBJECTS
 // *************************************
 
-@import "object/layout";
-@import "object/nav";
-@import "object/list-bare";
-@import "object/list-inline";
-@import "object/list-block";
-@import "object/list-ui";
-@import "object/tables";
-@import "object/media";
-@import "object/block";
-@import "object/flag";
-@import "object/box";
-@import "object/sprite";
-@import "object/buttons";
-@import "object/pack";
-@import "object/tabs";
+@import "bower_components/tree-layout/object.layout";
+@import "bower_components/tree-nav/object.nav";
+@import "bower_components/tree-list-bare/object.list-bare";
+@import "bower_components/tree-list-inline/object.list-inline";
+@import "bower_components/tree-list-block/object.list-block";
+@import "bower_components/tree-list-ui/object.list-ui";
+@import "bower_components/tree-tables/object.tables";
+@import "bower_components/tree-media/object.media";
+@import "bower_components/tree-block/object.block";
+@import "bower_components/tree-flag/object.flag";
+@import "bower_components/tree-box/object.box";
+@import "bower_components/tree-sprite/object.sprite";
+@import "bower_components/tree-buttons/object.buttons";
+@import "bower_components/tree-pack/object.pack";
+@import "bower_components/tree-tabs/object.tabs";
 
 
 
@@ -136,14 +138,14 @@
 //   #TRUMPS
 // *************************************
 
-@import "trump/clearfix";
-@import "trump/widths";
-@import "trump/widths-responsive";
-@import "trump/spacing";
-@import "trump/spacing-responsive";
-@import "trump/headings";
-@import "trump/lede";
-@import "trump/hidden";
-@import "trump/hidden-responsive";
-@import "trump/link-block";
-@import "trump/link-clean";
+@import "bower_components/tree-clearfix/trump.clearfix";
+@import "bower_components/tree-widths/trump.widths";
+@import "bower_components/tree-widths-responsive/trump.widths-responsive";
+@import "bower_components/tree-spacing/trump.spacing";
+@import "bower_components/tree-spacing-responsive/trump.spacing-responsive";
+@import "bower_components/tree-headings-trump/trump.headings";
+@import "bower_components/tree-lede/trump.lede";
+@import "bower_components/tree-hidden/trump.hidden";
+@import "bower_components/tree-hidden-responsive/trump.hidden-responsive";
+@import "bower_components/tree-link-block/trump.link-block";
+@import "bower_components/tree-link-clean/trump.link-clean";

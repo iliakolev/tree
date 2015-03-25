@@ -40,6 +40,6 @@
     "url": "https://github.com/iliakolev/tree.git"
   },
   "scripts": {
-    "test": "grunt depend && grunt build"
+    "test": "grunt test"
   }
 }

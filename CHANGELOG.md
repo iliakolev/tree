@@ -1,5 +1,11 @@
 # Tree Changelog
 
+## [0.8.6] - 2015-03-30
+
+* Add new bower package tree-visible v0.1.0
+* Bump tree-hidden v0.2.1
+* Bump grunt-jscs v1.6.0
+
 ## [0.8.5] - 2015-03-25
 
 * New www/dist/ directory to hold css and js files.

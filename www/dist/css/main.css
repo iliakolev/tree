@@ -962,6 +962,12 @@ img[height] {
 
 .u-hidden {
   display: none !important;
+  visibility: hidden !important;
+}
+
+.u-visible {
+  display: block !important;
+  visibility: visible !important;
 }
 
 .u-link-block, .u-link-block:hover, .u-link-block:focus, .u-link-block:active {

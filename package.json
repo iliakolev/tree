@@ -1,7 +1,7 @@
 {
   "name": "tree",
   "description": "Starting point front-end framework for developing projects on the web.",
-  "version": "0.8.5",
+  "version": "0.8.6",
   "author": "Ilia Kolev <info@iliakolev.com>",
   "bugs": {
     "url": "https://github.com/iliakolev/tree/issues"
@@ -20,7 +20,7 @@
     "grunt-contrib-uglify": "~0.8.0",
     "grunt-contrib-watch": "~0.6.1",
     "grunt-html": "~4.0.2",
-    "grunt-jscs": "~1.5.0",
+    "grunt-jscs": "~1.6.0",
     "grunt-perfbudget": "~0.1.6",
     "grunt-scss-lint": "~0.3.4",
     "load-grunt-tasks": "~3.1.0",
@@ -29,8 +29,8 @@
   "homepage": "https://github.com/iliakolev/tree",
   "keywords": [
     "css",
-    "front-end",
     "framework",
+    "front-end",
     "web"
   ],
   "license": "MIT",

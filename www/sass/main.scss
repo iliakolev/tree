@@ -56,7 +56,6 @@
 // Headings..............Heading-related helper classes.
 // Lede..................Introductory text.
 // Hidden................Hides content.
-// Hidden-responsive.....Hides content via media query.
 // Link-block............Displays a link as block.
 // Link-clean............A link without any text-decoration at all.
 
@@ -146,7 +145,6 @@
 @import "bower_components/tree-headings-trump/trump.headings";
 @import "bower_components/tree-lede/trump.lede";
 @import "bower_components/tree-hidden/trump.hidden";
-@import "bower_components/tree-hidden-responsive/trump.hidden-responsive";
 @import "bower_components/tree-visible/trump.visible";
 @import "bower_components/tree-link-block/trump.link-block";
 @import "bower_components/tree-link-clean/trump.link-clean";

@@ -1,5 +1,13 @@
 # Tree Changelog
 
+## [0.8.7] -2015-03-31
+
+* Bump bower v1.4.0
+* Bump grunt-contrib-uglify v0.8.1
+* Bump tree-visible v0.2.0 (add responsive classes).
+* Bump tree-hidden v0.3.0 (add responsive classes).
+* [DEPRECATE] tree-hidden-responsive module (merged into tree-hidden).
+
 ## [0.8.6] - 2015-03-30
 
 * Add new bower package tree-visible v0.1.0

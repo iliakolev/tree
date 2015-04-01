@@ -3,7 +3,7 @@ node_js:
   - "0.10"
   - "0.12"
 before_install:
-  - rvm use 1.9.3
+  - rvm use 2.2.0
 install:
   - travis_retry npm install -g grunt-cli
   - travis_retry npm install

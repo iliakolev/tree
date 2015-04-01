@@ -41,6 +41,7 @@
 // Media.................The media object.
 // Block.................Stack an image above some text content.
 // Flag..................The flag object.
+// Ratio.................Media embeds - that need to retain a specific aspect ratio.
 // Box...................The box object.
 // Sprite................The sprite object.
 // Buttons...............The button object.
@@ -124,6 +125,7 @@
 @import "bower_components/tree-media/object.media";
 @import "bower_components/tree-block/object.block";
 @import "bower_components/tree-flag/object.flag";
+@import "bower_components/tree-ratio/object.ratio";
 @import "bower_components/tree-box/object.box";
 @import "bower_components/tree-sprite/object.sprite";
 @import "bower_components/tree-buttons/object.buttons";

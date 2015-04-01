@@ -3,7 +3,6 @@
 ## [0.8.8] - 2015-04-01
 
 * Add tree-ratio module.
-* .travis.yml - use ruby 2.2.0
 * Bump bower v1.4.1
 * package.json - specify the version of node that stuff works on
 

@@ -1,5 +1,18 @@
 # Tree Changelog
 
+## [0.8.9] - 2015-04-06
+
+* index.html - Add Google analytics snippet.
+* Use `<meta http-equiv="x-ua-compatible" content="ie=edge">` instead of `<meta
+  http-equiv="X-UA-Compatible" content="IE=edge">`.
+* Bump tree-normalize to v3.0.4
+* Bump tree-hidden to v0.3.1
+* Bump tree-visible to v0.2.1
+* Bump grunt-autoprefixer to v3.0.0
+* Bump grunt-contib-connect to v0.10.1
+* Bump grunt-scss-lint to v0.3.6
+
+
 ## [0.8.8] - 2015-04-01
 
 * Add tree-ratio module.

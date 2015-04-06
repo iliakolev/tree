@@ -1,7 +1,7 @@
 {
   "name": "tree",
   "description": "Starting point front-end framework for developing projects on the web.",
-  "version": "0.8.8",
+  "version": "0.8.9",
   "author": "Ilia Kolev <info@iliakolev.com>",
   "bugs": {
     "url": "https://github.com/iliakolev/tree/issues"
@@ -9,10 +9,10 @@
   "devDependencies": {
     "bower": "~1.4.1",
     "grunt": "~0.4.5",
-    "grunt-autoprefixer": "~2.2.0",
+    "grunt-autoprefixer": "~3.0.0",
     "grunt-contrib-clean": "~0.6.0",
     "grunt-contrib-concat": "~0.5.1",
-    "grunt-contrib-connect": "~0.9.0",
+    "grunt-contrib-connect": "~0.10.1",
     "grunt-contrib-csslint": "~0.4.0",
     "grunt-contrib-cssmin": "~0.12.2",
     "grunt-contrib-jshint": "~0.11.1",
@@ -22,7 +22,7 @@
     "grunt-html": "~4.0.2",
     "grunt-jscs": "~1.6.0",
     "grunt-perfbudget": "~0.1.6",
-    "grunt-scss-lint": "~0.3.4",
+    "grunt-scss-lint": "~0.3.6",
     "load-grunt-tasks": "~3.1.0",
     "time-grunt": "~1.1.0"
   },

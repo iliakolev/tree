@@ -1,4 +1,4 @@
-# Tree
+# tree-starter-kit
 
 [![License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/iliakolev/tree/blob/master/LICENSE.md)
 [![Build Status](https://travis-ci.org/iliakolev/tree.svg?branch=master)](https://travis-ci.org/iliakolev/tree)

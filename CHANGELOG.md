@@ -1,4 +1,4 @@
-# Tree Changelog
+# tree-starter-kit Changelog
 
 ## [0.8.9] - 2015-04-06
 

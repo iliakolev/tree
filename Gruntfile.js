@@ -1,5 +1,5 @@
 /**
- * Tree Gruntfile
+ * Tree starter kit Gruntfile
  * Copyright 2013-2015 Ilia Kolev
  * Licensed under MIT (https://github.com/iliakolev/tree/blob/master/LICENSE)
  */

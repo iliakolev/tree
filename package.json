@@ -1,10 +1,10 @@
 {
-  "name": "tree",
-  "description": "Starting point front-end framework for developing projects on the web.",
+  "name": "tree-starter-kit",
+  "description": "Tree starter kit.",
   "version": "0.8.9",
   "author": "Ilia Kolev <info@iliakolev.com>",
   "bugs": {
-    "url": "https://github.com/iliakolev/tree/issues"
+    "url": "https://github.com/treeframework/tree-starter-kit/issues"
   },
   "devDependencies": {
     "bower": "~1.4.1",
@@ -29,7 +29,7 @@
   "engines": {
     "node": ">=0.10.1"
   },
-  "homepage": "https://github.com/iliakolev/tree",
+  "homepage": "https://github.com/treeframework/tree-starter-kit",
   "keywords": [
     "css",
     "framework",
@@ -40,7 +40,7 @@
   "main": "Gruntfile.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/iliakolev/tree.git"
+    "url": "https://github.com/treeframework/tree-starter-kit.git"
   },
   "scripts": {
     "postinstall": "bower install",

@@ -1,8 +1,8 @@
 # tree-starter-kit
 
-[![License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/iliakolev/tree/blob/master/LICENSE.md)
-[![Build Status](https://travis-ci.org/iliakolev/tree.svg?branch=master)](https://travis-ci.org/iliakolev/tree)
-[![Dependency Status](https://gemnasium.com/iliakolev/tree.svg)](https://gemnasium.com/iliakolev/tree)
+[![License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/treeframework/tree-starter-kit/blob/master/LICENSE.md)
+[![Build Status](https://travis-ci.org/treeframework/tree-starter-kit.svg?branch=master)](https://travis-ci.org/treeframework/tree-starter-kit)
+[![Dependency Status](https://gemnasium.com/treeframework/tree-starter-kit.svg)](https://gemnasium.com/treeframework/tree-starter-kit)
 
 This repo is mostly for me, but you are welcome to make suggestions. [inuitcss](https://twitter.com/inuitcss) is the project to fork.
 I'm mostly catching up and learning as I go.

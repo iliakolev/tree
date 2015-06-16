@@ -1,5 +1,17 @@
 # tree-starter-kit Changelog
 
+## [0.8.10] - 2015-06-16
+
+* rename package tree-tables to tree-table
+* Bump grunt-autoprefixer to v3.0.0
+* Bump grunt-contrib-cssmin to v0.12.3
+* Bump grunt-contrib-jshint to v0.11.2
+* Bump grunt-contrib-uglify to v0.9.1
+* Bump grunt-html to v4.0.3
+* Bump grunt-jscs to v1.8.0
+* Bump load-grunt-tasks to v3.2.0
+* Bump time-grunt to v1.2.1
+
 ## [0.8.9] - 2015-04-06
 
 * index.html - Add Google analytics snippet.

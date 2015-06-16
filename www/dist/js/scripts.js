@@ -9209,7 +9209,7 @@ return jQuery;
     'use strict';
 
     $(function () {
-        // Tree
+        // Tree starter kit
     });
 
 })(jQuery, window, document);

@@ -37,7 +37,7 @@
 // List-inline...........Displays a list as one horizontal row.
 // List-block............Creates blocky list items out of a `ul` or `ol`.
 // List-ui...............Keyline-delimited list items.
-// Tables................Table styles.
+// Table.................Table styles.
 // Media.................The media object.
 // Block.................Stack an image above some text content.
 // Flag..................The flag object.
@@ -121,7 +121,7 @@
 @import "bower_components/tree-list-inline/object.list-inline";
 @import "bower_components/tree-list-block/object.list-block";
 @import "bower_components/tree-list-ui/object.list-ui";
-@import "bower_components/tree-tables/object.tables";
+@import "bower_components/tree-table/object.table";
 @import "bower_components/tree-media/object.media";
 @import "bower_components/tree-block/object.block";
 @import "bower_components/tree-flag/object.flag";

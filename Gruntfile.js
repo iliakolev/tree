@@ -25,9 +25,7 @@ module.exports = function (grunt) {
 
         sass: {
             options: {
-                sourcemap: 'none',
-                style: 'expanded',
-                unixNewlines: true
+                sourcemap: 'none'
             },
             core: {
                 src: '<%= meta.sassPath %>main.scss',

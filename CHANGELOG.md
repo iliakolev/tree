@@ -1,5 +1,12 @@
 # tree-starter-kit Changelog
 
+## [0.8.11] - 2015-06-24
+
+* Remove grunt-contib-sass
+* Add grunt-sass
+* Bump tree-spacing to v0.2.0
+* Bump tree-spacing-responsive to v0.1.4
+
 ## [0.8.10] - 2015-06-16
 
 * rename package tree-tables to tree-table

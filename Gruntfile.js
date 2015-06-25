@@ -66,6 +66,31 @@ module.exports = function (grunt) {
             }
         },
 
+        parker: {
+            options: {
+                metrics: [
+                    'TotalStylesheets',
+                    'TotalStylesheetSize',
+                    'TotalRules',
+                    'TotalSelectors',
+                    'TotalIdentifiers',
+                    'TotalDeclarations',
+                    'SelectorsPerRule',
+                    'IdentifiersPerSelector',
+                    'SpecificityPerSelector',
+                    'TopSelectorSpecificity',
+                    'TopSelectorSpecificitySelector',
+                    'TotalIdSelectors',
+                    'TotalUniqueColours',
+                    'TotalImportantKeywords',
+                    'TotalMediaQueries'
+                ],
+                file: '<%= meta.distPath %>css/tree-stats.md',
+                usePackage: true
+            },
+            src: '<%= cssmin.tree.dest %>'
+        },
+
         concat: {
             tree: {
                 src: [
@@ -157,7 +182,7 @@ module.exports = function (grunt) {
             site: {
                 options: {
                     base: '<%= meta.rootPath %>',
-                    hostname: '192.168.0.150',
+                    hostname: 'localhost',
                     open: true,
                     livereload: true,
                     port: 8000
@@ -167,7 +192,7 @@ module.exports = function (grunt) {
 
         watch: {
             options: {
-                hostname: '192.168.0.150',
+                hostname: 'localhost',
                 livereload: true,
                 port: 8000
             },
@@ -190,7 +215,7 @@ module.exports = function (grunt) {
     require('time-grunt')(grunt);
 
     // Default task(s).
-    grunt.registerTask('dist-css', ['sass', 'postcss', 'cssmin']);
+    grunt.registerTask('dist-css', ['sass', 'postcss', 'cssmin', 'parker']);
     grunt.registerTask('dist-js', ['concat', 'uglify']);
     grunt.registerTask('dist', ['clean', 'dist-css', 'dist-js']);
     grunt.registerTask('validate-budget', ['perfbudget']);

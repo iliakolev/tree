@@ -1,5 +1,12 @@
 # tree-starter-kit Changelog
 
+## [0.8.12] - 2015-06-25
+
+* Move from grunt-autoprefixer (deprecated) to grunt-postcss
+* Add Grunt plugin for parker, a stylesheet analysis tool.
+* Change grunt connect hostname to `localhost`
+
+
 ## [0.8.11] - 2015-06-24
 
 * Remove grunt-contib-sass

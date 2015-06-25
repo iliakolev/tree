@@ -1,6 +1,6 @@
 # [tree-starter-kit]( https://github.com/treeframework/tree-starter-kit )
 
-**Version:** `0.8.11`
+**Version:** `0.8.12`
 
 > Tree starter kit.
 

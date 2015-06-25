@@ -33,17 +33,21 @@ module.exports = function (grunt) {
             }
         },
 
-        autoprefixer: {
+        postcss: {
             options: {
-                browsers: [
-                    'Android 2.3',
-                    'Android >= 4',
-                    'Chrome >= 20',
-                    'Firefox >= 24', // Firefox 24 is the latest ESR
-                    'Explorer >= 9',
-                    'iOS >= 6',
-                    'Opera >= 12',
-                    'Safari >= 6'
+                processors: [
+                    require('autoprefixer-core')({
+                        browsers: [
+                            'Android 2.3',
+                            'Android >= 4',
+                            'Chrome >= 20',
+                            'Firefox >= 24', // Firefox 24 is the latest ESR
+                            'Explorer >= 9',
+                            'iOS >= 6',
+                            'Opera >= 12',
+                            'Safari >= 6'
+                        ]
+                    })
                 ]
             },
             core: {
@@ -186,7 +190,7 @@ module.exports = function (grunt) {
     require('time-grunt')(grunt);
 
     // Default task(s).
-    grunt.registerTask('dist-css', ['sass', 'autoprefixer', 'cssmin']);
+    grunt.registerTask('dist-css', ['sass', 'postcss', 'cssmin']);
     grunt.registerTask('dist-js', ['concat', 'uglify']);
     grunt.registerTask('dist', ['clean', 'dist-css', 'dist-js']);
     grunt.registerTask('validate-budget', ['perfbudget']);

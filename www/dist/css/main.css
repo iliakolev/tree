@@ -500,128 +500,125 @@ img {
 .gm-style img, img[width], img[height] {
   max-width: none; }
 
-.layout {
+.o-layout {
   list-style: none;
   margin: 0;
   padding: 0;
   margin-left: -24px; }
 
-.layout__item {
+.o-layout__item {
   display: inline-block;
   padding-left: 24px;
   vertical-align: top;
   width: 100%; }
 
-.nav {
+.o-nav {
   margin: 0;
   padding: 0;
   list-style: none; }
 
-.nav__item {
+.o-nav__item {
   display: inline-block; }
 
-.nav__link {
+.o-nav__link {
   display: inline-block;
   padding: 24px; }
-  .nav__link:hover,
-  .nav__link:focus {
+  .o-nav__link:hover,
+  .o-nav__link:focus {
     text-decoration: none; }
 
-.list-bare {
+.o-list-bare {
   margin: 0;
   padding: 0;
   list-style: none; }
 
-.list-inline {
+.o-list-inline {
   margin: 0;
   padding: 0;
   list-style: none; }
-  .list-inline > li {
+  .o-list-inline > li {
     display: inline-block; }
 
-.list-block {
+.o-list-block {
   margin: 0;
   padding: 0;
   list-style: none; }
 
-.list-block__item,
-.list-block > li {
+.o-list-block__item {
   padding: 24px; }
 
-.list-ui,
-.list-ui__item,
-.list-ui > li {
+.o-list-ui,
+.o-list-ui__item {
   border: 0 solid #edece4; }
 
-.list-ui {
+.o-list-ui {
   margin: 0;
   padding: 0;
   list-style: none;
   border-top-width: 1px; }
 
-.list-ui__item,
-.list-ui > li {
+.o-list-ui__item {
   padding: 24px;
   border-bottom-width: 1px; }
 
 .o-table {
   width: 100%; }
 
-.media {
+.o-media {
   display: block; }
 
-.media__img {
+.o-media__img {
   float: left;
   margin-right: 24px; }
-  .media__img > img {
+  .o-media__img > img {
     display: block; }
 
-.media__body {
+.o-media__body {
   overflow: hidden;
   display: block; }
-  .media__body,
-  .media__body > :last-child {
+  .o-media__body,
+  .o-media__body > :last-child {
     margin-bottom: 0; }
 
-.block {
+.o-block {
   display: block; }
 
-.block__img {
+.o-block__img {
   vertical-align: middle;
   margin-bottom: 24px; }
 
-.block__body {
+.o-block__body {
   display: block; }
 
-.flag {
+.o-flag {
   display: table;
   width: 100%; }
 
-.flag__img,
-.flag__body {
+.o-flag__img,
+.o-flag__body {
   display: table-cell;
   vertical-align: middle; }
 
-.flag__img {
+.o-flag__img {
   padding-right: 24px; }
-  .flag__img > img {
+  .o-flag__img > img {
     display: block;
     max-width: none; }
 
-.flag__body {
+.o-flag__body {
   width: 100%; }
-  .flag__body,
-  .flag__body > :last-child {
+  .o-flag__body,
+  .o-flag__body > :last-child {
     margin-bottom: 0; }
 
-.ratio {
+.o-ratio {
   position: relative;
   display: block;
   height: 0;
   padding-bottom: 100%;
   overflow: hidden; }
 
-.ratio__item {
+.o-ratio__item {
   position: absolute;
   top: 0;
   left: 0;
@@ -629,11 +626,22 @@ img {
   height: 100%;
   width: 100%; }
 
-.box {
+.o-box {
   display: block;
   padding: 24px; }
-  .box > :last-child {
+  .o-box > :last-child {
     margin-bottom: 0; }
+
+.o-sprite {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-indent: 100%; }
 
 .btn {
   display: inline-block;
@@ -671,15 +679,15 @@ img {
     background-color: #2f8cde;
     border-color: #2f8cde; }
 
-.pack {
+.o-pack {
   width: 100%;
   display: table;
   table-layout: fixed; }
 
-.pack__item {
+.o-pack__item {
   display: table-cell; }
 
-.tabs {
+.o-tabs {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -688,15 +696,14 @@ img {
   width: 100%;
   text-align: center; }
 
-.tabs__item {
+.o-tabs__item {
   display: table-cell; }
 
-.tabs__link {
+.o-tabs__link {
   display: block; }
 
-.clearfix:after,
-.media:after,
-.box:after {
+.u-clearfix:after,
+.o-media:after, .o-box:after {
   clear: both;
   content: "";
   display: table; }
@@ -878,32 +885,32 @@ img {
   .u-4\/5-retina {
     width: 80% !important; } }
 
-.alpha {
+.u-alpha {
   font-size: 36px;
   font-size: 2.25rem;
   line-height: 1.3333333333; }
 
-.beta {
+.u-beta {
   font-size: 30px;
   font-size: 1.875rem;
   line-height: 1.6; }
 
-.gamma {
+.u-gamma {
   font-size: 24px;
   font-size: 1.5rem;
   line-height: 1; }
 
-.delta {
+.u-delta {
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.2; }
 
-.epsilon {
+.u-epsilon {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
 
-.zeta {
+.u-zeta {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.7142857143; }

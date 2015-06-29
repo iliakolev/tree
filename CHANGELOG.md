@@ -1,5 +1,44 @@
 # tree-starter-kit Changelog
 
+## [0.8.13] - 2015-06-28
+
+### NEW MODULES
+
+* Break `tree-mixins` into two separate modules:
+    * `tree-font-size`: sizing and vertical rhythm
+    * `tree-hocus`: Generate `:hover` and `:focus` styles in one go
+
+### DEPENDENCY UPDATES
+
+* `tree-box@0.4.1`
+* `tree-block@0.2.0`
+* `tree-clearfix@0.3.0`
+* `tree-media@0.3.0`
+* `tree-lede@0.5.0`
+* `treeframework-headings@0.4.0`
+* `tree-headings-trump@0.3.1`
+* `tree-nav@0.4.0`
+* `tree-tabs@0.3.0`
+* `tree-link-block@0.3.0`
+* `tree-link-clean@0.3.0`
+* `tree-list-block@0.3.0`
+* `tree-list-ui@0.2.0`
+* `tree-list-inline@0.2.0`
+* `tree-shared@0.2.11`
+* `tree-sprite@0.2.0`
+* `tree-reset@0.1.7`
+* `tree-box-sizing@0.2.9`
+* `tree-lists@0.1.7`
+* `tree-links@0.1.5`
+* `tree-responsive-tools@0.1.5`
+* `tree-layout@0.5.0`
+* `tree-images@0.1.8`
+* `tree-flag@0.2.0`
+* `tree-pack@0.3.0`
+* `tree-ratio@0.2.1`
+* `tree-list-bare@0.5.0`
+* `jQuery@2.1.4`
+
 ## [0.8.12] - 2015-06-25
 
 * Move from grunt-autoprefixer (deprecated) to grunt-postcss

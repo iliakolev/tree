@@ -31,7 +31,7 @@ linters:
   DuplicateProperty:
     enabled: true
     exclude:
-      - ../../bower_components/tree-mixins/_tools.mixins.scss
+      - ../../bower_components/tree-font-size/_tools.font-size.scss
       - ../../bower_components/tree-shared/_generic.shared.scss
 
   ElsePlacement:

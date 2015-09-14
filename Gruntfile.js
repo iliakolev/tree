@@ -128,15 +128,6 @@ module.exports = function (grunt) {
             }
         },
 
-        htmllint: {
-            options: {
-                ignore: [
-                    'Consider using the "h1" element as a top-level heading only (all "h1" elements are treated as top-level headings by many screen readers and other tools).'
-                ]
-            },
-            src: '<%= meta.rootPath %>**/*.html'
-        },
-
         scsslint: {
             options: {
                 config: '<%= meta.sassPath %>.scss-lint.yml'
@@ -219,9 +210,8 @@ module.exports = function (grunt) {
     grunt.registerTask('dist-js', ['concat', 'uglify']);
     grunt.registerTask('dist', ['clean', 'dist-css', 'dist-js']);
     grunt.registerTask('validate-budget', ['perfbudget']);
-    grunt.registerTask('validate-html', ['htmllint']);
     grunt.registerTask('build', ['dist']);
     grunt.registerTask('default', ['dist']);
-    grunt.registerTask('test', ['dist', 'scsslint', 'csslint', 'jshint', 'jscs', 'validate-html']);
+    grunt.registerTask('test', ['dist', 'scsslint', 'csslint', 'jshint', 'jscs']);
     grunt.registerTask('server', ['dist', 'connect', 'watch']);
 };

@@ -36,7 +36,7 @@ module.exports = function (grunt) {
         postcss: {
             options: {
                 processors: [
-                    require('autoprefixer-core')({
+                    require('autoprefixer')({
                         browsers: [
                             'Android 2.3',
                             'Android >= 4',

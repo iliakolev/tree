@@ -32,6 +32,7 @@
 // Images................Images styles.
 //
 // OBJECTS
+// Wrapper...............Content wrapper.
 // Layout................Layout tool.
 // Nav...................The nav object.
 // List-bare.............Removes bullets and indents from lists.
@@ -117,6 +118,7 @@
 //   #OBJECTS
 // *************************************
 
+@import "bower_components/tree-wrapper/object.wrapper";
 @import "bower_components/tree-layout/object.layout";
 @import "bower_components/tree-nav/object.nav";
 @import "bower_components/tree-list-bare/object.list-bare";

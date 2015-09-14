@@ -500,6 +500,13 @@ img {
 .gm-style img, img[width], img[height] {
   max-width: none; }
 
+.o-wrapper {
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 24px;
+  padding-left: 24px; }
+
 .o-layout {
   list-style: none;
   margin: 0;

@@ -9,7 +9,7 @@ I'm mostly catching up and learning as I go.
 
 ## Credits
 
-Tree, although produced and maintained by one developer, could not have
+tree-starter-kit, although produced and maintained by one developer, could not have
 been possible without inspiration from an array of other projects.
 
 * **[inuitcss](https://twitter.com/inuitcss)** Powerful, scalable, Sass-based, BEM, OOCSS framework.

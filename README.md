@@ -4,8 +4,7 @@
 [![Build Status](https://travis-ci.org/treeframework/tree-starter-kit.svg?branch=master)](https://travis-ci.org/treeframework/tree-starter-kit)
 [![Dependency Status](https://gemnasium.com/treeframework/tree-starter-kit.svg)](https://gemnasium.com/treeframework/tree-starter-kit)
 
-This repo is mostly for me, but you are welcome to make suggestions. [inuitcss](https://twitter.com/inuitcss) is the project to fork.
-I'm mostly catching up and learning as I go.
+This repo is mostly for me, but you are welcome to make suggestions.
 
 ## Credits
 

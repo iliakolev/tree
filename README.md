@@ -15,3 +15,4 @@ been possible without inspiration from an array of other projects.
 * **[inuitcss](https://twitter.com/inuitcss)** Powerful, scalable, Sass-based, BEM, OOCSS framework.
 * **[suitcss](http://suitcss.github.io/)** Style tools for UI components.
 * **[Ratchet](https://github.com/twbs/ratchet)** Build mobile apps with simple HTML, CSS, and JavaScript components.
+* **[Primer](http://primercss.io/)** CSS toolkit that powers GitHub's front-end design.

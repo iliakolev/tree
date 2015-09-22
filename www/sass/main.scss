@@ -1,6 +1,6 @@
 // *************************************
 //
-//   #TREE
+//   #TREE STARTER KIT
 //
 // *************************************
 
@@ -69,8 +69,8 @@
 //   #SETTINGS
 // *************************************
 
-@import "bower_components/tree-defaults/settings.defaults";
-@import "bower_components/tree-responsive-settings/settings.responsive";
+@import "node_modules/tree-defaults/settings.defaults";
+@import "node_modules/tree-responsive-settings/settings.responsive";
 
 
 
@@ -79,12 +79,12 @@
 //   #TOOLS
 // *************************************
 
-@import "bower_components/tree-functions/tools.functions";
-@import "bower_components/tree-font-size/tools.font-size";
-@import "bower_components/tree-hocus/tools.hocus";
-@import "bower_components/tree-widths-tools/tools.widths";
-@import "bower_components/tree-responsive-tools/tools.responsive";
-@import "bower_components/tree-aliases/tools.aliases";
+@import "node_modules/tree-functions/tools.functions";
+@import "node_modules/tree-font-size/tools.font-size";
+@import "node_modules/tree-hocus/tools.hocus";
+@import "node_modules/tree-widths-tools/tools.widths";
+@import "node_modules/tree-responsive-tools/tools.responsive";
+@import "node_modules/tree-aliases/tools.aliases";
 
 
 
@@ -93,10 +93,10 @@
 //   #GENERIC
 // *************************************
 
-@import "bower_components/tree-normalize/generic.normalize";
-@import "bower_components/tree-reset/generic.reset";
-@import "bower_components/tree-box-sizing/generic.box-sizing";
-@import "bower_components/tree-shared/generic.shared";
+@import "node_modules/tree-normalize/generic.normalize";
+@import "node_modules/tree-reset/generic.reset";
+@import "node_modules/tree-box-sizing/generic.box-sizing";
+@import "node_modules/tree-shared/generic.shared";
 
 
 
@@ -105,11 +105,11 @@
 //   #BASE
 // *************************************
 
-@import "bower_components/tree-page/base.page";
-@import "bower_components/treeframework-headings/base.headings";
-@import "bower_components/tree-links/base.links";
-@import "bower_components/tree-lists/base.lists";
-@import "bower_components/tree-images/base.images";
+@import "node_modules/tree-page/base.page";
+@import "node_modules/tree-headings/base.headings";
+@import "node_modules/tree-links/base.links";
+@import "node_modules/tree-lists/base.lists";
+@import "node_modules/tree-images/base.images";
 
 
 
@@ -118,23 +118,23 @@
 //   #OBJECTS
 // *************************************
 
-@import "bower_components/tree-wrapper/object.wrapper";
-@import "bower_components/tree-layout/object.layout";
-@import "bower_components/tree-nav/object.nav";
-@import "bower_components/tree-list-bare/object.list-bare";
-@import "bower_components/tree-list-inline/object.list-inline";
-@import "bower_components/tree-list-block/object.list-block";
-@import "bower_components/tree-list-ui/object.list-ui";
-@import "bower_components/tree-table/object.table";
-@import "bower_components/tree-media/object.media";
-@import "bower_components/tree-block/object.block";
-@import "bower_components/tree-flag/object.flag";
-@import "bower_components/tree-ratio/object.ratio";
-@import "bower_components/tree-box/object.box";
-@import "bower_components/tree-sprite/object.sprite";
-@import "bower_components/tree-buttons/object.buttons";
-@import "bower_components/tree-pack/object.pack";
-@import "bower_components/tree-tabs/object.tabs";
+@import "node_modules/tree-wrapper/object.wrapper";
+@import "node_modules/tree-layout/object.layout";
+@import "node_modules/tree-nav/object.nav";
+@import "node_modules/tree-list-bare/object.list-bare";
+@import "node_modules/tree-list-inline/object.list-inline";
+@import "node_modules/tree-list-block/object.list-block";
+@import "node_modules/tree-list-ui/object.list-ui";
+@import "node_modules/tree-table/object.table";
+@import "node_modules/tree-media/object.media";
+@import "node_modules/tree-block/object.block";
+@import "node_modules/tree-flag/object.flag";
+@import "node_modules/tree-ratio/object.ratio";
+@import "node_modules/tree-box/object.box";
+@import "node_modules/tree-sprite/object.sprite";
+@import "node_modules/tree-buttons/object.buttons";
+@import "node_modules/tree-pack/object.pack";
+@import "node_modules/tree-tabs/object.tabs";
 
 
 
@@ -143,14 +143,14 @@
 //   #TRUMPS
 // *************************************
 
-@import "bower_components/tree-clearfix/trump.clearfix";
-@import "bower_components/tree-widths/trump.widths";
-@import "bower_components/tree-widths-responsive/trump.widths-responsive";
-@import "bower_components/tree-spacing/trump.spacing";
-@import "bower_components/tree-spacing-responsive/trump.spacing-responsive";
-@import "bower_components/tree-headings-trump/trump.headings";
-@import "bower_components/tree-lede/trump.lede";
-@import "bower_components/tree-hidden/trump.hidden";
-@import "bower_components/tree-visible/trump.visible";
-@import "bower_components/tree-link-block/trump.link-block";
-@import "bower_components/tree-link-clean/trump.link-clean";
+@import "node_modules/tree-clearfix/trump.clearfix";
+@import "node_modules/tree-widths/trump.widths";
+@import "node_modules/tree-widths-responsive/trump.widths-responsive";
+@import "node_modules/tree-spacing/trump.spacing";
+@import "node_modules/tree-spacing-responsive/trump.spacing-responsive";
+@import "node_modules/tree-headings-trump/trump.headings";
+@import "node_modules/tree-lede/trump.lede";
+@import "node_modules/tree-hidden/trump.hidden";
+@import "node_modules/tree-visible/trump.visible";
+@import "node_modules/tree-link-block/trump.link-block";
+@import "node_modules/tree-link-clean/trump.link-clean";

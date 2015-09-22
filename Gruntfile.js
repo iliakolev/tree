@@ -20,7 +20,7 @@ module.exports = function (grunt) {
             distPath:  'www/dist/',
             sassPath:  'www/sass/',
             jsPath:    'www/js/',
-            bowerPath: 'bower_components/'
+            npmPath:   'node_modules/'
         },
 
         sass: {
@@ -94,7 +94,7 @@ module.exports = function (grunt) {
         concat: {
             tree: {
                 src: [
-                    '<%= meta.bowerPath %>jquery/dist/jquery.js',
+                    '<%= meta.npmPath %>jquery/dist/jquery.js',
                     '<%= meta.jsPath %>main.js'
                 ],
                 dest: '<%= meta.distPath %>js/scripts.js'
@@ -133,7 +133,7 @@ module.exports = function (grunt) {
                 config: '<%= meta.sassPath %>.scss-lint.yml'
             },
             src: [
-                '<%= meta.bowerPath %>{,tree*/}*.scss',
+                '<%= meta.npmPath %>{,tree*/}*.scss',
                 '<%= meta.sassPath %>{,*/}*.scss'
             ]
         },

@@ -19,7 +19,6 @@ module.exports = function (grunt) {
             rootPath:  'www/',
             distPath:  'www/dist/',
             sassPath:  'www/sass/',
-            jsPath:    'www/js/',
             npmPath:   'node_modules/'
         },
 
@@ -91,30 +90,6 @@ module.exports = function (grunt) {
             src: '<%= cssmin.tree.dest %>'
         },
 
-        concat: {
-            tree: {
-                src: [
-                    '<%= meta.npmPath %>jquery/dist/jquery.js',
-                    '<%= meta.jsPath %>main.js'
-                ],
-                dest: '<%= meta.distPath %>js/scripts.js'
-            }
-        },
-
-        uglify: {
-            options: {
-                compress: {
-                    warnings: false
-                },
-                mangle: true,
-                preserveComments: false
-            },
-            tree: {
-                src: '<%= concat.tree.dest %>',
-                dest: '<%= meta.distPath %>js/scripts.min.js'
-            }
-        },
-
         clean: {
             dist: '<%= meta.distPath %>'
         },
@@ -145,30 +120,6 @@ module.exports = function (grunt) {
             src: '<%= meta.distPath %>/css/main.css'
         },
 
-        jshint: {
-            options: {
-                jshintrc: '<%= meta.jsPath %>.jshintrc'
-            },
-            grunt: {
-                src: 'Gruntfile.js'
-            },
-            src: {
-                src: '<%= meta.jsPath %>*.js'
-            }
-        },
-
-        jscs: {
-            options: {
-                config: '<%= meta.jsPath %>.jscsrc'
-            },
-            grunt: {
-                src: '<%= jshint.grunt.src %>'
-            },
-            src: {
-                src: '<%= jshint.src.src %>'
-            }
-        },
-
         connect: {
             site: {
                 options: {
@@ -187,10 +138,6 @@ module.exports = function (grunt) {
                 livereload: true,
                 port: 8000
             },
-            js: {
-                files: '<%= meta.jsPath %>**/*.js',
-                tasks: ['dist-js']
-            },
             sass: {
                 files: '<%= meta.sassPath %>**/*.scss',
                 tasks: ['dist-css']
@@ -207,11 +154,10 @@ module.exports = function (grunt) {
 
     // Default task(s).
     grunt.registerTask('dist-css', ['sass', 'postcss', 'cssmin', 'parker']);
-    grunt.registerTask('dist-js', ['concat', 'uglify']);
-    grunt.registerTask('dist', ['clean', 'dist-css', 'dist-js']);
+    grunt.registerTask('dist', ['clean', 'dist-css']);
     grunt.registerTask('validate-budget', ['perfbudget']);
     grunt.registerTask('build', ['dist']);
     grunt.registerTask('default', ['dist']);
-    grunt.registerTask('test', ['dist', 'scsslint', 'csslint', 'jshint', 'jscs']);
+    grunt.registerTask('test', ['dist', 'scsslint', 'csslint']);
     grunt.registerTask('server', ['dist', 'connect', 'watch']);
 };

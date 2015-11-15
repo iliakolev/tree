@@ -17,7 +17,7 @@ module.exports = function (grunt) {
         // Metadata.
         meta: {
             rootPath:  'www/',
-            distPath:  'www/dist/',
+            cssPath:   'www/css/',
             sassPath:  'www/sass/',
             npmPath:   'node_modules/'
         },
@@ -28,7 +28,7 @@ module.exports = function (grunt) {
             },
             core: {
                 src: '<%= meta.sassPath %>main.scss',
-                dest: '<%= meta.distPath %>css/main.css'
+                dest: '<%= meta.cssPath %>main.css'
             }
         },
 
@@ -60,8 +60,8 @@ module.exports = function (grunt) {
                 report: 'min'
             },
             tree: {
-                src: '<%= meta.distPath %>css/main.css',
-                dest: '<%= meta.distPath %>css/main.min.css'
+                src: '<%= meta.cssPath %>main.css',
+                dest: '<%= meta.cssPath %>main.min.css'
             }
         },
 
@@ -84,14 +84,10 @@ module.exports = function (grunt) {
                     'TotalImportantKeywords',
                     'TotalMediaQueries'
                 ],
-                file: '<%= meta.distPath %>css/tree-stats.md',
+                file: '<%= meta.cssPath %>tree-stats.md',
                 usePackage: true
             },
             src: '<%= cssmin.tree.dest %>'
-        },
-
-        clean: {
-            dist: '<%= meta.distPath %>'
         },
 
         perfbudget: {
@@ -117,7 +113,7 @@ module.exports = function (grunt) {
             options: {
                 csslintrc: '<%= meta.sassPath %>.csslintrc'
             },
-            src: '<%= meta.distPath %>/css/main.css'
+            src: '<%= meta.cssPath %>main.css'
         },
 
         connect: {
@@ -140,7 +136,7 @@ module.exports = function (grunt) {
             },
             sass: {
                 files: '<%= meta.sassPath %>**/*.scss',
-                tasks: ['dist-css']
+                tasks: ['dist']
             },
             html: {
                 files: '<%= meta.rootPath %>**'
@@ -153,10 +149,8 @@ module.exports = function (grunt) {
     require('time-grunt')(grunt);
 
     // Default task(s).
-    grunt.registerTask('dist-css', ['sass', 'postcss', 'cssmin', 'parker']);
-    grunt.registerTask('dist', ['clean', 'dist-css']);
+    grunt.registerTask('dist', ['sass', 'postcss', 'cssmin', 'parker']);
     grunt.registerTask('validate-budget', ['perfbudget']);
-    grunt.registerTask('build', ['dist']);
     grunt.registerTask('default', ['dist']);
     grunt.registerTask('test', ['dist', 'scsslint', 'csslint']);
     grunt.registerTask('server', ['dist', 'connect', 'watch']);

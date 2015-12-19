@@ -65,7 +65,7 @@
     "grunt-postcss": "~0.7.0",
     "grunt-sass": "~1.0.0",
     "grunt-scss-lint": "~0.3.6",
-    "load-grunt-tasks": "~3.3.0",
+    "load-grunt-tasks": "~3.4.0",
     "time-grunt": "~1.2.1"
   },
   "engines": {

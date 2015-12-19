@@ -120,7 +120,7 @@ module.exports = function (grunt) {
             site: {
                 options: {
                     base: '<%= meta.rootPath %>',
-                    hostname: 'localhost',
+                    hostname: '0.0.0.0',
                     open: true,
                     livereload: true,
                     port: 8000

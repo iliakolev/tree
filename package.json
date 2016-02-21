@@ -69,7 +69,7 @@
     "time-grunt": "~1.3.0"
   },
   "engines": {
-    "node": ">=0.10.1"
+    "node": ">= 4.2.2"
   },
   "homepage": "https://github.com/treeframework/tree-starter-kit",
   "keywords": [

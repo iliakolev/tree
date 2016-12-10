@@ -63,7 +63,7 @@
     "grunt-parker": "~0.2.0",
     "grunt-perfbudget": "~0.1.9",
     "grunt-postcss": "~0.8.0",
-    "grunt-sass": "~1.2.1",
+    "grunt-sass": "~2.0.0",
     "grunt-scss-lint": "~0.3.8",
     "load-grunt-tasks": "~3.5.2",
     "time-grunt": "~1.4.0"

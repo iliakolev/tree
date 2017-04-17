@@ -58,7 +58,7 @@
     "grunt": "~0.4.5",
     "grunt-contrib-connect": "~1.0.2",
     "grunt-contrib-csslint": "~1.0.0",
-    "grunt-contrib-cssmin": "~1.0.1",
+    "grunt-contrib-cssmin": "~2.1.0",
     "grunt-contrib-watch": "~1.0.0",
     "grunt-parker": "~0.2.0",
     "grunt-perfbudget": "~0.1.9",
